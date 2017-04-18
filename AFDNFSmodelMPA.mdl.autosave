@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.306"
+    ComputedModelVersion    "1.305"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -28,7 +28,7 @@ Model {
       Type		      "Cell"
       Dimension		      2
       Cell		      "HDLSubsystem"
-      Cell		      "$bdroot"
+      Cell		      "AFDNFSmodelMPA"
       PropName		      "mdlProps"
     }
   }
@@ -110,16 +110,16 @@ Model {
 	}
 	Object {
 	  $ObjectID		  10
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "7232"
 	  Extents		  [1879.0, 881.0]
-	  ZoomFactor		  [0.99999999999999989]
-	  Offset		  [0.2274834511780458, 293.95794711225727]
+	  ZoomFactor		  [0.79999999999999982]
+	  Offset		  [-200.01561459407384, -122.05074805243501]
 	}
 	Object {
 	  $ObjectID		  11
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "8028"
 	  Extents		  [1879.0, 881.0]
@@ -168,9 +168,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "AHKh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Apr 18 12:19:39 2017"
+  LastModifiedDate	  "Mon Jan 02 18:45:21 2017"
   RTWModifiedTimeStamp	  414415414
-  ModelVersionFormat	  "1.%<AutoIncrement:306>"
+  ModelVersionFormat	  "1.%<AutoIncrement:305>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -4831,7 +4831,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Linear\nVelocity"
@@ -26659,7 +26659,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag2
-    Data		    "  %)30     .    N ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -26668,9 +26668,9 @@ MatData {
     "            \\#\\.    ,     8    (    !@         %    \"                0         )          X    P    !@    @    "
     "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
     "    \"0    @           #P/PX    P    !@    @    &          4    (               !          D         #@   #     & "
-    "   \"     8         !0    @               $         \"0         .    ,     8    (    !@         %    \"           "
-    "     0         )          X    P    !@    @    &          4    (               !          D         #@   #     &  "
-    "  \"     8         !0    @               $         \"0         "
+    "   \"     8         !0    @               $         \"0         .    .     8    (    !@         %    \"     $    !"
+    "     0         )    \"         \"   ! #@   #@    &    \"     8         !0    @    !     0    $         \"0    @   "
+    "       4B80 X    P    !@    @    &          4    (               !          D         "
   }
   DataRecord {
     Tag			    DataTag3
@@ -26743,7 +26743,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag4
-    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    V ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -26752,9 +26752,9 @@ MatData {
     "            \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"    )L*T8;/'^,_#@   #@   "
     " &    \"     8         !0    @    !     0    $         \"0    @           #POPX    X    !@    @    &          4   "
     " (     0    $    !          D    (            \\#\\.    ,     8    (    !@         %    \"                0       "
-    "  )          X    P    !@    @    &          4    (               !          D         #@   #     &    \"     8   "
-    "      !0    @               $         \"0         .    ,     8    (    !@         %    \"                0        "
-    " )          X    P    !@    @    &          4    (               !          D         "
+    "  )          X    P    !@    @    &          4    (               !          D         #@   #@    &    \"     8   "
+    "      !0    @    !     0    $         \"0    @         @   0 X    X    !@    @    &          4    (     0    $    "
+    "!          D    (          '8GT .    ,     8    (    !@         %    \"                0         )          "
   }
   DataRecord {
     Tag			    DataTag5
@@ -26827,7 +26827,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag6
-    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    V ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -26836,9 +26836,9 @@ MatData {
     "            \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"    )L*T8;/'^,_#@   #@   "
     " &    \"     8         !0    @    !     0    $         \"0    @           #POPX    X    !@    @    &          4   "
     " (     0    $    !          D    (            \\#\\.    ,     8    (    !@         %    \"                0       "
-    "  )          X    P    !@    @    &          4    (               !          D         #@   #     &    \"     8   "
-    "      !0    @               $         \"0         .    ,     8    (    !@         %    \"                0        "
-    " )          X    P    !@    @    &          4    (               !          D         "
+    "  )          X    P    !@    @    &          4    (               !          D         #@   #@    &    \"     8   "
+    "      !0    @    !     0    $         \"0    @         @   0 X    X    !@    @    &          4    (     0    $    "
+    "!          D    (        0 'PGT .    ,     8    (    !@         %    \"                0         )          "
   }
   DataRecord {
     Tag			    DataTag7
@@ -26911,7 +26911,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag8
-    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    V ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -26920,9 +26920,9 @@ MatData {
     "            \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"    )L*T8;/'^,_#@   #@   "
     " &    \"     8         !0    @    !     0    $         \"0    @           #POPX    X    !@    @    &          4   "
     " (     0    $    !          D    (            \\#\\.    ,     8    (    !@         %    \"                0       "
-    "  )          X    P    !@    @    &          4    (               !          D         #@   #     &    \"     8   "
-    "      !0    @               $         \"0         .    ,     8    (    !@         %    \"                0        "
-    " )          X    P    !@    @    &          4    (               !          D         "
+    "  )          X    P    !@    @    &          4    (               !          D         #@   #@    &    \"     8   "
+    "      !0    @    !     0    $         \"0    @         @   0 X    X    !@    @    &          4    (     0    $    "
+    "!          D    (        D  \"H$ .    ,     8    (    !@         %    \"                0         )          "
   }
   DataRecord {
     Tag			    DataTag9
@@ -26995,7 +26995,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag10
-    Data		    "  %)30     .    R ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
+    Data		    "  %)30     .    V ,   8    (     @         %    \"     $    !     0         %  0 $0    $   #,    =F5R:6"
     "9Y0FQK4&%T:',   !V97)I9GE\";&M(86YD;&5S '9N=DUG<DED>           86-T:79E1W)O=7        !R97%$:7-P4')C;G0      &)L:T1"
     "I<W!-;V1E        9W)O=7!#;G0           !G<F]U<%)E<4-N=        &=R;W5P1$]/4E-I9       ;6]D96Q(              !B;&]C:"
     "T@              &]V97)I9&53971T:6YG<P        X    P    !@    @    &          4    (               !          D    "
@@ -27004,9 +27004,9 @@ MatData {
     "            \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"    )L*T8;/'^,_#@   #@   "
     " &    \"     8         !0    @    !     0    $         \"0    @           #POPX    X    !@    @    &          4   "
     " (     0    $    !          D    (            \\#\\.    ,     8    (    !@         %    \"                0       "
-    "  )          X    P    !@    @    &          4    (               !          D         #@   #     &    \"     8   "
-    "      !0    @               $         \"0         .    ,     8    (    !@         %    \"                0        "
-    " )          X    P    !@    @    &          4    (               !          D         "
+    "  )          X    P    !@    @    &          4    (               !          D         #@   #@    &    \"     8   "
+    "      !0    @    !     0    $         \"0    @         @   0 X    X    !@    @    &          4    (     0    $    "
+    "!          D    (        D  .H$ .    ,     8    (    !@         %    \"                0         )          "
   }
 }
 #Finite State Machines

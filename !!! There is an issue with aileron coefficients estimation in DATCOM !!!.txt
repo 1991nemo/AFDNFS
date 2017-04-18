@@ -1,5 +1,0 @@
-!!! There is an issue with aileron coefficients estimation !!!
-changes required
-	model for Datcom
-	DatcomForceMoment
-	AFDNFSmodelMPA
