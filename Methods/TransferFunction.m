@@ -57,11 +57,15 @@ nfs.dyn.lat.A   =   [s*u-ae.Ybeta,-(s*ae.Yp+g*cos(theta1)),s*(u-ae.Yr);
                      -ae.Lbeta,s^2-ae.Lp*s,-(s^2*A+s*ae.Lr);
                      -(ae.Nbeta+ae.NTbeta),-(s^2*B+ae.Np*s),s^2-s*ae.Nr];
 
+% ref: McLean; Xu in maclean = Xu+XTu in Roskam
+% ref: McLean; U0 in McLean -> U0+zq in Roskam
+% ref: McLean; No Moment Derivative for thrust in McLean -> MTu & MTalpha
+% in Roskam has been added to the code in accordance; MTalpha = U0*MTw
 %                   u       w       q       theta       
-Amatlong       =   [ae.Xu   ae.Xw   0       -g*cos(nfs.pathangle);
-                    ae.Zu   ae.Zw   u       -g*sin(nfs.pathangle);
-                    Mubar   Mwbar   Mqbar   Mthetabar            ;
-                    0       0       1       0                    ;];
+Amatlong       =   [ae.Xu+ae.XTu    ae.Xw                   0       -g*cos(nfs.pathangle);
+                    ae.Zu           ae.Zw                   u+ae.Zq	-g*sin(nfs.pathangle);
+                    Mubar+ae.MTu	Mwbar+ae.MTalpha/u      Mqbar   Mthetabar            ;
+                    0               0                       1       0                    ;];
 
 % % % % % % There is an  issue with Amatlat (v variant) - the results are not correct!
 
