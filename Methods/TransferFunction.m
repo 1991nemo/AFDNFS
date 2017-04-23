@@ -69,19 +69,19 @@ Amatlong       =   [ae.Xu+ae.XTu    ae.Xw                   0       -g*cos(nfs.p
 
 % % % % % % There is an  issue with Amatlat (v variant) - the results are not correct!
 
-% %                   v           p           r                   phi                     psi    
-% Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
-%                     ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
-%                     ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
-%                     0           1           tan(nfs.pathangle)  0                       0;
-%                     0           0           sec(nfs.pathangle)  0                       0;];
-
-%                   beta        p           r                   phi                     psi    
-Amatlat        =   [ae.Yv       0           -1                  g/u                     0;
+%                   v           p           r                   phi                     psi    
+Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
                     ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
                     ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
                     0           1           tan(nfs.pathangle)  0                       0;
                     0           0           sec(nfs.pathangle)  0                       0;];
+
+%                   beta        p           r                   phi                     psi    
+% Amatlat        =   [ae.Ybeta       0           -1                  g/u                     0;
+%                     ae.Lbetaprime  ae.Lpprime  ae.Lrprime          0                       0;
+%                     ae.Nbetaprime  ae.Npprime  ae.Nrprime          0                       0;
+%                     0           1           tan(nfs.pathangle)  0                       0;
+%                     0           0           sec(nfs.pathangle)  0                       0;];
 %                   delta_e
 Bmatlong       =   [ae.Xdelta_e;
                     ae.Zdelta_e;

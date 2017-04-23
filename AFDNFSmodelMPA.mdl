@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.306"
+    ComputedModelVersion    "1.307"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -97,7 +97,7 @@ Model {
 	  LoadSaveID		  "1838"
 	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [0.8]
-	  Offset		  [0.0, -3.5]
+	  Offset		  [31.0, -2.5]
 	}
 	Object {
 	  $ObjectID		  9
@@ -110,21 +110,21 @@ Model {
 	}
 	Object {
 	  $ObjectID		  10
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "7232"
 	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [0.99999999999999989]
-	  Offset		  [0.2274834511780458, 293.95794711225727]
+	  Offset		  [-267.65646397416924, -128.76910233097618]
 	}
 	Object {
 	  $ObjectID		  11
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "8028"
 	  Extents		  [1879.0, 881.0]
-	  ZoomFactor		  [0.99999999999999967]
-	  Offset		  [-56.013061989829161, 530.789746490012]
+	  ZoomFactor		  [1.75]
+	  Offset		  [128.475522256359, 308.22036235513912]
 	}
 	Object {
 	  $ObjectID		  12
@@ -168,9 +168,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "AHKh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Apr 18 12:19:39 2017"
-  RTWModifiedTimeStamp	  414415414
-  ModelVersionFormat	  "1.%<AutoIncrement:306>"
+  LastModifiedDate	  "Tue Apr 18 16:57:37 2017"
+  RTWModifiedTimeStamp	  414419261
+  ModelVersionFormat	  "1.%<AutoIncrement:307>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -4836,7 +4836,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "Linear\nVelocity"
 	      SID		      "7233"
-	      Position		      [50, 48, 80, 62]
+	      Position		      [70, 48, 100, 62]
 	      ZOrder		      -1
 	      BackgroundColor	      "green"
 	      IconDisplay	      "Port number"
@@ -4892,7 +4892,7 @@ Model {
 	      Name		      "Aero Attributes"
 	      SID		      "7238"
 	      Ports		      [2, 6]
-	      Position		      [205, -5, 380, 220]
+	      Position		      [225, -5, 400, 220]
 	      ZOrder		      -5
 	      ForegroundColor	      "red"
 	      RequestExecContextInheritance off
@@ -6096,7 +6096,7 @@ Model {
 	      Name		      "Bus\nSelector"
 	      SID		      "8617"
 	      Ports		      [1, 3]
-	      Position		      [510, 280, 515, 390]
+	      Position		      [515, 280, 520, 390]
 	      ZOrder		      135
 	      ShowName		      off
 	      OutputSignals	      "delta_f,delta_e,delta_a"
@@ -6203,7 +6203,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"100"
+		ZoomFactor		"175"
 		Block {
 		  BlockType		  Inport
 		  Name			  "alp ha"
@@ -6218,7 +6218,7 @@ Model {
 		  BlockType		  Inport
 		  Name			  "beta"
 		  SID			  "8030"
-		  Position		  [550, 323, 580, 337]
+		  Position		  [550, 333, 580, 347]
 		  ZOrder		  107
 		  BackgroundColor	  "green"
 		  Port			  "2"
@@ -6251,7 +6251,7 @@ Model {
 		  BlockType		  Inport
 		  Name			  "qbar"
 		  SID			  "8033"
-		  Position		  [550, 353, 580, 367]
+		  Position		  [550, 363, 580, 377]
 		  ZOrder		  104
 		  BackgroundColor	  "green"
 		  Port			  "5"
@@ -6273,7 +6273,7 @@ Model {
 		  BlockType		  Inport
 		  Name			  "V"
 		  SID			  "8034"
-		  Position		  [550, 293, 580, 307]
+		  Position		  [550, 303, 580, 317]
 		  ZOrder		  103
 		  BackgroundColor	  "green"
 		  Port			  "7"
@@ -6328,7 +6328,7 @@ Model {
 		  BlockType		  Inport
 		  Name			  "C.G."
 		  SID			  "8040"
-		  Position		  [550, 383, 580, 397]
+		  Position		  [550, 393, 580, 407]
 		  ZOrder		  149
 		  BackgroundColor	  "green"
 		  Port			  "12"
@@ -6529,7 +6529,7 @@ Model {
 		  BlockType		  Constant
 		  Name			  "Constant"
 		  SID			  "8050"
-		  Position		  [480, 405, 545, 435]
+		  Position		  [480, 415, 545, 445]
 		  ZOrder		  151
 		  BackgroundColor	  "green"
 		  ShowName		  off
@@ -6549,7 +6549,7 @@ Model {
 		  BlockType		  Constant
 		  Name			  "Constant2"
 		  SID			  "8052"
-		  Position		  [550, 435, 615, 465]
+		  Position		  [550, 445, 615, 475]
 		  ZOrder		  153
 		  BackgroundColor	  "green"
 		  ShowName		  off
@@ -6569,7 +6569,7 @@ Model {
 		  BlockType		  Constant
 		  Name			  "Constant4"
 		  SID			  "8054"
-		  Position		  [480, 465, 545, 495]
+		  Position		  [480, 475, 545, 505]
 		  ZOrder		  155
 		  BackgroundColor	  "green"
 		  ShowName		  off
@@ -15748,7 +15748,7 @@ Model {
 		  Name			  "Static Contribution"
 		  SID			  "8435"
 		  Ports			  [8, 3]
-		  Position		  [640, 275, 740, 535]
+		  Position		  [640, 285, 740, 545]
 		  ZOrder		  129
 		  ForegroundColor	  "orange"
 		  RequestExecContextInheritance	off
@@ -19166,7 +19166,7 @@ Model {
 		  Name			  "Sum"
 		  SID			  "8583"
 		  Ports			  [2, 1]
-		  Position		  [825, 310, 845, 330]
+		  Position		  [825, 320, 845, 340]
 		  ZOrder		  86
 		  ShowName		  off
 		  IconShape		  "round"
@@ -19180,7 +19180,7 @@ Model {
 		  Name			  "Sum1"
 		  SID			  "8584"
 		  Ports			  [2, 1]
-		  Position		  [860, 395, 880, 415]
+		  Position		  [860, 405, 880, 425]
 		  ZOrder		  85
 		  ShowName		  off
 		  IconShape		  "round"
@@ -19265,7 +19265,7 @@ Model {
 		  BlockType		  Outport
 		  Name			  "F"
 		  SID			  "8591"
-		  Position		  [935, 313, 965, 327]
+		  Position		  [935, 323, 965, 337]
 		  ZOrder		  80
 		  BackgroundColor	  "red"
 		  IconDisplay		  "Port number"
@@ -19275,7 +19275,7 @@ Model {
 		  BlockType		  Outport
 		  Name			  "M"
 		  SID			  "8592"
-		  Position		  [935, 398, 965, 412]
+		  Position		  [935, 408, 965, 422]
 		  ZOrder		  79
 		  BackgroundColor	  "red"
 		  Port			  "2"
@@ -19625,7 +19625,7 @@ Model {
 		  ZOrder		  46
 		  SrcBlock		  "Static Contribution"
 		  SrcPort		  3
-		  Points		  [20, 0; 0, 80]
+		  Points		  [20, 0; 0, 70]
 		  Branch {
 		    ZOrder		    47
 		    Points		    [0, 367; -148, 0; 0, 28]
@@ -19689,7 +19689,7 @@ Model {
 		  }
 		  Branch {
 		    ZOrder		    56
-		    Points		    [0, -135]
+		    Points		    [0, -125]
 		    DstBlock		    "Static Contribution"
 		    DstPort		    8
 		  }
@@ -19700,7 +19700,7 @@ Model {
 	      BlockType		      Gain
 	      Name		      "HeightInENU"
 	      SID		      "7467"
-	      Position		      [160, 151, 185, 179]
+	      Position		      [180, 151, 205, 179]
 	      ZOrder		      -6
 	      ShowName		      off
 	      Gain		      "-1"
@@ -19727,7 +19727,7 @@ Model {
 	      BlockType		      InportShadow
 	      Name		      "Position 1"
 	      SID		      "8602"
-	      Position		      [50, 158, 80, 172]
+	      Position		      [70, 158, 100, 172]
 	      ZOrder		      120
 	      ForegroundColor	      "darkGreen"
 	      BackgroundColor	      "green"
@@ -19753,7 +19753,7 @@ Model {
 	      Name		      "Selector1"
 	      SID		      "8603"
 	      Ports		      [1, 1]
-	      Position		      [110, 153, 135, 177]
+	      Position		      [130, 153, 155, 177]
 	      ZOrder		      121
 	      ForegroundColor	      "green"
 	      ShowName		      off
@@ -19767,7 +19767,7 @@ Model {
 	      Name		      "Sum"
 	      SID		      "8668"
 	      Ports		      [3, 1]
-	      Position		      [910, 495, 930, 515]
+	      Position		      [880, 495, 900, 515]
 	      ZOrder		      139
 	      ShowName		      off
 	      IconShape		      "round"
@@ -19781,7 +19781,7 @@ Model {
 	      Name		      "Sum1"
 	      SID		      "8669"
 	      Ports		      [3, 1]
-	      Position		      [970, 635, 990, 655]
+	      Position		      [940, 635, 960, 655]
 	      ZOrder		      140
 	      ShowName		      off
 	      IconShape		      "round"
@@ -19794,7 +19794,7 @@ Model {
 	      BlockType		      Terminator
 	      Name		      "Terminator1"
 	      SID		      "7578"
-	      Position		      [390, 115, 410, 135]
+	      Position		      [410, 115, 430, 135]
 	      ZOrder		      -20
 	      ForegroundColor	      "white"
 	      BackgroundColor	      "black"
@@ -19805,7 +19805,7 @@ Model {
 	      Name		      "Thrust"
 	      SID		      "8634"
 	      Ports		      [0, 2]
-	      Position		      [585, 742, 765, 1018]
+	      Position		      [585, 737, 765, 1013]
 	      ZOrder		      137
 	      ForegroundColor	      "green"
 	      RequestExecContextInheritance off
@@ -20716,7 +20716,7 @@ Model {
 	      ZOrder		      96
 	      SrcBlock		      "Digital DATCOM v1.0.2"
 	      SrcPort		      1
-	      Points		      [150, 0]
+	      Points		      [120, 0]
 	      DstBlock		      "Sum"
 	      DstPort		      1
 	    }
@@ -20731,7 +20731,7 @@ Model {
 	      ZOrder		      98
 	      SrcBlock		      "Thrust"
 	      SrcPort		      1
-	      Points		      [150, 0]
+	      Points		      [120, 0]
 	      DstBlock		      "Sum"
 	      DstPort		      3
 	    }
@@ -20753,7 +20753,7 @@ Model {
 	      ZOrder		      101
 	      SrcBlock		      "Digital DATCOM v1.0.2"
 	      SrcPort		      2
-	      Points		      [210, 0]
+	      Points		      [180, 0]
 	      DstBlock		      "Sum1"
 	      DstPort		      1
 	    }
@@ -20761,7 +20761,7 @@ Model {
 	      ZOrder		      102
 	      SrcBlock		      "Thrust"
 	      SrcPort		      2
-	      Points		      [210, 0]
+	      Points		      [180, 0]
 	      DstBlock		      "Sum1"
 	      DstPort		      3
 	    }
