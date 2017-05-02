@@ -87,7 +87,7 @@ if ~strcmp(nfs.unit,nfs.inputunit)
         % well! everything should express in Imperial units
     end;
 end;
-if strcmp(nfs.unit,nfs.inputunit)
+if strcmp(nfs.unit,nfs.inputunit),
     if strcmp(nfs.inputunit,'Imperial')
         % well! it's ok
     elseif strcmp(nfs.inputunit,'SI')
