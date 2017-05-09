@@ -23,8 +23,8 @@ else
 end;
 % clc; clear all; close all;
 %% General
-% nfs=PlaneData('SI');
-nfs=PlaneData('Imperial');
+nfs=PlaneData('SI');
+% nfs=PlaneData('Imperial');
 % q                       =   nfs.dynamicpressure             ;
 % q                       =   nfs.q                           ;
 % c                       =   nfs.meanchord                   ;
@@ -53,9 +53,9 @@ nfs.dyn.long.A  =   [s-ae.Xu-ae.XTu,-ae.Xalpha,g*cos(theta1);
                     -ae.Zu,s*(u-ae.Zalphadot)-ae.Zalpha,-(ae.Zq+u)*s+g*sin(theta1);
                     -(ae.Mu+ae.MTu),-(ae.Malphadot*s+ae.Malpha+ae.MTalpha),s^2-ae.Mq*s];
                 
-nfs.dyn.lat.A   =   [s*u-ae.Ybeta,-(s*ae.Yp+g*cos(theta1)),s*(u-ae.Yr);
-                     -ae.Lbeta,s^2-ae.Lp*s,-(s^2*A+s*ae.Lr);
-                     -(ae.Nbeta+ae.NTbeta),-(s^2*B+ae.Np*s),s^2-s*ae.Nr];
+nfs.dyn.lat.A   =   [s*u-ae.Ybeta,          -(s*ae.Yp+g*cos(theta1)),   s*(u-ae.Yr);
+                     -ae.Lbeta,             s^2-ae.Lp*s,                -(s^2*A+s*ae.Lr);
+                     -(ae.Nbeta+ae.NTbeta), -(s^2*B+ae.Np*s),           s^2-s*ae.Nr];
 
 % ref: McLean; Xu in maclean = Xu+XTu in Roskam
 % ref: McLean; U0 in McLean -> U0+zq in Roskam
@@ -143,12 +143,19 @@ nfs.dyn.lat.wn       =   unique(nfs.dyn.lat.wn)                   ;
 nfs.dyn.lat.zeta     =   unique(nfs.dyn.lat.zeta)                 ;
 nfs.dyn.lat.cheq     =   vpa(subs(poly2sym(poly(p{end})),'x','s'),5);
 
-% nfs.dyn.lat.correct.cheq = det(nfs.dyn.lat.A);
-% nfs.dyn.lat.correct.pole = double(solve(nfs.dyn.lat.cheq));
-% [nfs.dyn.lat.correct.wn, nfs.dyn.lat.correct.zeta]...
-%                      =   damp(zpk([],nfs.dyn.lat.correct.pole,1));
-% nfs.dyn.correct.lat.wn       =   unique(nfs.dyn.lat.correct.wn);
-% nfs.dyn.correct.lat.zeta     =   unique(nfs.dyn.lat.correct.zeta);
+nfs.dyn.long.correct.cheq = det(nfs.dyn.long.A);
+nfs.dyn.long.correct.pole = double(solve(nfs.dyn.long.cheq));
+[nfs.dyn.long.correct.wn, nfs.dyn.long.correct.zeta]...
+                     =   damp(zpk([],nfs.dyn.long.correct.pole,1));
+nfs.dyn.long.correct.wn       =   unique(nfs.dyn.long.correct.wn);
+nfs.dyn.long.correct.zeta     =   unique(nfs.dyn.long.correct.zeta);
+
+nfs.dyn.lat.correct.cheq = det(nfs.dyn.lat.A);
+nfs.dyn.lat.correct.pole = double(solve(nfs.dyn.lat.correct.cheq));
+[nfs.dyn.lat.correct.wn, nfs.dyn.lat.correct.zeta]...
+                     =   damp(zpk([],nfs.dyn.lat.correct.pole,1));
+nfs.dyn.lat.correct.wn       =   unique(nfs.dyn.lat.correct.wn);
+nfs.dyn.lat.correct.zeta     =   unique(nfs.dyn.lat.correct.zeta);
 
 
 
@@ -161,26 +168,26 @@ nfs.dyn.lat.cheq     =   vpa(subs(poly2sym(poly(p{end})),'x','s'),5);
 %}
 
 if strcmp(plt,'true')
-disp('Longitudinal');
-routh(sym2poly(nfs.dyn.long.cheq));
-disp('Lateral');
-routh(sym2poly(nfs.dyn.lat.cheq));
-%
+    disp('Longitudinal');
+    routh(sym2poly(det(nfs.dyn.long.A)));
+    disp('Lateral');
+    routh(sym2poly(det(nfs.dyn.lat.A)));
+    %
 
-figure('NumberTitle','off','Name','Longitudinal Poles','Color',[1,1,1]);
-plot(-10:10,zeros(size(-10:10)),':k',zeros(size(-10:10)),-10:10,':k');
-hold on; plot(nfs.dyn.long.pole,'o');
-xlabel('Re'); ylabel('Im');
-title('Longitudinal Characteristic Equation Poles');
-axis([(min(real(nfs.dyn.long.pole)))-1, (max(real(nfs.dyn.long.pole)))+1,...
-      1.1*(min(imag(nfs.dyn.long.pole))), 1.1*(max(imag(nfs.dyn.long.pole)))]);
-figure('NumberTitle','off','Name','Lateral Poles','Color',[1,1,1]);
-plot(-10:10,zeros(size(-10:10)),':k',zeros(size(-10:10)),-10:10,':k');
-hold on; plot(nfs.dyn.lat.pole,'o');
-xlabel('Re'); ylabel('Im');
-title('Lateral Characteristic Equation Poles');
-axis([(min(real(nfs.dyn.lat.pole)))-1, (max(real(nfs.dyn.lat.pole)))+1,...
-      1.1*(min(imag(nfs.dyn.lat.pole))), 1.1*(max(imag(nfs.dyn.lat.pole)))]);
+    figure('NumberTitle','off','Name','Longitudinal Poles','Color',[1,1,1]);
+    plot(-10:10,zeros(size(-10:10)),':k',zeros(size(-10:10)),-10:10,':k');
+    hold on; plot(nfs.dyn.long.correct.pole,'o');
+    xlabel('Re'); ylabel('Im');
+    title('Longitudinal Characteristic Equation Poles');
+    axis([(min(real(nfs.dyn.long.correct.pole)))-1, (max(real(nfs.dyn.long.correct.pole)))+1,...
+          1.1*(min(imag(nfs.dyn.long.correct.pole))), 1.1*(max(imag(nfs.dyn.long.correct.pole)))]);
+    figure('NumberTitle','off','Name','Lateral Poles','Color',[1,1,1]);
+    plot(-10:10,zeros(size(-10:10)),':k',zeros(size(-10:10)),-10:10,':k');
+    hold on; plot(nfs.dyn.lat.correct.pole,'o');
+    xlabel('Re'); ylabel('Im');
+    title('Lateral Characteristic Equation Poles');
+    axis([(min(real(nfs.dyn.lat.correct.pole)))-1, (max(real(nfs.dyn.lat.correct.pole)))+1,...
+          1.1*(min(imag(nfs.dyn.lat.correct.pole))), 1.1*(max(imag(nfs.dyn.lat.correct.pole)))]);
 end;
 %}
 

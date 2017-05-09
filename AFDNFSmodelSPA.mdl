@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.300"
+    ComputedModelVersion    "1.301"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -74,15 +74,15 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		3
+	Dimension		6
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "7232"
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-46.460411987701491, -113.5]
+	  ZoomFactor		  [1.4199999999999997]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
@@ -102,11 +102,38 @@ Model {
 	  ZoomFactor		  [1.0]
 	  Offset		  [-2.7421875, -1.0]
 	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "7232"
+	  Extents		  [1875.0, 879.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-46.460411987701491, -113.5]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "8028"
+	  Extents		  [1875.0, 879.0]
+	  ZoomFactor		  [0.46183310533515731]
+	  Offset		  [-423.96327014218014, 64.686018957345937]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "8049"
+	  Extents		  [1875.0, 879.0]
+	  ZoomFactor		  [0.4]
+	  Offset		  [-1219.201804524113, 1213.0648813011271]
+	}
 	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		9
+	$ObjectID		12
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -136,9 +163,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "AHKh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Apr 30 16:12:46 2017"
-  RTWModifiedTimeStamp	  415469489
-  ModelVersionFormat	  "1.%<AutoIncrement:300>"
+  LastModifiedDate	  "Sun May 07 19:01:08 2017"
+  RTWModifiedTimeStamp	  416058918
+  ModelVersionFormat	  "1.%<AutoIncrement:301>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -188,7 +215,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    10
+    $ObjectID		    13
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "AFDNFSmodelSPA"
     overrideMode_	    [0.0]
@@ -233,7 +260,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      11
+      $ObjectID		      14
       Version		      "1.17.0"
       DisabledProps	      []
       Description	      ""
@@ -241,7 +268,7 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  12
+	  $ObjectID		  15
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -281,7 +308,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  13
+	  $ObjectID		  16
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -322,7 +349,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  14
+	  $ObjectID		  17
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -383,7 +410,7 @@ Model {
 	  BusAssignmentInplaceUpdate on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  15
+	  $ObjectID		  18
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -493,7 +520,7 @@ Model {
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  16
+	  $ObjectID		  19
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -541,7 +568,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  17
+	  $ObjectID		  20
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -560,7 +587,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  18
+	  $ObjectID		  21
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -590,7 +617,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  19
+	  $ObjectID		  22
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -673,7 +700,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      20
+	      $ObjectID		      23
 	      Version		      "1.17.0"
 	      Array {
 		Type			"Cell"
@@ -760,7 +787,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      21
+	      $ObjectID		      24
 	      Version		      "1.17.0"
 	      Array {
 		Type			"Cell"
@@ -859,7 +886,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  22
+	  $ObjectID		  25
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -899,7 +926,7 @@ Model {
 	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  23
+	  $ObjectID		  26
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
@@ -923,11 +950,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    11
+    $ObjectID		    14
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    24
+    $ObjectID		    27
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1351,7 +1378,7 @@ Model {
   System {
     Name		    "AFDNFSmodelSPA"
     Location		    [-7, -7, 1543, 871]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1379,7 +1406,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		25
+	$ObjectID		28
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/Initialization'))"
       }
@@ -1413,7 +1440,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		26
+	$ObjectID		29
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/NavigationSystem'))"
       }
@@ -1471,7 +1498,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		27
+	$ObjectID		30
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/LockheedMartinVARIOUS'));"
       }
@@ -1737,7 +1764,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    28
+		    $ObjectID		    31
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Cross Product"
 		    Description		    "Calculate the cross product of two 3-by-1 vectors."
@@ -3181,7 +3208,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    29
+		    $ObjectID		    32
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "disp('T_IB')"
 		  }
@@ -3632,7 +3659,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    30
+		    $ObjectID		    33
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Cross Product"
 		    Description		    "Calculate the cross product of two 3-by-1 vectors."
@@ -6062,27 +6089,27 @@ Model {
 	      Variant		      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		31
+		$ObjectID		34
 		$ClassName		"Simulink.Mask"
 		Object {
 		  $PropName		  "Parameters"
-		  $ObjectID		  32
+		  $ObjectID		  35
 		  $ClassName		  "Simulink.MaskParameter"
 		  Type			  "edit"
 		  Name			  "ae"
 		  Prompt		  "Aero Coefficients"
-		  Value			  "nfs.aero"
+		  Value			  "nfs"
 		}
 		Array {
 		  Type			  "Simulink.dialog.Control"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    33
+		    $ObjectID		    36
 		    $ClassName		    "Simulink.dialog.Group"
 		    Prompt		    "%<MaskType>"
 		    Object {
 		    $PropName		    "DialogControls"
-		    $ObjectID		    34
+		    $ObjectID		    37
 		    $ClassName		    "Simulink.dialog.Text"
 		    Prompt		    "%<MaskDescription>"
 		    Name		    "DescTextVar"
@@ -6090,13 +6117,13 @@ Model {
 		    Name		    "DescGroupVar"
 		  }
 		  Object {
-		    $ObjectID		    35
+		    $ObjectID		    38
 		    $ClassName		    "Simulink.dialog.Group"
 		    Prompt		    "Simulink:studio:ToolBarParametersMenu"
 		    Name		    "ParameterGroupVar"
 		  }
 		  Object {
-		    $ObjectID		    36
+		    $ObjectID		    39
 		    $ClassName		    "Simulink.dialog.parameter.Edit"
 		    Name		    "ae"
 		  }
@@ -6106,7 +6133,7 @@ Model {
 	      System {
 		Name			"Energy Analysis"
 		Location		[-7, -7, 1543, 871]
-		Open			off
+		Open			on
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -6118,7 +6145,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"40"
+		ZoomFactor		"46"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Dynamic Pressure"
@@ -6239,7 +6266,7 @@ Model {
 		  SID			  "8040"
 		  Position		  [450, 1460, 480, 1490]
 		  ZOrder		  325
-		  Value			  "ae.iH"
+		  Value			  "ae.iH0"
 		}
 		Block {
 		  BlockType		  Constant
@@ -6263,7 +6290,7 @@ Model {
 		  SID			  "8043"
 		  Position		  [1415, 1455, 1445, 1485]
 		  ZOrder		  335
-		  Value			  "ae.iH"
+		  Value			  "ae.iH0"
 		}
 		Block {
 		  BlockType		  Constant
@@ -6329,7 +6356,7 @@ Model {
 		  System {
 		    Name		    "Lateral-Directional"
 		    Location		    [-7, -7, 1543, 871]
-		    Open		    off
+		    Open		    on
 		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
@@ -6341,7 +6368,7 @@ Model {
 		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
-		    ZoomFactor		    "150"
+		    ZoomFactor		    "40"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "Dynamic Pressure"
@@ -25879,11 +25906,11 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    37
+		    $ObjectID		    40
 		    $ClassName		    "Simulink.Mask"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    38
+		    $ObjectID		    41
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "cD0"
@@ -26298,20 +26325,20 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    39
+		    $ObjectID		    42
 		    $ClassName		    "Simulink.Mask"
 		    Array {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    40
+		    $ObjectID		    43
 		    Type		    "edit"
 		    Name		    "cL0"
 		    Prompt		    "CL0"
 		    Value		    "nfs.aero.cL0"
 		    }
 		    Object {
-		    $ObjectID		    41
+		    $ObjectID		    44
 		    Type		    "edit"
 		    Name		    "meanchord"
 		    Prompt		    "Mean Aerodynamic Chord"
@@ -27364,7 +27391,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    42
+		    $ObjectID		    45
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -27378,7 +27405,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    43
+		    $ObjectID		    46
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -31453,7 +31480,6 @@ Model {
 	      Points		      [5, 0]
 	      Branch {
 		ZOrder			44
-		Points			[0, -20]
 		DstBlock		"Goto"
 		DstPort			1
 	      }
@@ -32782,7 +32808,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		44
+	$ObjectID		47
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/OnBoardComputerESAPathfinder'));"
       }
@@ -34753,35 +34779,35 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    45
+		    $ObjectID		    48
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "plot([0,1,1,2,2,3,3,4],[0,0,1,1,-1,-1,0,0])"
 		    Array {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    4
 		    Object {
-		    $ObjectID		    46
+		    $ObjectID		    49
 		    Type		    "edit"
 		    Name		    "T_start"
 		    Prompt		    "Doublet Time"
 		    Value		    "10"
 		    }
 		    Object {
-		    $ObjectID		    47
+		    $ObjectID		    50
 		    Type		    "edit"
 		    Name		    "amp"
 		    Prompt		    "Amplitude"
 		    Value		    "deg2rad(2)"
 		    }
 		    Object {
-		    $ObjectID		    48
+		    $ObjectID		    51
 		    Type		    "edit"
 		    Name		    "span"
 		    Prompt		    "Time Span"
 		    Value		    "1"
 		    }
 		    Object {
-		    $ObjectID		    49
+		    $ObjectID		    52
 		    Type		    "edit"
 		    Name		    "sampletime"
 		    Prompt		    "Sample Time"
@@ -35276,7 +35302,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    50
+		    $ObjectID		    53
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -35290,7 +35316,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    51
+		    $ObjectID		    54
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -35392,7 +35418,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    52
+		    $ObjectID		    55
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -35406,7 +35432,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    53
+		    $ObjectID		    56
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -35508,7 +35534,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    54
+		    $ObjectID		    57
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -35522,7 +35548,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    55
+		    $ObjectID		    58
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -35624,7 +35650,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    56
+		    $ObjectID		    59
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -35638,7 +35664,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    57
+		    $ObjectID		    60
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -36871,7 +36897,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		58
+	$ObjectID		61
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/Initialization'))"
       }
