@@ -1,12 +1,12 @@
 Model {
   Name			  "AFDNFSmodelMPA"
-  Version		  8.9
+  Version		  8.8
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.308"
+    ComputedModelVersion    "1.307"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -15,15 +15,12 @@ Model {
     HasInitializeEvent	    0
     HasTerminateEvent	    0
     IsExportFunctionModel   0
-    NumParameterArguments   0
-    OrderedModelArguments   1
   }
   LogicAnalyzerGraphicalSettings ""
   LogicAnalyzerPlugin	  "on"
   LogicAnalyzerSignalOrdering ""
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 8 0"
-  SLCCPlugin		  "on"
+  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 8 0"
   slprops.hdlmdlprops {
     $PropName		    "HDLParams"
     $ObjectID		    1
@@ -44,7 +41,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  InitFcn		  "run('Methods\\DatcomAFDSimInit')"
+  InitFcn		  "run('Methods/AFDSimInit')\npwd\nload('SampleDatcomData.mat')"
   LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
@@ -80,16 +77,16 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1840"
-	  Extents		  [1920.0, 1080.0]
+	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [0.6]
 	  Offset		  [-7.3645833333332575, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1875.0, 879.0]
+	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [1.4199999999999997]
 	  Offset		  [0.0, 0.0]
 	}
@@ -98,7 +95,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1838"
-	  Extents		  [1875.0, 879.0]
+	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [0.8]
 	  Offset		  [31.0, -2.5]
 	}
@@ -116,27 +113,27 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "7232"
-	  Extents		  [1875.0, 879.0]
+	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [0.99999999999999989]
-	  Offset		  [65.417082354536561, -68.769102330975954]
+	  Offset		  [-267.65646397416924, -128.76910233097618]
 	}
 	Object {
 	  $ObjectID		  11
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "8028"
-	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [33.93043211375813, 167.1288935222594]
+	  Extents		  [1879.0, 881.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [128.475522256359, 308.22036235513912]
 	}
 	Object {
 	  $ObjectID		  12
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "8059"
-	  Extents		  [1875.0, 879.0]
+	  Extents		  [1879.0, 881.0]
 	  ZoomFactor		  [2.3337931034482753]
-	  Offset		  [-157.68363992316802, 443.00118203309694]
+	  Offset		  [-157.68363992316796, 443.00118203309694]
 	}
 	PropName		"EditorsInfo"
       }
@@ -156,25 +153,24 @@ Model {
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB4AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB0AP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAANAD///8AAAeAAAADuAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAMAD///8AAAeAAAADtgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPG/////wAAAAAAAAAA/"
       "////wEAAAP+/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
-  HideAutomaticNames	  on
   Created		  "Tue Oct 07 16:16:02 2014"
   Creator		  "AHKh PC"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "AHKh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 09 13:35:08 2017"
-  RTWModifiedTimeStamp	  416237602
-  ModelVersionFormat	  "1.%<AutoIncrement:308>"
+  LastModifiedDate	  "Tue Apr 18 16:57:37 2017"
+  RTWModifiedTimeStamp	  414419261
+  ModelVersionFormat	  "1.%<AutoIncrement:307>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -182,7 +178,6 @@ Model {
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
-  PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  off
   ShowEditTimeAdvisorChecks off
@@ -209,7 +204,6 @@ Model {
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
   SimulationMode	  "normal"
-  VisualizeLoggedSignalsWhenLoggingToFile off
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
@@ -264,13 +258,12 @@ Model {
   ExtModeAutoUpdateStatusClock on
   ShowModelReferenceBlockVersion off
   ShowModelReferenceBlockIO off
-  OrderedModelArguments	  on
   Array {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      15
-      Version		      "1.17.0"
+      Version		      "1.16.5"
       DisabledProps	      []
       Description	      ""
       Array {
@@ -278,7 +271,7 @@ Model {
 	Dimension		10
 	Simulink.SolverCC {
 	  $ObjectID		  16
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
@@ -318,7 +311,7 @@ Model {
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  17
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
 	  Decimation		  "1"
@@ -353,13 +346,12 @@ Model {
 	  ReturnWorkspaceOutputsName "out"
 	  Refine		  "1"
 	  LoggingToFile		  off
-	  DatasetSignalFormat	  "timeseries"
 	  LoggingFileName	  "out.mat"
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  18
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    8
@@ -414,13 +406,10 @@ Model {
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
-	  OptimizeBlockOrder	  "off"
-	  OptimizeDataStoreBuffers on
-	  BusAssignmentInplaceUpdate on
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  19
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -507,7 +496,6 @@ Model {
 	  SymbolicDimMinMaxWarning "warning"
 	  LossOfSymbolicDimsSimulationWarning "warning"
 	  LossOfSymbolicDimsCodeGenerationWarning "error"
-	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
 	  BlockIODiagnostic	  "none"
 	  SFUnusedDataAndEventsDiag "warning"
 	  SFUnexpectedBacktrackingDiag "warning"
@@ -526,11 +514,10 @@ Model {
 	  AllowedUnitSystems	  "all"
 	  UnitsInconsistencyMsg	  "warning"
 	  AllowAutomaticUnitConversions	on
-	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  20
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
 	  ProdBitPerChar	  8
@@ -578,7 +565,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  21
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
@@ -597,7 +584,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  22
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  ""
 	  SimCustomSourceCode	  ""
@@ -621,13 +608,11 @@ Model {
 	  ModelFunctionsGlobalVisibility "on"
 	  CompileTimeRecursionLimit 50
 	  EnableRuntimeRecursion  on
-	  MATLABDynamicMemAlloc	  on
-	  MATLABDynamicMemAllocThreshold 65536
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  23
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    13
@@ -710,10 +695,10 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      24
-	      Version		      "1.17.0"
+	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
-		Dimension		27
+		Dimension		25
 		Cell			"IgnoreCustomStorageClasses"
 		Cell			"IgnoreTestpoints"
 		Cell			"InsertBlockDesc"
@@ -739,8 +724,6 @@ Model {
 		Cell			"CustomSymbolStrModelFcn"
 		Cell			"CustomSymbolStrUtil"
 		Cell			"CustomUserTokenString"
-		Cell			"CustomSymbolStrEmxType"
-		Cell			"CustomSymbolStrEmxFcn"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
@@ -772,8 +755,6 @@ Model {
 	      CustomSymbolStrTmpVar   "$N$M"
 	      CustomSymbolStrMacro    "$R$N$M"
 	      CustomSymbolStrUtil     "$N$C"
-	      CustomSymbolStrEmxType  "emxArray_$M$N"
-	      CustomSymbolStrEmxFcn   "emx$M$N"
 	      CustomUserTokenString   ""
 	      CustomCommentsFcn	      ""
 	      DefineNamingRule	      "None"
@@ -797,7 +778,7 @@ Model {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      25
-	      Version		      "1.17.0"
+	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
 		Dimension		18
@@ -829,7 +810,8 @@ Model {
 	      TargetLangStandard      "C89/C90 (ANSI)"
 	      CodeReplacementLibrary  "None"
 	      UtilityFuncGeneration   "Auto"
-	      MultiwordTypeDef	      "System defined"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
 	      MultiwordLength	      2048
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
@@ -873,8 +855,6 @@ Model {
 	      UseToolchainInfoCompliant	on
 	      GenerateSharedConstants on
 	      CoderGroups	      []
-	      AccessMethods	      []
-	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -896,7 +876,7 @@ Model {
 	}
 	SlCovCC.ConfigComp {
 	  $ObjectID		  26
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -932,11 +912,10 @@ Model {
 	  CovUseTimeInterval	  off
 	  CovStartTime		  0
 	  CovStopTime		  0
-	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
 	  $ObjectID		  27
-	  Version		  "1.17.0"
+	  Version		  "1.16.5"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -953,7 +932,7 @@ Model {
       Name		      "Configuration"
       ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 259, 119, 1341, 758 ]
+      ConfigPrmDlgPosition     [ 259, 119, 1341, 758 ] 
     }
     PropName		    "ConfigurationSets"
   }
@@ -982,7 +961,6 @@ Model {
     FontWeight		    "normal"
     FontAngle		    "normal"
     ShowName		    on
-    HideAutomaticName	    on
     BlockRotation	    0
     BlockMirror		    off
   }
@@ -1008,7 +986,7 @@ Model {
     SelfModifiable	    "off"
     IconFrame		    "on"
     IconOpaque		    "opaque"
-    RunInitForIconRedraw    "analyze"
+    RunInitForIconRedraw    "off"
     IconRotate		    "none"
     PortRotate		    "default"
     IconUnits		    "autoscale"
@@ -1050,6 +1028,8 @@ Model {
     }
     Block {
       BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
     }
     Block {
       BlockType		      Constant
@@ -1272,7 +1252,6 @@ Model {
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
-      MustResolveToSignalObject	off
     }
     Block {
       BlockType		      PreLookup
@@ -1456,7 +1435,6 @@ Model {
     Name		    "AFDNFSmodelMPA"
     Location		    [-7, -7, 1543, 871]
     Open		    on
-    PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "[0.752941, 0.752941, 0.752941]"
@@ -1491,7 +1469,6 @@ Model {
 	Name			"Initialization"
 	Location		[16, 52, 1744, 1336]
 	Open			off
-	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1525,7 +1502,6 @@ Model {
 	Name			"Navigation\nSystem"
 	Location		[16, 52, 1652, 1024]
 	Open			off
-	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1583,7 +1559,6 @@ Model {
 	Name			"Nonlinear Flight\nSimulator"
 	Location		[-7, -7, 1543, 871]
 	Open			on
-	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1619,7 +1594,6 @@ Model {
 	    Name		    "6DoF Nonlinear Flight\nEquations of Motion\n(Rigid Body)"
 	    Location		    [-7, 0, 1541, 876]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1749,6 +1723,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"pqr"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -1765,7 +1741,6 @@ Model {
 		Name			"AngularAcceleration(Omegadot)"
 		Location		[16, 52, 1652, 1024]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -1854,7 +1829,6 @@ Model {
 		    Name		    "Cross Product"
 		    Location		    [487, 134, 1245, 909]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -1914,7 +1888,6 @@ Model {
 		    Name		    "Subsystem2"
 		    Location		    [721, 128, 1289, 911]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2118,7 +2091,6 @@ Model {
 		    Name		    "Subsystem3"
 		    Location		    [721, 128, 1289, 911]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2580,7 +2552,6 @@ Model {
 		Name			"Euler angles &\nDirection Cosine"
 		Location		[-7, 0, 1541, 876]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2669,7 +2640,6 @@ Model {
 		    Name		    "Euler angles Calculation"
 		    Location		    [-7, 0, 1541, 876]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2873,7 +2843,6 @@ Model {
 		    Name		    "If Action\nSubsystem"
 		    Location		    [312, 359, 866, 843]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2949,7 +2918,6 @@ Model {
 		    Name		    "Rotation Angles\nto DCM"
 		    Location		    [16, 52, 1652, 1024]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -2978,8 +2946,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [430, 16, 490, 404]
 		    ZOrder		    -2
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -3293,7 +3261,6 @@ Model {
 		    Name		    "Transform from\nBody to\nInertial axes"
 		    Location		    [633, 52, 1391, 827]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3661,7 +3628,6 @@ Model {
 		Name			"Linear Acceleration(Vdot)"
 		Location		[-7, 0, 1541, 876]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3749,7 +3715,6 @@ Model {
 		    Name		    "Cross Product"
 		    Location		    [487, 134, 1245, 909]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -3809,7 +3774,6 @@ Model {
 		    Name		    "Subsystem2"
 		    Location		    [721, 128, 1289, 911]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4013,7 +3977,6 @@ Model {
 		    Name		    "Subsystem3"
 		    Location		    [721, 128, 1289, 911]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -4479,6 +4442,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"uvw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -4856,7 +4821,6 @@ Model {
 	    Name		    "Forces&Moments"
 	    Location		    [-7, -7, 1543, 871]
 	    Open		    on
-	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -4937,7 +4901,6 @@ Model {
 		Name			"Aero Attributes"
 		Location		[-7, -7, 1543, 871]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -5006,14 +4969,20 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "U"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "V"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "W"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -5034,6 +5003,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Betadot"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -5050,7 +5021,6 @@ Model {
 		    Name		    "Dynamic Pressure Calc"
 		    Location		    [-7, 0, 1541, 876]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5212,7 +5182,7 @@ Model {
 		  ZOrder		  29
 		  ShowName		  off
 		  ScopeSpecificationString "C++SS(StrPVP('Location','[1, 49, 1601, 899]'),StrPVP('Open','off'),StrPVP('ZoomMode','yo"
-		  "nly'),MxPVP('AxesTitles',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor"
+		  "nly'),MxPVP('AxesTitles',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor"
 		  "'',''[0.501960784313725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 "
 		  "1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5"
 		  " 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('"
@@ -5229,7 +5199,7 @@ Model {
 		  ZOrder		  30
 		  ShowName		  off
 		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitles',"
-		  "53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.501960784313725 0"
+		  "24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.501960784313725 0"
 		  ".501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 "
 		  "1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'','"
 		  "'MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName','ScopeData5'),S"
@@ -5246,7 +5216,7 @@ Model {
 		  ZOrder		  31
 		  ShowName		  off
 		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitles',"
-		  "53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.501960784313725 0"
+		  "24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.501960784313725 0"
 		  ".501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 "
 		  "1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'','"
 		  "'MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName','ScopeData6'),S"
@@ -5263,7 +5233,7 @@ Model {
 		  ZOrder		  28
 		  ShowName		  off
 		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitles',"
-		  "53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.501960784313725 0"
+		  "24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.501960784313725 0"
 		  ".501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 "
 		  "1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'','"
 		  "'MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName','ScopeData10'),"
@@ -5284,7 +5254,6 @@ Model {
 		    Name		    "Subsystem"
 		    Location		    [-7, 0, 1541, 876]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5707,7 +5676,6 @@ Model {
 		    Name		    "Velocity Magnitude"
 		    Location		    [16, 52, 1688, 1152]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -5749,6 +5717,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "abs(V)"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -6130,18 +6100,23 @@ Model {
 	      ZOrder		      135
 	      ShowName		      off
 	      OutputSignals	      "delta_f,delta_e,delta_a"
-	      OutputAsBus	      off
 	      Port {
 		PortNumber		1
 		Name			"<delta_f>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		2
 		Name			"<delta_e>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		3
 		Name			"<delta_a>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -6218,7 +6193,6 @@ Model {
 		Name			"Digital DATCOM v1.0.2"
 		Location		[-7, -7, 1543, 871]
 		Open			on
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -6229,7 +6203,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"80"
+		ZoomFactor		"175"
 		Block {
 		  BlockType		  Inport
 		  Name			  "alp ha"
@@ -6377,10 +6351,14 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "idxm"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "fm"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6399,10 +6377,14 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "idxa"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "fa"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6421,10 +6403,14 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "idxh"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "fh"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6443,10 +6429,14 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "idxd_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "fd_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6465,10 +6455,14 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "idxd_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "fd_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6487,10 +6481,14 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "idxd_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "fd_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -6631,7 +6629,6 @@ Model {
 		    Name		    "Deflection"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    on
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6740,7 +6737,6 @@ Model {
 		    Name		    "Aerodynamic\nForces and Moments"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6851,8 +6847,8 @@ Model {
 		    ZOrder		    22
 		    BlockRotation	    270
 		    BlockMirror		    on
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/3x3 Cross Product"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/3x3 Cross Product"
 		    SourceType		    "CrossProduct"
 		    ContentPreviewEnabled   off
 		    }
@@ -6870,7 +6866,6 @@ Model {
 		    Name		    "CG-CP Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6915,7 +6910,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -6986,8 +6980,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -7130,7 +7124,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7432,6 +7425,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -7531,7 +7526,6 @@ Model {
 		    Name		    "Force Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7576,7 +7570,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -7647,8 +7640,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -7791,7 +7784,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8093,6 +8085,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -8181,7 +8175,6 @@ Model {
 		    Name		    "Moment Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8226,7 +8219,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8297,8 +8289,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -8441,7 +8433,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -8743,6 +8734,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9162,7 +9155,6 @@ Model {
 		    Name		    "Delta Coefficients"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -9196,7 +9188,6 @@ Model {
 		    Name		    "Aileron Deflaction"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -9227,38 +9218,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_a,fd_a"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_a>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_a>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9271,38 +9277,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_a,fd_a"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_a>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_a>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9316,6 +9337,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CY_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9329,6 +9352,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cm_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9342,6 +9367,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CL_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9355,6 +9382,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CD_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9371,6 +9400,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cl_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9387,6 +9418,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cn_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9647,7 +9680,6 @@ Model {
 		    Name		    "Elevator Deflaction"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -9678,38 +9710,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_e,fd_e"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_e>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_e>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9722,38 +9769,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_e,fd_e"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_e>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_e>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9766,38 +9828,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_e,fd_e"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_e>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_e>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9811,6 +9888,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CY_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9824,6 +9903,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cl_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9837,6 +9918,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cn_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9853,6 +9936,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CD_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9869,6 +9954,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CL_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -9885,6 +9972,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cm_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10222,7 +10311,6 @@ Model {
 		    Name		    "Flap Deflaction"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -10253,38 +10341,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_f,fd_f"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_f>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_f>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10297,38 +10400,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_f,fd_f"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_f>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_f>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10341,38 +10459,53 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh,idxd_f,fd_f"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    7
 		    Name		    "<idxd_f>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    8
 		    Name		    "<fd_f>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10386,6 +10519,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CY_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10399,6 +10534,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cl_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10412,6 +10549,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cn_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10428,6 +10567,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CD_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10444,6 +10585,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "CL_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10460,6 +10603,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Cm_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -10973,7 +11118,6 @@ Model {
 		    Name		    "Dynamic Contribution"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11152,7 +11296,6 @@ Model {
 		    Name		    "Aerodynamic\nForces and Moments\nStability Axis"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11263,8 +11406,8 @@ Model {
 		    ZOrder		    22
 		    BlockRotation	    270
 		    BlockMirror		    on
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/3x3 Cross Product"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/3x3 Cross Product"
 		    SourceType		    "CrossProduct"
 		    ContentPreviewEnabled   off
 		    }
@@ -11282,7 +11425,6 @@ Model {
 		    Name		    "CG-CP Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11327,7 +11469,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11398,8 +11539,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -11542,7 +11683,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11844,6 +11984,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -11943,7 +12085,6 @@ Model {
 		    Name		    "Force Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -11988,7 +12129,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12059,8 +12199,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -12203,7 +12343,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12505,6 +12644,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -12593,7 +12734,6 @@ Model {
 		    Name		    "Moment Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12638,7 +12778,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -12709,8 +12848,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -12853,7 +12992,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -13155,6 +13293,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -13570,30 +13710,41 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -13822,7 +13973,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed1"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -14288,7 +14438,6 @@ Model {
 		    Name		    "Stability Angular Rates"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -14349,11 +14498,9 @@ Model {
 		    Ports		    [1, 1]
 		    Position		    [85, 13, 155, 67]
 		    ZOrder		    31
-		    LibraryVersion	    "1.470"
+		    LibraryVersion	    "1.462"
 		    SourceBlock		    "aerolibtransform2/Direction Cosine Matrix\nBody to Wind"
 		    SourceType		    "DCM Body to Wind"
-		    SourceProductName	    "Aerospace Blockset"
-		    SourceProductBaseCode   "AE"
 		    ContentPreviewEnabled   off
 		    }
 		    Block {
@@ -14432,8 +14579,6 @@ Model {
 		    LibraryVersion	    "1.154"
 		    SourceBlock		    "aerolibasang/Wind Angular Rates/Subsystem"
 		    SourceType		    "SubSystem"
-		    SourceProductName	    "Aerospace Blockset"
-		    SourceProductBaseCode   "AE"
 		    ContentPreviewEnabled   off
 		    }
 		    Block {
@@ -15612,7 +15757,6 @@ Model {
 		    Name		    "Static Contribution"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15731,7 +15875,6 @@ Model {
 		    Name		    "Aerodynamic\nForces and Moments"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15842,8 +15985,8 @@ Model {
 		    ZOrder		    22
 		    BlockRotation	    270
 		    BlockMirror		    on
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/3x3 Cross Product"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/3x3 Cross Product"
 		    SourceType		    "CrossProduct"
 		    ContentPreviewEnabled   off
 		    }
@@ -15861,7 +16004,6 @@ Model {
 		    Name		    "CG-CP Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15906,7 +16048,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -15977,8 +16118,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -16121,7 +16262,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -16423,6 +16563,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -16522,7 +16664,6 @@ Model {
 		    Name		    "Force Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -16567,7 +16708,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -16638,8 +16778,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -16782,7 +16922,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -17084,6 +17223,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -17172,7 +17313,6 @@ Model {
 		    Name		    "Moment Transformation"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -17217,7 +17357,6 @@ Model {
 		    Name		    "Body2Stability"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -17288,8 +17427,8 @@ Model {
 		    Ports		    [9, 1]
 		    Position		    [755, 45, 855, 355]
 		    ZOrder		    4
-		    LibraryVersion	    "1.125"
-		    SourceBlock		    "sharedutil/Create 3x3 Matrix"
+		    LibraryVersion	    "1.106"
+		    SourceBlock		    "aerolibutil/Create 3x3 Matrix"
 		    SourceType		    "Create 3x3 Matrix"
 		    ContentPreviewEnabled   off
 		    }
@@ -17432,7 +17571,6 @@ Model {
 		    Name		    "Incidence, Sideslip,\n& Airspeed"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -17734,6 +17872,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stability2Body"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -18149,30 +18289,41 @@ Model {
 		    ForegroundColor	    "blue"
 		    ShowName		    off
 		    OutputSignals	    "idxa,fa,idxm,fm,idxh,fh"
-		    OutputAsBus		    off
 		    Port {
 		    PortNumber		    1
 		    Name		    "<idxa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    2
 		    Name		    "<fa>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    3
 		    Name		    "<idxm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    4
 		    Name		    "<fm>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    5
 		    Name		    "<idxh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    Port {
 		    PortNumber		    6
 		    Name		    "<fh>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -19663,7 +19814,6 @@ Model {
 		Name			"Thrust"
 		Location		[-7, -7, 1543, 871]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -19759,7 +19909,6 @@ Model {
 		    Name		    "Signal Builder"
 		    Location		    [450, 52, 1006, 537]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -19994,7 +20143,6 @@ Model {
 		Name			"Weight"
 		Location		[-7, -7, 1543, 871]
 		Open			on
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -20382,7 +20530,7 @@ Model {
 		Annotation {
 		  SID			  "8665"
 		  Name			  "theta"
-		  Position		  [89, 91, 113, 105]
+		  Position		  [89, 91, 113, 106]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -20391,7 +20539,7 @@ Model {
 		Annotation {
 		  SID			  "8664"
 		  Name			  "phi"
-		  Position		  [91, 50, 106, 64]
+		  Position		  [91, 50, 106, 65]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -20657,7 +20805,6 @@ Model {
 	    Name		    "Initialization"
 	    Location		    [-7, -7, 1543, 871]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -21046,7 +21193,6 @@ Model {
 	    Name		    "Plot"
 	    Location		    [16, 52, 1652, 1024]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -21137,7 +21283,7 @@ Model {
 	      Position		      [415, 249, 445, 281]
 	      ZOrder		      8
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.50196078431"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.50196078431"
 	      "3725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColor"
 	      "s'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 "
 	      "0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName',"
@@ -21153,7 +21299,7 @@ Model {
 	      Position		      [415, 119, 445, 151]
 	      ZOrder		      8
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.50196078431"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.50196078431"
 	      "3725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColor"
 	      "s'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 "
 	      "0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName',"
@@ -21169,7 +21315,7 @@ Model {
 	      Position		      [415, 314, 445, 346]
 	      ZOrder		      8
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[655, 387, 979, 626]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.50196078431"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.50196078431"
 	      "3725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColor"
 	      "s'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 "
 	      "0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('YMin','0')"
@@ -21269,7 +21415,7 @@ Model {
 	      Position		      [415, 184, 445, 216]
 	      ZOrder		      8
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.50196078431"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.50196078431"
 	      "3725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColor"
 	      "s'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 "
 	      "0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName',"
@@ -21285,7 +21431,7 @@ Model {
 	      Position		      [415, 54, 445, 86]
 	      ZOrder		      8
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),StrPVP('ZoomMode"
-	      "','yonly'),MxPVP('AxesTitles',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''Fig"
+	      "','yonly'),MxPVP('AxesTitles',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''Fig"
 	      "ureColor'',''[0.501960784313725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColo"
 	      "r'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineW"
 	      "idths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends"
@@ -21312,7 +21458,7 @@ Model {
 	      Position		      [415, 379, 445, 411]
 	      ZOrder		      5
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.50196078431"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.50196078431"
 	      "3725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColor"
 	      "s'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 "
 	      "0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName',"
@@ -21354,7 +21500,7 @@ Model {
 	      Position		      [415, 449, 445, 481]
 	      ZOrder		      5
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[538, 390, 862, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.50196078431"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.50196078431"
 	      "3725 0.501960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColor"
 	      "s'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 "
 	      "0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName',"
@@ -21477,8 +21623,8 @@ Model {
 	  Position		  [1400, 14, 1430, 46]
 	  ZOrder		  5
 	  ShowName		  off
-	  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitles',5"
-	  "3,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.501960784313725 0.5"
+	  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitles',2"
+	  "4,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.501960784313725 0.5"
 	  "01960784313725 0.501960784313725]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0"
 	  ";1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''Mar"
 	  "kerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('DataFormat','StructureWithTime"
@@ -21848,7 +21994,6 @@ Model {
 	Name			"OnBoardComputer"
 	Location		[-7, -7, 1543, 871]
 	Open			off
-	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -21883,7 +22028,6 @@ Model {
 	    Name		    "Control\nSystem"
 	    Location		    [-7, -7, 1543, 871]
 	    Open		    on
-	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -21942,7 +22086,6 @@ Model {
 		Name			"BusCreator"
 		Location		[-7, -7, 1543, 871]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -21986,18 +22129,26 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "delta_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    2
 		    Name		    "delta_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    3
 		    Name		    "delta_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		  Port {
 		    PortNumber		    4
 		    Name		    "delta_r"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22072,6 +22223,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_e"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22086,6 +22239,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_f"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22100,6 +22255,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_a"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22114,6 +22271,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_r"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22153,6 +22312,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_e"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22168,6 +22329,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_f"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22183,6 +22346,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_a"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22198,6 +22363,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"delta_r"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -22225,7 +22392,6 @@ Model {
 		Name			"Full-State Feedback Servo"
 		Location		[-7, 0, 1542, 877]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -22287,6 +22453,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Lateral-Directional"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22304,6 +22472,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Longitudinal"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22392,7 +22562,6 @@ Model {
 		Name			"Full-State Observer Servo"
 		Location		[-7, 0, 1542, 877]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -22530,6 +22699,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "u_long"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22576,7 +22747,7 @@ Model {
 		  ZOrder		  -3
 		  ShowName		  off
 		  ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),StrPVP('ZoomMode','"
-		  "yonly'),MxPVP('AxesTitles',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureCol"
+		  "yonly'),MxPVP('AxesTitles',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureCol"
 		  "or'',''[0.5 0.5 0.5]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1"
 		  ";1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles''"
 		  ",''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('TimeRange','1200'),StrPVP('YMin','-80'),"
@@ -22599,6 +22770,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Lateral-Directional"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22630,6 +22803,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Longitudinal"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22771,6 +22946,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "y^"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22800,6 +22977,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "y_lat"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -22816,6 +22995,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "y_long"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23286,7 +23467,6 @@ Model {
 		Name			"Reduced Order Observer Servo"
 		Location		[-7, 0, 1542, 877]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -23404,6 +23584,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "u_long"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23445,6 +23627,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Lateral-Directional"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23462,6 +23646,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "Longitudinal"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23588,6 +23774,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "y_lat"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23604,6 +23792,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "y_long"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23877,7 +24067,7 @@ Model {
 	      ZOrder		      -3
 	      Commented		      "on"
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.5 0.5 0.5]'"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.5 0.5 0.5]'"
 	      "',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1"
 	      "]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|no"
 	      "ne|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('SaveName','ScopeData21'),StrPVP('DataFormat','Struct"
@@ -23893,7 +24083,7 @@ Model {
 	      Position		      [145, 49, 175, 81]
 	      ZOrder		      -3
 	      ScopeSpecificationString "C++SS(StrPVP('Location','[188, 390, 512, 629]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-	      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.5 0.5 0.5]'"
+	      "s',24,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',28,'struct(''FigureColor'',''[0.5 0.5 0.5]'"
 	      "',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1"
 	      "]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|no"
 	      "ne|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('YMin','-600'),StrPVP('YMax','400'),StrPVP('SaveName'"
@@ -23941,7 +24131,6 @@ Model {
 		Name			"Trim"
 		Location		[-7, -7, 1543, 871]
 		Open			off
-		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -23977,6 +24166,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "delta_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -23991,6 +24182,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "delta_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -24005,6 +24198,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "delta_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -24019,6 +24214,8 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "delta_r"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		  }
 		}
 		Block {
@@ -24034,7 +24231,6 @@ Model {
 		    Name		    "Doublet\nGenerated Signal"
 		    Location		    [256, 52, 762, 462]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -24118,7 +24314,6 @@ Model {
 		    Name		    "Doublet"
 		    Location		    [216, 129, 532, 550]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -24406,7 +24601,6 @@ Model {
 		    Name		    "Triangular signal\nspan 10 sec"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -24537,6 +24731,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "delta_r"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -24554,6 +24750,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "delta_a"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -24571,6 +24769,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "delta_f"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -24587,6 +24787,8 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "delta_e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
 		    }
 		    }
 		    Block {
@@ -24643,7 +24845,6 @@ Model {
 		    Name		    "Signal Builder1"
 		    Location		    [450, 52, 1006, 537]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -24759,7 +24960,6 @@ Model {
 		    Name		    "Signal Builder2"
 		    Location		    [450, 52, 1006, 537]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -24875,7 +25075,6 @@ Model {
 		    Name		    "Signal Builder3"
 		    Location		    [450, 52, 1006, 537]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -24991,7 +25190,6 @@ Model {
 		    Name		    "Signal Builder4"
 		    Location		    [450, 52, 1006, 537]
 		    Open		    off
-		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
@@ -25705,7 +25903,6 @@ Model {
 	    Name		    "Guidance Algorithm"
 	    Location		    [16, 52, 1637, 1018]
 	    Open		    off
-	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -25769,30 +25966,44 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"Linear Velocity (Body)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		2
 		Name			"Angular Velocity (Body)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		3
 		Name			"Linear Acceleration (Body)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		4
 		Name			"Angular Acceleration (Body)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		5
 		Name			"Euler Angles"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		6
 		Name			"Position (NED)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	      Port {
 		PortNumber		7
 		Name			"Velocity (NED)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -25843,6 +26054,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"q"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -25860,6 +26073,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"v"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -25877,6 +26092,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"Theta"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -25894,6 +26111,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"u & w"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -25911,6 +26130,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"p & r"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -25928,6 +26149,8 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"phi & psi"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
 	      }
 	    }
 	    Block {
@@ -26246,7 +26469,7 @@ Model {
 	    Annotation {
 	      SID		      "7818"
 	      Name		      "There is no guidance algorithm yet!"
-	      Position		      [831, 34, 988, 48]
+	      Position		      [831, 34, 988, 49]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -26307,7 +26530,6 @@ Model {
 	Name			"Results"
 	Location		[16, 52, 1744, 1336]
 	Open			off
-	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -26347,7 +26569,7 @@ Model {
     Annotation {
       SID		      "8027"
       Name		      "There is an issue on theta(euler angle)"
-      Position		      [394, 232, 566, 246]
+      Position		      [394, 232, 566, 247]
       InternalMargins	      [0, 0, 0, 0]
       FixedHeight	      off
       FixedWidth	      off
@@ -26789,7 +27011,7 @@ MatData {
 }
 #Finite State Machines
 #
-#   Stateflow 80000011
+#   Stateflow 80000010
 #
 #
 Stateflow {
@@ -26798,7 +27020,7 @@ Stateflow {
     name		    "AFDNFSmodelMPA"
     created		    "23-Oct-2014 16:57:46"
     isLibrary		    0
-    sfVersion		    80000011
+    sfVersion		    80000010
     firstTarget		    2
   }
   target {
