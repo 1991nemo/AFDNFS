@@ -8,22 +8,25 @@
 % Date:                         Octrober, 2014                            %
 %=========================================================================%
 %                   Avanced Flight Dynamics  (AFD)                        %
-%                   Beech 99 Aerodynamical Database                       %
 %-------------------------------------------------------------------------%
 %                               AFDNFS                                    %
 %=========================================================================%
 function nfs=TransferFunction(varargin)
-if (nargin==0||nargin==2)~=1
+if (nargin==0||nargin==2||nargin==3)~=1
     error('TransferFunction:argChk','Wrong number of arguments.');
 end;
 if nargin==2
     plt=varargin{2};
+    nfs=PlaneData('SI');
+elseif nargin == 3,
+    nfs=varargin{1};
+    plt=varargin{3};
 else
     plt='false';
+    nfs=PlaneData('SI');
 end;
 % clc; clear all; close all;
 %% General
-nfs=PlaneData('SI');
 % nfs=PlaneData('Imperial');
 % q                       =   nfs.dynamicpressure             ;
 % q                       =   nfs.q                           ;

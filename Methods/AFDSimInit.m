@@ -14,7 +14,7 @@
 %=========================================================================%
 clc; clear all; close all;
 format long;
-nfs=PlaneData('SI');
+nfs=PlaneData('Imperial');%('SI');
 % load('SampleDatcomData.mat');
 % Trim Condition =========================================================%
 [trim_con]=AFDTrim(nfs);
@@ -31,4 +31,9 @@ desired.phi=0;
 desired.q=0;
 
 [F_Body,M_Body]=ForceMoment(nfs.crusevelvec,[0 0 0],[nfs.trim.delta_e 0 0 0],...
-    [0 nfs.trim.alpha 0],[0,0,-nfs.altitude],nfs.trim.thrust,0,nfs)
+    [0 nfs.trim.alpha 0],[0,0,-nfs.altitude],nfs.trim.thrust,0,nfs);
+disp('Force = '); disp(F_Body);
+disp('Moment = '); disp(M_Body);
+clear F_Body M_Body;
+nfs = TransferFunction(nfs,'Plot','false');
+nfs = AFDCtrlDesign(nfs);

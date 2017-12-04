@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.311"
+    ComputedModelVersion    "1.316"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -87,7 +87,7 @@ Model {
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
-	Filter			[9]
+	Filter			[8]
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -97,48 +97,39 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		4
+	Dimension		3
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1855"
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [0.0, 0.0]
+	  ZoomFactor		  [1.4096033402922759]
+	  Offset		  [-39.106826980842243, 2.0681279620853275]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1840"
+	  LoadSaveID		  "5820"
 	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [20.520729001945913, 62.252556335727164]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "7477"
+	  LoadSaveID		  "1840"
 	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-2.7421875, -1.0]
-	}
-	Object {
-	  $ObjectID		  9
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "12404"
-	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [1.7815303430079157]
-	  Offset		  [81.025344342416929, 130.14158767772514]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-38.263999267881445, -127.48316133552788]
 	}
 	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		10
+	$ObjectID		9
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -147,18 +138,18 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[512]
-	Height			[384]
+	Width			[300]
+	Height			[734]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB4AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB4AP///wAAAAEAAAF7AAADuPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAANAD///8AAAeAAAADuAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/"
-      "////wEAAAFS/////wAAAAAAAAAA/////wEAAAHF/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAJW/////wAAAAAAAAAA/"
-      "////wEAAASH/////wAAAAAAAAAA/////wEAAASw/////wAAAAAAAAAA/////wEAAATZ/////wAAAAAAAAAA/////wEAAAUR/////wAAAAAAAAAA/"
-      "////wEAAAVJ/////wAAAAAAAAAA/////wEAAAWB/////wAAAAAAAAAA"
+      "QBjAHQAbwByAAAAAEoAAAO4AAAApwD///8AAAADAAAGAAAAAOP8AQAAAAH7/////wAAAAAAAAAGAAAAAqYA////AAAHgAAAA7gAAAABAAAAAgAAA"
+      "AEAAAAC/AAAAAEAAAACAAAAD/////8AAAAAAP////8AAAAAAAAAAP////8BAAAAAP////8AAAAAAAAAAP////8AAAAAAP////8AAAAAAAAAAP///"
+      "/8BAAAAkf////8AAAAAAAAAAP////8BAAABBP////8AAAAAAAAAAP////8BAAABUv////8AAAAAAAAAAP////8BAAABxf////8AAAAAAAAAAP///"
+      "/8AAAAAAP////8AAAAAAAAAAP////8BAAACVv////8AAAAAAAAAAP////8BAAAEh/////8AAAAAAAAAAP////8BAAAEsP////8AAAAAAAAAAP///"
+      "/8BAAAE2f////8AAAAAAAAAAP////8BAAAFEf////8AAAAAAAAAAP////8BAAAFSf////8AAAAAAAAAAP////8BAAAFgf////8AAAAAAAAAAA=="
     }
   }
   HideAutomaticNames	  on
@@ -168,9 +159,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "AHKh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Dec 04 16:19:59 2017"
-  RTWModifiedTimeStamp	  434305113
-  ModelVersionFormat	  "1.%<AutoIncrement:311>"
+  LastModifiedDate	  "Mon Dec 04 19:55:57 2017"
+  RTWModifiedTimeStamp	  434317467
+  ModelVersionFormat	  "1.%<AutoIncrement:316>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -220,7 +211,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    11
+    $ObjectID		    10
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "AFDNFSmodelSPA"
     overrideMode_	    [0.0]
@@ -265,7 +256,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      12
+      $ObjectID		      11
       Version		      "1.17.1"
       DisabledProps	      []
       Description	      ""
@@ -273,7 +264,7 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -312,7 +303,7 @@ Model {
 	  DecoupledContinuousIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -353,7 +344,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -415,7 +406,7 @@ Model {
 	  DifferentSizesBufferReuse off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -530,7 +521,7 @@ Model {
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  17
+	  $ObjectID		  16
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -578,7 +569,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  18
+	  $ObjectID		  17
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -597,7 +588,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  19
+	  $ObjectID		  18
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -627,7 +618,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  20
+	  $ObjectID		  19
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -711,7 +702,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      21
+	      $ObjectID		      20
 	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
@@ -797,7 +788,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      22
+	      $ObjectID		      21
 	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
@@ -898,7 +889,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  23
+	  $ObjectID		  22
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -938,7 +929,7 @@ Model {
 	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  24
+	  $ObjectID		  23
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
@@ -962,11 +953,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    12
+    $ObjectID		    11
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    25
+    $ObjectID		    24
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1400,7 +1391,7 @@ Model {
   System {
     Name		    "AFDNFSmodelSPA"
     Location		    [-7, -7, 1543, 871]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1412,9 +1403,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "142"
+    ZoomFactor		    "141"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "12579"
+    SIDHighWatermark	    "12627"
     Block {
       BlockType		      SubSystem
       Name		      "Initialization"
@@ -1428,7 +1419,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		26
+	$ObjectID		25
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/Initialization'))"
       }
@@ -1462,13 +1453,13 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		27
+	$ObjectID		26
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/NavigationSystem'))"
       }
       System {
 	Name			"Navigation & Sensor\nSystem"
-	Location		[16, 52, 1652, 1024]
+	Location		[-7, -7, 1543, 871]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -1520,7 +1511,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		28
+	$ObjectID		27
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/LockheedMartinVARIOUS'));"
       }
@@ -1786,7 +1777,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    29
+		    $ObjectID		    28
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Cross Product"
 		    Description		    "Calculate the cross product of two 3-by-1 vectors."
@@ -3232,7 +3223,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    30
+		    $ObjectID		    29
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "disp('T_IB')"
 		  }
@@ -3683,7 +3674,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    31
+		    $ObjectID		    30
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Cross Product"
 		    Description		    "Calculate the cross product of two 3-by-1 vectors."
@@ -6133,11 +6124,11 @@ Model {
 	      Variant		      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		32
+		$ObjectID		31
 		$ClassName		"Simulink.Mask"
 		Object {
 		  $PropName		  "Parameters"
-		  $ObjectID		  33
+		  $ObjectID		  32
 		  $ClassName		  "Simulink.MaskParameter"
 		  Type			  "edit"
 		  Name			  "ae"
@@ -6148,12 +6139,12 @@ Model {
 		  Type			  "Simulink.dialog.Control"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    34
+		    $ObjectID		    33
 		    $ClassName		    "Simulink.dialog.Group"
 		    Prompt		    "%<MaskType>"
 		    Object {
 		    $PropName		    "DialogControls"
-		    $ObjectID		    35
+		    $ObjectID		    34
 		    $ClassName		    "Simulink.dialog.Text"
 		    Prompt		    "%<MaskDescription>"
 		    Name		    "DescTextVar"
@@ -6161,13 +6152,13 @@ Model {
 		    Name		    "DescGroupVar"
 		  }
 		  Object {
-		    $ObjectID		    36
+		    $ObjectID		    35
 		    $ClassName		    "Simulink.dialog.Group"
 		    Prompt		    "Simulink:studio:ToolBarParametersMenu"
 		    Name		    "ParameterGroupVar"
 		  }
 		  Object {
-		    $ObjectID		    37
+		    $ObjectID		    36
 		    $ClassName		    "Simulink.dialog.parameter.Edit"
 		    Name		    "ae"
 		  }
@@ -26013,11 +26004,11 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    38
+		    $ObjectID		    37
 		    $ClassName		    "Simulink.Mask"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    39
+		    $ObjectID		    38
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "cD0"
@@ -26432,20 +26423,20 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    40
+		    $ObjectID		    39
 		    $ClassName		    "Simulink.Mask"
 		    Array {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    41
+		    $ObjectID		    40
 		    Type		    "edit"
 		    Name		    "cL0"
 		    Prompt		    "CL0"
 		    Value		    "nfs.aero.cL0"
 		    }
 		    Object {
-		    $ObjectID		    42
+		    $ObjectID		    41
 		    Type		    "edit"
 		    Name		    "meanchord"
 		    Prompt		    "Mean Aerodynamic Chord"
@@ -27498,7 +27489,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    43
+		    $ObjectID		    42
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -27512,7 +27503,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    44
+		    $ObjectID		    43
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -28698,7 +28689,7 @@ Model {
 		  System {
 		    Name		    "Aerodynamic Moment "
 		    Location		    [-7, -7, 1543, 871]
-		    Open		    on
+		    Open		    off
 		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
@@ -31467,7 +31458,7 @@ Model {
 	      System {
 		Name			"Turbulence"
 		Location		[-7, -7, 1543, 871]
-		Open			on
+		Open			off
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -33675,14 +33666,14 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		45
+	$ObjectID		44
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/OnBoardComputerESAPathfinder'));"
       }
       System {
 	Name			"OnBoardComputer"
 	Location		[-7, -7, 1543, 871]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -33729,7 +33720,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "125"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Guidance"
@@ -33757,6 +33748,16 @@ Model {
 	      ZOrder		      -4
 	      ShowName		      off
 	      Value		      "[0 0 0 0]'"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "12619"
+	      Ports		      [1, 4]
+	      Position		      [390, 193, 395, 372]
+	      ZOrder		      24
+	      ShowName		      off
+	      DisplayOption	      "bar"
 	    }
 	    Block {
 	      BlockType		      From
@@ -33802,7 +33803,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto1"
 	      SID		      "7757"
-	      Position		      [670, 197, 765, 223]
+	      Position		      [435, 202, 530, 228]
 	      ZOrder		      -10
 	      BackgroundColor	      "purple"
 	      ShowName		      off
@@ -33812,7 +33813,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto2"
 	      SID		      "7774"
-	      Position		      [670, 282, 765, 308]
+	      Position		      [435, 292, 530, 318]
 	      ZOrder		      -10
 	      BackgroundColor	      "purple"
 	      ShowName		      off
@@ -33822,7 +33823,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto4"
 	      SID		      "7778"
-	      Position		      [670, 317, 765, 343]
+	      Position		      [435, 337, 530, 363]
 	      ZOrder		      -10
 	      BackgroundColor	      "purple"
 	      ShowName		      off
@@ -33832,7 +33833,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto5"
 	      SID		      "7839"
-	      Position		      [670, 232, 765, 258]
+	      Position		      [435, 247, 530, 273]
 	      ZOrder		      -10
 	      BackgroundColor	      "purple"
 	      ShowName		      off
@@ -33850,13 +33851,764 @@ Model {
 	      Commented		      "on"
 	    }
 	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LQR"
+	      SID		      "12580"
+	      Ports		      [1, 1]
+	      Position		      [155, 228, 335, 342]
+	      ZOrder		      23
+	      BackgroundColor	      "magenta"
+	      RequestExecContextInheritance off
+	      Variant		      off
+	      System {
+		Name			"LQR"
+		Location		[-7, -7, 1543, 871]
+		Open			off
+		PortBlocksUseCompactNotation off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"150"
+		Block {
+		  BlockType		  Inport
+		  Name			  "N&S\nSystem"
+		  SID			  "12583"
+		  Position		  [280, 443, 310, 457]
+		  ZOrder		  22
+		  BackgroundColor	  "green"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "12587"
+		  Position		  [740, 410, 825, 440]
+		  ZOrder		  44
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "desired.pitch"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "12588"
+		  Position		  [740, 220, 825, 250]
+		  ZOrder		  43
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "[nfs.crusevelvec(1); nfs.crusevelvec(3)]"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  SID			  "12589"
+		  Position		  [650, 480, 735, 510]
+		  ZOrder		  42
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "nfs.crusevelvec(2)"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  "Demux"
+		  SID			  "12590"
+		  Ports			  [1, 7]
+		  Position		  [380, 237, 385, 663]
+		  ZOrder		  41
+		  ShowName		  off
+		  Outputs		  "7"
+		  DisplayOption		  "bar"
+		  Port {
+		    PortNumber		    1
+		    Name		    "Linear Velocity (Body)"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "Angular Velocity (Body)"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "Linear Acceleration (Body)"
+		  }
+		  Port {
+		    PortNumber		    4
+		    Name		    "Angular Acceleration (Body)"
+		  }
+		  Port {
+		    PortNumber		    5
+		    Name		    "Euler Angles"
+		  }
+		  Port {
+		    PortNumber		    6
+		    Name		    "Position (NED)"
+		  }
+		  Port {
+		    PortNumber		    7
+		    Name		    "Velocity (NED)"
+		  }
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "12614"
+		  Position		  [1080, 315, 1110, 345]
+		  ZOrder		  52
+		  ShowName		  off
+		  Gain			  "-1"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain1"
+		  SID			  "12615"
+		  Position		  [1080, 515, 1110, 545]
+		  ZOrder		  54
+		  ShowName		  off
+		  Gain			  "-1*0"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Lat LQR"
+		  SID			  "12616"
+		  Position		  [1015, 515, 1045, 545]
+		  ZOrder		  53
+		  Gain			  "nfs.ctrl.lqr.lat.K"
+		  Multiplication	  "Matrix(K*u)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Long LQR"
+		  SID			  "12613"
+		  Position		  [1015, 315, 1045, 345]
+		  ZOrder		  51
+		  Gain			  "nfs.ctrl.lqr.long.K"
+		  Multiplication	  "Matrix(K*u)"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "12618"
+		  Ports			  [3, 1]
+		  Position		  [1250, 281, 1255, 579]
+		  ZOrder		  56
+		  ShowName		  off
+		  Inputs		  "3"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux1"
+		  SID			  "12592"
+		  Ports			  [3, 1]
+		  Position		  [925, 242, 930, 418]
+		  ZOrder		  39
+		  ShowName		  off
+		  Inputs		  "3"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux2"
+		  SID			  "12593"
+		  Ports			  [3, 1]
+		  Position		  [925, 442, 930, 618]
+		  ZOrder		  38
+		  ShowName		  off
+		  Inputs		  "3"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape"
+		  SID			  "12620"
+		  Ports			  [1, 1]
+		  Position		  [965, 320, 985, 340]
+		  ZOrder		  57
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		  OutputDimensions	  "[4,1]"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape1"
+		  SID			  "12621"
+		  Ports			  [1, 1]
+		  Position		  [1195, 320, 1215, 340]
+		  ZOrder		  58
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape2"
+		  SID			  "12622"
+		  Ports			  [1, 1]
+		  Position		  [965, 520, 985, 540]
+		  ZOrder		  59
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		  OutputDimensions	  "[5,1]"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape3"
+		  SID			  "12623"
+		  Ports			  [1, 1]
+		  Position		  [1195, 520, 1215, 540]
+		  ZOrder		  60
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		  OutputDimensions	  "[2,1]"
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation1"
+		  SID			  "12626"
+		  Ports			  [1, 1]
+		  Position		  [1140, 520, 1160, 540]
+		  ZOrder		  62
+		  ShowName		  off
+		  InputPortMap		  "u0"
+		  UpperLimit		  "deg2rad(15)"
+		  LowerLimit		  "-deg2rad(15)"
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation2"
+		  SID			  "12627"
+		  Ports			  [1, 1]
+		  Position		  [1140, 320, 1160, 340]
+		  ZOrder		  63
+		  ShowName		  off
+		  InputPortMap		  "u0"
+		  UpperLimit		  "deg2rad(15)"
+		  LowerLimit		  "-deg2rad(15)"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector"
+		  SID			  "12594"
+		  Ports			  [1, 1]
+		  Position		  [740, 315, 770, 345]
+		  ZOrder		  37
+		  ShowName		  off
+		  InputPortWidth	  "3"
+		  IndexOptions		  "Index vector (dialog)"
+		  Indices		  "[2]"
+		  OutputSizes		  "1"
+		  Port {
+		    PortNumber		    1
+		    Name		    "q"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector1"
+		  SID			  "12595"
+		  Ports			  [1, 1]
+		  Position		  [740, 455, 770, 485]
+		  ZOrder		  36
+		  ShowName		  off
+		  InputPortWidth	  "3"
+		  IndexOptions		  "Index vector (dialog)"
+		  Indices		  "[2]"
+		  OutputSizes		  "1"
+		  Port {
+		    PortNumber		    1
+		    Name		    "v"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector2"
+		  SID			  "12596"
+		  Ports			  [1, 1]
+		  Position		  [740, 375, 770, 405]
+		  ZOrder		  35
+		  ShowName		  off
+		  InputPortWidth	  "3"
+		  IndexOptions		  "Index vector (dialog)"
+		  Indices		  "[2]"
+		  OutputSizes		  "1"
+		  Port {
+		    PortNumber		    1
+		    Name		    "Theta"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector3"
+		  SID			  "12597"
+		  Ports			  [1, 1]
+		  Position		  [740, 255, 770, 285]
+		  ZOrder		  34
+		  ShowName		  off
+		  InputPortWidth	  "3"
+		  IndexOptions		  "Index vector (dialog)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		  Port {
+		    PortNumber		    1
+		    Name		    "u & w"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector4"
+		  SID			  "12598"
+		  Ports			  [1, 1]
+		  Position		  [740, 515, 770, 545]
+		  ZOrder		  33
+		  ShowName		  off
+		  InputPortWidth	  "3"
+		  IndexOptions		  "Index vector (dialog)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		  Port {
+		    PortNumber		    1
+		    Name		    "p & r"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector5"
+		  SID			  "12599"
+		  Ports			  [1, 1]
+		  Position		  [740, 575, 770, 605]
+		  ZOrder		  32
+		  ShowName		  off
+		  InputPortWidth	  "3"
+		  IndexOptions		  "Index vector (dialog)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		  Port {
+		    PortNumber		    1
+		    Name		    "phi & psi"
+		  }
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  SID			  "12600"
+		  Ports			  [2, 1]
+		  Position		  [845, 380, 865, 400]
+		  ZOrder		  27
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum1"
+		  SID			  "12601"
+		  Ports			  [2, 1]
+		  Position		  [845, 260, 865, 280]
+		  ZOrder		  26
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "-+|"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum2"
+		  SID			  "12602"
+		  Ports			  [2, 1]
+		  Position		  [845, 460, 865, 480]
+		  ZOrder		  25
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator1"
+		  SID			  "12603"
+		  Position		  [530, 380, 550, 400]
+		  ZOrder		  31
+		  ForegroundColor	  "white"
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator2"
+		  SID			  "12604"
+		  Position		  [530, 440, 550, 460]
+		  ZOrder		  30
+		  ForegroundColor	  "white"
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator3"
+		  SID			  "12605"
+		  Position		  [530, 560, 550, 580]
+		  ZOrder		  29
+		  ForegroundColor	  "white"
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator4"
+		  SID			  "12606"
+		  Position		  [530, 620, 550, 640]
+		  ZOrder		  28
+		  ForegroundColor	  "white"
+		  BackgroundColor	  "black"
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "dF"
+		  SID			  "12617"
+		  Position		  [1080, 415, 1110, 445]
+		  ZOrder		  55
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Control\nCommand"
+		  SID			  "12584"
+		  Position		  [1370, 423, 1400, 437]
+		  ZOrder		  23
+		  BackgroundColor	  "red"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  DstBlock		  "Sum1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  DstBlock		  "Sum2"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Sum2"
+		  SrcPort		  1
+		  DstBlock		  "Mux2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "v"
+		  ZOrder		  5
+		  Labels		  [0, 0]
+		  SrcBlock		  "Selector1"
+		  SrcPort		  1
+		  DstBlock		  "Sum2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "Angular Acceleration (Body)"
+		  ZOrder		  7
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  4
+		  DstBlock		  "Terminator2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "phi & psi"
+		  ZOrder		  8
+		  Labels		  [0, 0]
+		  SrcBlock		  "Selector5"
+		  SrcPort		  1
+		  DstBlock		  "Mux2"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "q"
+		  ZOrder		  9
+		  Labels		  [0, 0]
+		  SrcBlock		  "Selector"
+		  SrcPort		  1
+		  DstBlock		  "Mux1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "p & r"
+		  ZOrder		  10
+		  Labels		  [0, 0]
+		  SrcBlock		  "Selector4"
+		  SrcPort		  1
+		  DstBlock		  "Mux2"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "Linear Velocity (Body)"
+		  ZOrder		  13
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  1
+		  Points		  [320, 0]
+		  Branch {
+		    ZOrder		    12
+		    DstBlock		    "Selector3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    11
+		    Points		    [0, 200]
+		    DstBlock		    "Selector1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "Angular Velocity (Body)"
+		  ZOrder		  18
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  2
+		  Points		  [245, 0]
+		  Branch {
+		    ZOrder		    17
+		    DstBlock		    "Selector"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    16
+		    Points		    [0, 200]
+		    DstBlock		    "Selector4"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Name			  "Position (NED)"
+		  ZOrder		  19
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  6
+		  DstBlock		  "Terminator3"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  20
+		  SrcBlock		  "Sum1"
+		  SrcPort		  1
+		  DstBlock		  "Mux1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "Velocity (NED)"
+		  ZOrder		  21
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  7
+		  DstBlock		  "Terminator4"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "Euler Angles"
+		  ZOrder		  24
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  5
+		  Points		  [175, 0]
+		  Branch {
+		    ZOrder		    23
+		    Points		    [0, -120]
+		    DstBlock		    "Selector2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    22
+		    Points		    [0, 80]
+		    DstBlock		    "Selector5"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  25
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  DstBlock		  "Mux1"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "Linear Acceleration (Body)"
+		  ZOrder		  27
+		  Labels		  [0, 0]
+		  SrcBlock		  "Demux"
+		  SrcPort		  3
+		  DstBlock		  "Terminator1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "u & w"
+		  ZOrder		  29
+		  Labels		  [0, 0]
+		  SrcBlock		  "Selector3"
+		  SrcPort		  1
+		  DstBlock		  "Sum1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "Theta"
+		  ZOrder		  30
+		  Labels		  [0, 0]
+		  SrcBlock		  "Selector2"
+		  SrcPort		  1
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  31
+		  SrcBlock		  "N&S\nSystem"
+		  SrcPort		  1
+		  DstBlock		  "Demux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  36
+		  SrcBlock		  "Mux1"
+		  SrcPort		  1
+		  DstBlock		  "Reshape"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  35
+		  SrcBlock		  "Long LQR"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  37
+		  SrcBlock		  "Lat LQR"
+		  SrcPort		  1
+		  DstBlock		  "Gain1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  39
+		  SrcBlock		  "Mux2"
+		  SrcPort		  1
+		  DstBlock		  "Reshape2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  40
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Saturation2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  41
+		  SrcBlock		  "dF"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  42
+		  SrcBlock		  "Gain1"
+		  SrcPort		  1
+		  DstBlock		  "Saturation1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  43
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Control\nCommand"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  44
+		  SrcBlock		  "Reshape"
+		  SrcPort		  1
+		  DstBlock		  "Long LQR"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  45
+		  SrcBlock		  "Reshape1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  46
+		  SrcBlock		  "Reshape2"
+		  SrcPort		  1
+		  DstBlock		  "Lat LQR"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  47
+		  SrcBlock		  "Reshape3"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  48
+		  SrcBlock		  "Saturation1"
+		  SrcPort		  1
+		  DstBlock		  "Reshape3"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  49
+		  SrcBlock		  "Saturation2"
+		  SrcPort		  1
+		  DstBlock		  "Reshape1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
 	      BlockType		      ManualSwitch
 	      Name		      "Manual Switch1"
 	      SID		      "7816"
 	      Position		      [1295, 342, 1325, 378]
 	      ZOrder		      -13
 	      ShowName		      off
-	      CurrentSetting	      "0"
 	    }
 	    Block {
 	      BlockType		      Mux
@@ -33867,6 +34619,32 @@ Model {
 	      ZOrder		      -12
 	      ShowName		      off
 	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      "12624"
+	      Ports		      [1]
+	      Position		      [1460, 414, 1490, 446]
+	      ZOrder		      25
+	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
+	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
+	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Dom"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.01309','MaxYLimReal','0.01309','YLabelReal','','MinYLi"
+	      "mMag','0.00000','MaxYLimMag','0.01309','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
+	      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
+	      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
+	      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980"
+	      "39215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
+	      "'NumLines',4,'LineNames',{{'Sum:1','Sum:2','Sum:3','Sum:4'}},'ShowContent',true,'Placement',1)},'DisplayPropert"
+	      "yDefaults',struct('MinYLimReal','-0.01309','MaxYLimReal','0.01309','YLabelReal','','MinYLimMag','0.00000','MaxY"
+	      "LimMag','0.01309','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'"
+	      "AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.62352"
+	      "9411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;"
+	      "0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803921"
+	      "56863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,"
+	      "'Version','2017b')),'Version','2017b')"
+	      NumInputPorts	      "1"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -34040,35 +34818,35 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    46
+		    $ObjectID		    45
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "plot([0,1,1,2,2,3,3,4],[0,0,1,1,-1,-1,0,0])"
 		    Array {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    4
 		    Object {
-		    $ObjectID		    47
+		    $ObjectID		    46
 		    Type		    "edit"
 		    Name		    "T_start"
 		    Prompt		    "Doublet Time"
 		    Value		    "10"
 		    }
 		    Object {
-		    $ObjectID		    48
+		    $ObjectID		    47
 		    Type		    "edit"
 		    Name		    "amp"
 		    Prompt		    "Amplitude"
 		    Value		    "deg2rad(2)"
 		    }
 		    Object {
-		    $ObjectID		    49
+		    $ObjectID		    48
 		    Type		    "edit"
 		    Name		    "span"
 		    Prompt		    "Time Span"
 		    Value		    "1"
 		    }
 		    Object {
-		    $ObjectID		    50
+		    $ObjectID		    49
 		    Type		    "edit"
 		    Name		    "sampletime"
 		    Prompt		    "Sample Time"
@@ -34319,7 +35097,6 @@ Model {
 		  Position		  [355, 152, 385, 188]
 		  ZOrder		  -13
 		  ShowName		  off
-		  CurrentSetting	  "0"
 		}
 		Block {
 		  BlockType		  ManualSwitch
@@ -34342,7 +35119,7 @@ Model {
 		  System {
 		    Name		    "Triangular signal\nspan 10 sec"
 		    Location		    [-7, -7, 1543, 871]
-		    Open		    off
+		    Open		    on
 		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
@@ -34455,7 +35232,6 @@ Model {
 		    ZOrder		    -8
 		    BackgroundColor	    "magenta"
 		    ShowName		    off
-		    Gain		    "0"
 		    ParamDataTypeStr	    "Inherit: Inherit via internal rule"
 		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
 		    SaturateOnIntegerOverflow off
@@ -34537,7 +35313,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    51
+		    $ObjectID		    50
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -34551,7 +35327,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    52
+		    $ObjectID		    51
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -34653,7 +35429,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    53
+		    $ObjectID		    52
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -34667,7 +35443,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    54
+		    $ObjectID		    53
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -34762,14 +35538,14 @@ Model {
 		    StopFcn		    "sigbuilder_block('stop');"
 		    NameChangeFcn	    "sigbuilder_block('namechange');"
 		    ClipboardFcn	    "sigbuilder_block('clipboard');"
-		    OpenFcn		    "sigbuilder_block('open',[437.25 199.5 550.5 399.75 ]);"
+		    OpenFcn		    "sigbuilder_block('open',[437.4 199.2 550.2 400.2 ]);"
 		    CloseFcn		    "sigbuilder_block('close');"
 		    RequestExecContextInheritance off
 		    MaskHideContents	    on
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    55
+		    $ObjectID		    54
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -34783,7 +35559,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    56
+		    $ObjectID		    55
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -34878,14 +35654,14 @@ Model {
 		    StopFcn		    "sigbuilder_block('stop');"
 		    NameChangeFcn	    "sigbuilder_block('namechange');"
 		    ClipboardFcn	    "sigbuilder_block('clipboard');"
-		    OpenFcn		    "sigbuilder_block('open',[437.25 199.5 550.5 399.75 ]);"
+		    OpenFcn		    "sigbuilder_block('open',[437.4 199.2 550.2 400.2 ]);"
 		    CloseFcn		    "sigbuilder_block('close');"
 		    RequestExecContextInheritance off
 		    MaskHideContents	    on
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    57
+		    $ObjectID		    56
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -34899,7 +35675,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    58
+		    $ObjectID		    57
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -37192,6 +37968,12 @@ Model {
 	      SrcPort		      1
 	      Points		      [55, 0]
 	      Branch {
+		ZOrder			59
+		Points			[0, 70]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
 		ZOrder			3
 		DstBlock		"Control\nCommand"
 		DstPort			1
@@ -37301,6 +38083,48 @@ Model {
 	      SrcBlock		      "Guidance"
 	      SrcPort		      1
 	      DstBlock		      "Terminator4"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      53
+	      SrcBlock		      "N&S\nSystem"
+	      SrcPort		      1
+	      DstBlock		      "LQR"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      54
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "Goto1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      55
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "Goto5"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      56
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      DstBlock		      "Goto2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      57
+	      SrcBlock		      "Demux"
+	      SrcPort		      4
+	      DstBlock		      "Goto4"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      58
+	      SrcBlock		      "LQR"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
 	      DstPort		      1
 	    }
 	  }
@@ -37921,7 +38745,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		59
+	$ObjectID		58
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/Initialization'))"
       }
@@ -38239,20 +39063,20 @@ MatData {
     " X    !@    @    &          4    (     0    $    !          D    (            \\#\\.    & $   8    (     @        "
     " %    \"     $    !     0         %  0 \"0    $    ;    8VAA;FYE;', >4QI;0      ;&%B96Q0;W,        .    .     8   "
     " (    !@         %    \"     $    !     0         )    \"            / _#@   $     &    \"     8         !0    @  "
-    "  !     @    $         \"0   !    !G9F9F9F;FOV=F9F9F9N8_#@   #     &    \"     0         !0    @    !     @    $  "
-    "       $  \" %1,   .    : (   8    (     @         %    \"     $    !     0         %  0 #@    $   !B    9&ES<%1I;"
-    "64       !D:7-P36]D90       &UI;E1I;64         ;6%X5&EM90        !A9G1E<D9I;F%L4W1R '-A;7!L951I;64     >F5R;T-R;W-"
-    "S               .    0     8    (    !@         %    \"     $    \"     0         )    $            \"1         -$"
-    " .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \"     8  "
-    "       !0    @    !     0    $         \"0    @            D0 X    X    !@    @    &          4    (     0    $   "
-    " !          D    (            -$ .    0     8    (    !          %    \"     $    +     0         0    \"P   $5X='"
-    ")A<&]L871E       .    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #    "
-    " &    \"     0         !0    @    !     @    $         $  \" &]N   .    @ $   8    (     @         %    \"     $  "
-    "  !     0         %  0 #@    $    X    86-T:79E1&ES<$ED> !T:6UE4F%N9V4      &YA;64             9&ES<&QA>5)A;F=E   "
-    ".    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   $     &    \"     8   "
-    "      !0    @    !     @    $         \"0   !             D0        #1 #@   #@    &    \"     0         !0    @   "
-    " !    !P    $         $     <   !'<F]U<\" Q  X   !     !@    @    &          4    (     0    (    !          D    "
-    "0            )$         T0 X    X    !@    @    &          4    (     0    $    !          D    (            \\#\\"
+    "  !     @    $         \"0   !     T,S,S,S/#OS0S,S,S,\\,_#@   #     &    \"     0         !0    @    !     @    $ "
+    "        $  \" %1,   .    : (   8    (     @         %    \"     $    !     0         %  0 #@    $   !B    9&ES<%1I"
+    ";64       !D:7-P36]D90       &UI;E1I;64         ;6%X5&EM90        !A9G1E<D9I;F%L4W1R '-A;7!L951I;64     >F5R;T-R;W"
+    "-S               .    0     8    (    !@         %    \"     $    \"     0         )    $            \"1         -"
+    "$ .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \"     8 "
+    "        !0    @    !     0    $         \"0    @            D0 X    X    !@    @    &          4    (     0    $  "
+    "  !          D    (            -$ .    0     8    (    !          %    \"     $    +     0         0    \"P   $5X="
+    "')A<&]L871E       .    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #   "
+    "  &    \"     0         !0    @    !     @    $         $  \" &]N   .    @ $   8    (     @         %    \"     $ "
+    "   !     0         %  0 #@    $    X    86-T:79E1&ES<$ED> !T:6UE4F%N9V4      &YA;64             9&ES<&QA>5)A;F=E  "
+    " .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   $     &    \"     8  "
+    "       !0    @    !     @    $         \"0   !             D0        #1 #@   #@    &    \"     0         !0    @  "
+    "  !    !P    $         $     <   !'<F]U<\" Q  X   !     !@    @    &          4    (     0    (    !          D   "
+    " 0            )$         T0 X    X    !@    @    &          4    (     0    $    !          D    (            \\#\\"
     ".    .     8    (    !@         %    \"     $    !     0         )    \"               #@   (     &    \"    !$   "
     "       0         !  0 34-/4P$    (    4VEG4W5I=&4.    2     8    (    #0         %    \"     8    !     0         "
     "&    &        -T\"     0    $    !     P    X   !0\"P  !@    @    )          4    (     0   \" +   !          (   "
@@ -38268,28 +39092,28 @@ MatData {
     "     $    '     0         0    !P   $=R;W5P(#$ #@   $@    &    \"     0         !0    @    !    &     $         $ "
     "   !@   !.;W)M86QI>F5D($%L:6QE<F]N*&1E9RD.    >     8    (    !@         %    \"     $    )     0         )    2  "
     "          \"1         )D         H0        \"I         +$         N0        #!         ,4         T0 X   !X    !@ "
-    "   @    &          4    (     0    D    !          D   !(                         #,S,S,S,^,_           S,S,S,S/CO"
-    "P                                          #@   $@    &    \"     T         !0    @    &     0    $         !@   !"
-    "@       #= @    $    !     P    $    .    0     8    (    !@         %    \"     $    \"     0         )    $     "
-    "       \"1         -$ .    2     8    (    #0         %    \"     8    !     0         &    &        -T\"     0   "
-    " $    \"     @    X    X!0  !@    @    !          4    (    !     $    !          X    X    !@    @    \"         "
-    " 4    (     0         !          4 !  !     0         .    0 $   8    (     @         %    \"     $    !     0    "
-    "     %  0 \"0    $    D    3F%M90      6$1A=&$     641A=&$     57-E<D1A=&$       X    P    !@    @    $          4"
-    "    (               !         !          #@   #     &    \"     8         !0    @               $         \"0     "
-    "    .    ,     8    (    !@         %    \"                0         )          X    P    !@    @    &          4 "
-    "   (               !          D         #@   ! \"   &    \"     (         !0    @    !     0    $         !0 $ !  "
-    "   !    8    $YA;64               !3:6=N86QS            06-T:79E4VEG;F%L     %)E<75I<F5M96YT26YF;P!5<V5R1&%T80    "
-    "      5&EM95)A;F=E          X    P    !@    @    $          4    (               !         !          #@   $@    &"
-    "    \"     T         !0    @    %     0    $         !@   !0       #= @               0         .    ,     8    ( "
-    "   !@         %    \"                0         )          X    P    !@    @    $          4    (               !  "
-    "       !          #@   #     &    \"     8         !0    @               $         \"0         .    0     8    (  "
-    "  !@         %    \"     $    \"     0         )    $                       )$ .    : $   8    (     @         %  "
-    "  \"     $    !     0         %  0 #     $    P    3F%M90          1W)O=7!S        06-T:79E1W)O=7  57-E<D1A=&$    "
-    " #@   #     &    \"     0         !0    @               $         $          .    2     8    (    #0         %    "
-    "\"     4    !     0         &    %        -T\"               \"          X    X    !@    @    &          4    (   "
-    "  0    $    !          D    (            \\#\\.    ,     8    (    !@         %    \"                0         )  "
-    "        X   \"(    !@    @    )          4    (     0   %@    !          (   !8      %)30     .    2     8    (   "
-    "  @         %    \"     $    !     0         %  0 !0    $    %    34-/4P     .          "
+    "   @    &          4    (     0    D    !          D   !(                         )J9F9F9F;D_          \":F9F9F9FY"
+    "OP                                          #@   $@    &    \"     T         !0    @    &     0    $         !@   "
+    "!@       #= @    $    !     P    $    .    0     8    (    !@         %    \"     $    \"     0         )    $    "
+    "        \"1         -$ .    2     8    (    #0         %    \"     8    !     0         &    &        -T\"     0  "
+    "  $    \"     @    X    X!0  !@    @    !          4    (    !     $    !          X    X    !@    @    \"        "
+    "  4    (     0         !          4 !  !     0         .    0 $   8    (     @         %    \"     $    !     0   "
+    "      %  0 \"0    $    D    3F%M90      6$1A=&$     641A=&$     57-E<D1A=&$       X    P    !@    @    $          "
+    "4    (               !         !          #@   #     &    \"     8         !0    @               $         \"0    "
+    "     .    ,     8    (    !@         %    \"                0         )          X    P    !@    @    &          4"
+    "    (               !          D         #@   ! \"   &    \"     (         !0    @    !     0    $         !0 $ ! "
+    "    !    8    $YA;64               !3:6=N86QS            06-T:79E4VEG;F%L     %)E<75I<F5M96YT26YF;P!5<V5R1&%T80   "
+    "       5&EM95)A;F=E          X    P    !@    @    $          4    (               !         !          #@   $@    "
+    "&    \"     T         !0    @    %     0    $         !@   !0       #= @               0         .    ,     8    ("
+    "    !@         %    \"                0         )          X    P    !@    @    $          4    (               ! "
+    "        !          #@   #     &    \"     8         !0    @               $         \"0         .    0     8    ( "
+    "   !@         %    \"     $    \"     0         )    $                       )$ .    : $   8    (     @         % "
+    "   \"     $    !     0         %  0 #     $    P    3F%M90          1W)O=7!S        06-T:79E1W)O=7  57-E<D1A=&$   "
+    "  #@   #     &    \"     0         !0    @               $         $          .    2     8    (    #0         %   "
+    " \"     4    !     0         &    %        -T\"               \"          X    X    !@    @    &          4    (  "
+    "   0    $    !          D    (            \\#\\.    ,     8    (    !@         %    \"                0         ) "
+    "         X   \"(    !@    @    )          4    (     0   %@    !          (   !8      %)30     .    2     8    (  "
+    "   @         %    \"     $    !     0         %  0 !0    $    %    34-/4P     .          "
   }
   DataRecord {
     Tag			    DataTag7
