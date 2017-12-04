@@ -15,7 +15,7 @@
 clc; clear all; close all;
 format long;
 nfs=PlaneData('SI');
-load('SampleDatcomData.mat');
+% load('SampleDatcomData.mat');
 % Trim Condition =========================================================%
 [trim_con]=AFDTrim(nfs);
 % [trim_con]=AFDTrimDatcom(nfs);
@@ -30,5 +30,5 @@ desired.pitch=(nfs.trim.alpha);
 desired.phi=0;
 desired.q=0;
 
-% [F_Body,M_Body]=ForceMoment(nfs.crusevelvec,[0 0 0],[nfs.trim.delta_e 0 0 0],...
-%     [0 nfs.trim.alpha 0],[0,0,-nfs.altitude],nfs.trim.thrust,0,nfs)
+[F_Body,M_Body]=ForceMoment(nfs.crusevelvec,[0 0 0],[nfs.trim.delta_e 0 0 0],...
+    [0 nfs.trim.alpha 0],[0,0,-nfs.altitude],nfs.trim.thrust,0,nfs)
