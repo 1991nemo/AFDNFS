@@ -52,11 +52,11 @@ Mdelta_ebar =   ae.Mdelta_e+ae.Mwdot*ae.Zdelta_e;
 syms s;
 % Transfer Function Matrix -----------------------------------------------%
 
-nfs.dyn.long.A  =   [s-ae.Xu-ae.XTu,-ae.Xalpha,g*cos(theta1);
+nfs.dyn.long.DynMat  =   [s-ae.Xu-ae.XTu,-ae.Xalpha,g*cos(theta1);
                     -ae.Zu,s*(u-ae.Zalphadot)-ae.Zalpha,-(ae.Zq+u)*s+g*sin(theta1);
                     -(ae.Mu+ae.MTu),-(ae.Malphadot*s+ae.Malpha+ae.MTalpha),s^2-ae.Mq*s];
                 
-nfs.dyn.lat.A   =   [s*u-ae.Ybeta,          -(s*ae.Yp+g*cos(theta1)),   s*(u-ae.Yr);
+nfs.dyn.lat.DynMat   =   [s*u-ae.Ybeta,          -(s*ae.Yp+g*cos(theta1)),   s*(u-ae.Yr);
                      -ae.Lbeta,             s^2-ae.Lp*s,                -(s^2*A+s*ae.Lr);
                      -(ae.Nbeta+ae.NTbeta), -(s^2*B+ae.Np*s),           s^2-s*ae.Nr];
 
@@ -69,33 +69,39 @@ Amatlong       =   [ae.Xu+ae.XTu    ae.Xw                   0       -g*cos(nfs.p
                     ae.Zu           ae.Zw                   u+ae.Zq	-g*sin(nfs.pathangle);
                     Mubar+ae.MTu	Mwbar+ae.MTalpha/u      Mqbar   Mthetabar            ;
                     0               0                       1       0                    ;];
-
-% % % % % % There is an  issue with Amatlat (v variant) - the results are not correct!
-
-%                   v           p           r                   phi                     psi    
-Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
-                    ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
-                    ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
-                    0           1           tan(nfs.pathangle)  0                       0;
-                    0           0           sec(nfs.pathangle)  0                       0;];
-
-%                   beta        p           r                   phi                     psi    
-% Amatlat        =   [ae.Ybeta       0           -1                  g/u                     0;
-%                     ae.Lbetaprime  ae.Lpprime  ae.Lrprime          0                       0;
-%                     ae.Nbetaprime  ae.Npprime  ae.Nrprime          0                       0;
-%                     0           1           tan(nfs.pathangle)  0                       0;
-%                     0           0           sec(nfs.pathangle)  0                       0;];
 %                   delta_e
 Bmatlong       =   [ae.Xdelta_e;
                     ae.Zdelta_e;
                     Mdelta_ebar;
                     0          ;];
+
+% % % % % % There is an  issue with Amatlat (v variant) - the results are not correct!
+
+%                   v           p           r                   phi                     psi    
+% Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
+%                     ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
+%                     ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
+%                     0           1           tan(nfs.pathangle)  0                       0;
+%                     0           0           sec(nfs.pathangle)  0                       0;];
 %                   delta_a             delta_r
 Bmatlat        =   [ae.Ydelta_a         ae.Ydelta_r     ;
                     ae.Ldelta_aprime    ae.Ldelta_rprime;
                     ae.Ndelta_aprime    ae.Ndelta_rprime;
                     0                   0               ;
                     0                   0               ;];
+%                   beta           p           r                   phi                     psi    
+Amatlat        =   [ae.Yv          0           -1                  g/u*cos(nfs.pathangle)  0;
+                    ae.Lbetaprime  ae.Lpprime  ae.Lrprime          0                       0;
+                    ae.Nbetaprime  ae.Npprime  ae.Nrprime          0                       0;
+                    0              1           tan(nfs.pathangle)  0                       0;
+                    0              0           sec(nfs.pathangle)  0                       0;];
+%                   delta_a             delta_r
+Bmatlat        =   [ae.Ydelta_a/u       ae.Ydelta_r/u   ;
+                    ae.Ldelta_aprime    ae.Ldelta_rprime;
+                    ae.Ndelta_aprime    ae.Ndelta_rprime;
+                    0                   0               ;
+                    0                   0               ;];
+
 
 Amat            =   blkdiag(Amatlong,Amatlat);
 Bmat            =   blkdiag(Bmatlong,Bmatlat);
@@ -149,14 +155,14 @@ nfs.dyn.lat.wn       =   unique(nfs.dyn.lat.wn)                   ;
 nfs.dyn.lat.zeta     =   unique(nfs.dyn.lat.zeta)                 ;
 nfs.dyn.lat.cheq     =   vpa(subs(poly2sym(poly(p{end})),'x','s'),5);
 
-nfs.dyn.long.correct.cheq = det(nfs.dyn.long.A);
+nfs.dyn.long.correct.cheq = det(nfs.dyn.long.DynMat);
 nfs.dyn.long.correct.pole = double(solve(nfs.dyn.long.cheq));
 [nfs.dyn.long.correct.wn, nfs.dyn.long.correct.zeta]...
                      =   damp(zpk([],nfs.dyn.long.correct.pole,1));
 nfs.dyn.long.correct.wn       =   unique(nfs.dyn.long.correct.wn);
 nfs.dyn.long.correct.zeta     =   unique(nfs.dyn.long.correct.zeta);
 
-nfs.dyn.lat.correct.cheq = det(nfs.dyn.lat.A);
+nfs.dyn.lat.correct.cheq = det(nfs.dyn.lat.DynMat);
 nfs.dyn.lat.correct.pole = double(solve(nfs.dyn.lat.correct.cheq));
 [nfs.dyn.lat.correct.wn, nfs.dyn.lat.correct.zeta]...
                      =   damp(zpk([],nfs.dyn.lat.correct.pole,1));
