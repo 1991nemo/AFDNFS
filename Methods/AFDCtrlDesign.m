@@ -7,7 +7,7 @@ Dlong = zeros(size(Clong,1),size(Blong,2));
 
 syslong = ss(Along, Blong, Clong, Dlong);
 
-[Klong, ~, ~] = lqr(syslong,eye(size(Along))*2,eye(size(Blong,2)));
+[Klong, ~, ~] = lqr(syslong,eye(size(Along))*10,eye(size(Blong,2)));
 
 nfs.ctrl.lqr.long.K = Klong;
 

@@ -1,3 +1,9 @@
 function nfs = NFSMrasurement(nfs)
-nfs.Measurement.Rate = 0.0001;
+nfs.Measurement.Rate = 0.001;
 nfs.Measurement.IMULoc = [0;0;0];
+nfs.Measurement.Acc.Seed = [23093; 23094; 23095];
+nfs.Measurement.Acc.NoisePower = [0.0001; 0.0001; 0.0001]*1e-8;
+nfs.Measurement.Acc.SFCC = eye(3); % Scale Factor and Cross Coupling
+nfs.Measurement.Gyro.Seed = [23093; 23094; 23095]*1.1;
+nfs.Measurement.Gyro.NoisePower = [0.0001; 0.0001; 0.0001]*1e-8;
+nfs.Measurement.Gyro.SFCC = eye(3); % Scale Factor and Cross Coupling

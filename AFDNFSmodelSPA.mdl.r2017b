@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.326"
+    ComputedModelVersion    "1.328"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -60,7 +60,7 @@ Model {
       Type		      "Cell"
       Dimension		      2
       Cell		      "HDLSubsystem"
-      Cell		      "AFDNFSmodelSPA"
+      Cell		      "$bdroot"
       PropName		      "mdlProps"
     }
   }
@@ -103,22 +103,22 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		5
+	Dimension		6
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1847"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1875.0, 879.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [191.05221248104749, -152.477912735466]
+	  ZoomFactor		  [1.4096033402922756]
+	  Offset		  [-39.106826980842243, 2.0681279620851]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "5820"
-	  Extents		  [1875.0, 879.0]
+	  Extents		  [1920.0, 1080.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -149,11 +149,20 @@ Model {
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1847"
+	  Extents		  [1875.0, 879.0]
+	  ZoomFactor		  [2.1726686731010942]
+	  Offset		  [375.62662406589675, -68.828632387907618]
+	}
 	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		11
+	$ObjectID		12
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -183,9 +192,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "AHKh"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Dec 08 17:37:09 2017"
-  RTWModifiedTimeStamp	  434659116
-  ModelVersionFormat	  "1.%<AutoIncrement:326>"
+  LastModifiedDate	  "Sat Dec 09 20:13:31 2017"
+  RTWModifiedTimeStamp	  434746383
+  ModelVersionFormat	  "1.%<AutoIncrement:328>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -235,7 +244,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    12
+    $ObjectID		    13
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "AFDNFSmodelSPA"
     overrideMode_	    [0.0]
@@ -280,7 +289,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      13
+      $ObjectID		      14
       Version		      "1.17.1"
       DisabledProps	      []
       Description	      ""
@@ -288,7 +297,7 @@ Model {
 	Type			"Handle"
 	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -327,7 +336,7 @@ Model {
 	  DecoupledContinuousIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -368,7 +377,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -430,7 +439,7 @@ Model {
 	  DifferentSizesBufferReuse off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  17
+	  $ObjectID		  18
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -545,7 +554,7 @@ Model {
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  18
+	  $ObjectID		  19
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -593,7 +602,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  19
+	  $ObjectID		  20
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -612,7 +621,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  20
+	  $ObjectID		  21
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -642,7 +651,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  21
+	  $ObjectID		  22
 	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
@@ -726,7 +735,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      22
+	      $ObjectID		      23
 	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
@@ -812,7 +821,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      23
+	      $ObjectID		      24
 	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
@@ -913,7 +922,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  24
+	  $ObjectID		  25
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -953,7 +962,7 @@ Model {
 	  CovMcdcMode		  "Masking"
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  25
+	  $ObjectID		  26
 	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
@@ -977,11 +986,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    13
+    $ObjectID		    14
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    26
+    $ObjectID		    27
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1428,7 +1437,7 @@ Model {
   System {
     Name		    "AFDNFSmodelSPA"
     Location		    [-7, -7, 1543, 871]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1442,7 +1451,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "141"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "16249"
+    SIDHighWatermark	    "16252"
     Block {
       BlockType		      SubSystem
       Name		      "Initialization"
@@ -1456,7 +1465,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		27
+	$ObjectID		28
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/Initialization'))"
       }
@@ -1490,7 +1499,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		28
+	$ObjectID		29
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/NavigationSystem'))"
       }
@@ -1509,109 +1518,21 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"217"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Plant\nDynamics"
 	  SID			  "1848"
-	  Position		  [10, 348, 40, 362]
+	  Position		  [390, 133, 420, 147]
 	  ZOrder		  4
 	  BackgroundColor	  "green"
 	  IconDisplay		  "Port number"
 	}
 	Block {
-	  BlockType		  Reference
-	  Name			  "3Axis IMU - Measurement Model"
-	  SID			  "12644"
-	  Ports			  [5, 2]
-	  Position		  [695, 142, 910, 448]
-	  ZOrder		  13
-	  ForegroundColor	  "blue"
-	  Commented		  "on"
-	  LibraryVersion	  "1.8"
-	  SourceBlock		  "ModelsLibrary/3Axis IMU"
-	  SourceType		  ""
-	  ContentPreviewEnabled	  off
-	  units			  "Metric (MKS)"
-	  IMULocation		  "nfs.Measurement.IMULoc"
-	  Ts			  "nfs.Measurement.Rate"
-	  AccSubtractGravity	  on
-	  dtype_a		  on
-	  AccNaturalFrequency	  "190"
-	  AccDampingRatio	  "0.707"
-	  AccSFCC		  "eye(3)"
-	  AccMeasurmentBias	  "[0; 0; 0]"
-	  AccMeasUpperLimit	  "[inf; inf; inf]"
-	  AccMeasLowerLimit	  "[-inf; -inf; -inf]"
-	  AccNoiseCheck		  on
-	  AccNoiseSeeds		  "[23093; 23094; 23095]"
-	  AccNoisePower		  "[0.0001; 0.0001; 0.0001]"
-	  dtype_g		  on
-	  GyroNaturalFrequency	  "190"
-	  GyroDampingRatio	  "0.707"
-	  GyroSFCC		  "eye(3)"
-	  GyroMeasurmentBias	  "[0; 0; 0]"
-	  GyroGSensitiveBias	  "[0; 0; 0]"
-	  GyroMeasUpperLimit	  "[inf; inf; inf]"
-	  GyroMeasLowerLimit	  "[-inf; -inf; -inf]"
-	  GyroNoiseCheck	  on
-	  GyroNoiseSeeds	  "[23093; 23094; 23095]"
-	  GyroNoisePower	  "[0.0001; 0.0001; 0.0001]"
-	}
-	Block {
-	  BlockType		  Constant
-	  Name			  "CG Loc\nin Body"
-	  SID			  "12647"
-	  Position		  [590, 347, 655, 363]
-	  ZOrder		  16
-	  BackgroundColor	  "green"
-	  Commented		  "on"
-	  Value			  "[0;0;0]"
-	}
-	Block {
-	  BlockType		  Demux
-	  Name			  "Demux"
-	  SID			  "12639"
-	  Ports			  [1, 7]
-	  Position		  [135, 142, 140, 568]
-	  ZOrder		  9
-	  ShowName		  off
-	  Outputs		  "7"
-	  DisplayOption		  "bar"
-	  Port {
-	    PortNumber		    1
-	    Name		    "Linear Velocity (Body)"
-	  }
-	  Port {
-	    PortNumber		    2
-	    Name		    "Angular Velocity (Body)"
-	  }
-	  Port {
-	    PortNumber		    3
-	    Name		    "Linear Acceleration (Body)"
-	  }
-	  Port {
-	    PortNumber		    4
-	    Name		    "Angular Acceleration (Body)"
-	  }
-	  Port {
-	    PortNumber		    5
-	    Name		    "Euler Angles"
-	  }
-	  Port {
-	    PortNumber		    6
-	    Name		    "Position (NED)"
-	  }
-	  Port {
-	    PortNumber		    7
-	    Name		    "Velocity (NED)"
-	  }
-	}
-	Block {
 	  BlockType		  From
 	  Name			  "From"
 	  SID			  "16248"
-	  Position		  [1780, 395, 1905, 425]
+	  Position		  [670, 190, 795, 220]
 	  ZOrder		  169
 	  ForegroundColor	  "[0.916667, 0.916667, 0.916667]"
 	  BackgroundColor	  "orange"
@@ -1622,7 +1543,7 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Goto"
 	  SID			  "16247"
-	  Position		  [135, 610, 260, 640]
+	  Position		  [545, 190, 670, 220]
 	  ZOrder		  168
 	  ForegroundColor	  "[0.916667, 0.916667, 0.916667]"
 	  BackgroundColor	  "orange"
@@ -1630,421 +1551,27 @@ Model {
 	  GotoTag		  "IdealMeasurement"
 	}
 	Block {
-	  BlockType		  SubSystem
-	  Name			  "Gravity Calculator"
-	  SID			  "15811"
-	  Ports			  [1, 1]
-	  Position		  [330, 395, 465, 445]
-	  ZOrder		  151
-	  ForegroundColor	  "lightBlue"
-	  Commented		  "on"
-	  RequestExecContextInheritance	off
-	  Variant		  off
-	  System {
-	    Name		    "Gravity Calculator"
-	    Location		    [-7, -7, 1543, 871]
-	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "Position (NED)"
-	      SID		      "15812"
-	      Position		      [65, 68, 95, 82]
-	      ZOrder		      121
-	      BackgroundColor	      "green"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "Flat Earth to LLA"
-	      SID		      "15813"
-	      Ports		      [2, 2]
-	      Position		      [190, 35, 310, 195]
-	      ZOrder		      112
-	      ForegroundColor	      "red"
-	      BackgroundColor	      "orange"
-	      LibraryVersion	      "1.478"
-	      SourceBlock	      "aerolibtransform2/Flat Earth to LLA"
-	      SourceType	      "Flat Earth to LLA"
-	      SourceProductName	      "Aerospace Blockset"
-	      SourceProductBaseCode   "AE"
-	      ContentPreviewEnabled   off
-	      units		      "Metric (MKS)"
-	      ptype		      "Earth (WGS84)"
-	      F			      "1/298.257223563"
-	      R			      "6378137"
-	      LL0		      "[nfs.Coordinate.Lat nfs.Coordinate.Long]"
-	      psi		      "0"
-	    }
-	    Block {
-	      BlockType		      Mux
-	      Name		      "Mux1"
-	      SID		      "15814"
-	      Ports		      [2, 1]
-	      Position		      [340, 33, 345, 197]
-	      ZOrder		      116
-	      ShowName		      off
-	      Inputs		      "2"
-	      DisplayOption	      "bar"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Ref Alt"
-	      SID		      "15815"
-	      Position		      [70, 145, 90, 165]
-	      ZOrder		      113
-	      BackgroundColor	      "green"
-	      HideAutomaticName	      off
-	      Value		      "0"
-	    }
-	    Block {
-	      BlockType		      Reshape
-	      Name		      "Reshape"
-	      SID		      "15816"
-	      Ports		      [1, 1]
-	      Position		      [375, 103, 405, 127]
-	      ZOrder		      117
-	      ShowName		      off
-	      OutputDimensionality    "Customize"
-	      OutputDimensions	      "[1,3]"
-	    }
-	    Block {
-	      BlockType		      Reshape
-	      Name		      "Reshape1"
-	      SID		      "15817"
-	      Ports		      [1, 1]
-	      Position		      [685, 103, 715, 127]
-	      ZOrder		      124
-	      ShowName		      off
-	      OutputDimensionality    "Customize"
-	      OutputDimensions	      "[3,1]"
-	    }
-	    Block {
-	      BlockType		      GravityWGS84
-	      Name		      "WGS84 Gravity Model  "
-	      SID		      "15818"
-	      Ports		      [1, 1]
-	      Position		      [430, 76, 650, 154]
-	      ZOrder		      114
-	      ForegroundColor	      "magenta"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Gravity\n(NED)"
-	      SID		      "15819"
-	      Position		      [755, 108, 785, 122]
-	      ZOrder		      122
-	      BackgroundColor	      "red"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "Mux1"
-	      SrcPort		      1
-	      DstBlock		      "Reshape"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Flat Earth to LLA"
-	      SrcPort		      2
-	      DstBlock		      "Mux1"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Reshape"
-	      SrcPort		      1
-	      DstBlock		      "WGS84 Gravity Model  "
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "Flat Earth to LLA"
-	      SrcPort		      1
-	      DstBlock		      "Mux1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Position (NED)"
-	      SrcPort		      1
-	      DstBlock		      "Flat Earth to LLA"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      8
-	      SrcBlock		      "Ref Alt"
-	      SrcPort		      1
-	      DstBlock		      "Flat Earth to LLA"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      9
-	      SrcBlock		      "WGS84 Gravity Model  "
-	      SrcPort		      1
-	      DstBlock		      "Reshape1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      10
-	      SrcBlock		      "Reshape1"
-	      SrcPort		      1
-	      DstBlock		      "Gravity\n(NED)"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Initialization"
-	  SID			  "16218"
-	  Ports			  [0, 4]
-	  Position		  [950, 276, 1105, 444]
-	  ZOrder		  163
-	  BackgroundColor	  "yellow"
-	  Commented		  "on"
-	  RequestExecContextInheritance	off
-	  Variant		  off
-	  System {
-	    Name		    "Initialization"
-	    Location		    [-7, -7, 1543, 871]
-	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant4"
-	      SID		      "16223"
-	      Position		      [15, 193, 190, 227]
-	      ZOrder		      -4
-	      BackgroundColor	      "green"
-	      ShowName		      off
-	      Value		      "nfs.crusevelvec"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant6"
-	      SID		      "16224"
-	      Position		      [15, 238, 190, 272]
-	      ZOrder		      -4
-	      BackgroundColor	      "green"
-	      ShowName		      off
-	      Value		      "nfs.angularvel0"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant7"
-	      SID		      "16225"
-	      Position		      [15, 283, 190, 317]
-	      ZOrder		      -4
-	      BackgroundColor	      "green"
-	      ShowName		      off
-	      Value		      "nfs.attitude0"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant8"
-	      SID		      "16226"
-	      Position		      [15, 328, 190, 362]
-	      ZOrder		      -4
-	      BackgroundColor	      "green"
-	      ShowName		      off
-	      Value		      "nfs.initialpos"
-	    }
-	    Block {
-	      BlockType		      Reshape
-	      Name		      "Reshape4"
-	      SID		      "16230"
-	      Ports		      [1, 1]
-	      Position		      [280, 198, 310, 222]
-	      ZOrder		      -23
-	      ShowName		      off
-	      OutputDimensionality    "Column vector (2-D)"
-	    }
-	    Block {
-	      BlockType		      Reshape
-	      Name		      "Reshape6"
-	      SID		      "16232"
-	      Ports		      [1, 1]
-	      Position		      [280, 243, 310, 267]
-	      ZOrder		      -23
-	      ShowName		      off
-	      OutputDimensionality    "Column vector (2-D)"
-	    }
-	    Block {
-	      BlockType		      Reshape
-	      Name		      "Reshape7"
-	      SID		      "16233"
-	      Ports		      [1, 1]
-	      Position		      [280, 288, 310, 312]
-	      ZOrder		      -23
-	      ShowName		      off
-	      OutputDimensionality    "Column vector (2-D)"
-	    }
-	    Block {
-	      BlockType		      Reshape
-	      Name		      "Reshape8"
-	      SID		      "16234"
-	      Ports		      [1, 1]
-	      Position		      [280, 333, 310, 357]
-	      ZOrder		      -23
-	      ShowName		      off
-	      OutputDimensionality    "Column vector (2-D)"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Initial Linear Velocity Vector"
-	      SID		      "16239"
-	      Position		      [420, 203, 450, 217]
-	      ZOrder		      -35
-	      BackgroundColor	      "red"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Initial Angular Velocity Vector"
-	      SID		      "16240"
-	      Position		      [420, 248, 450, 262]
-	      ZOrder		      -36
-	      BackgroundColor	      "red"
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Initial Euler Angles"
-	      SID		      "16241"
-	      Position		      [420, 293, 450, 307]
-	      ZOrder		      -37
-	      BackgroundColor	      "red"
-	      Port		      "3"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Initial Location (NED)"
-	      SID		      "16242"
-	      Position		      [420, 338, 450, 352]
-	      ZOrder		      -38
-	      BackgroundColor	      "red"
-	      Port		      "4"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Constant4"
-	      SrcPort		      1
-	      DstBlock		      "Reshape4"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "Constant6"
-	      SrcPort		      1
-	      DstBlock		      "Reshape6"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Constant7"
-	      SrcPort		      1
-	      DstBlock		      "Reshape7"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      8
-	      SrcBlock		      "Constant8"
-	      SrcPort		      1
-	      DstBlock		      "Reshape8"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      13
-	      SrcBlock		      "Reshape4"
-	      SrcPort		      1
-	      DstBlock		      "Initial Linear Velocity Vector"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      14
-	      SrcBlock		      "Reshape6"
-	      SrcPort		      1
-	      DstBlock		      "Initial Angular Velocity Vector"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      15
-	      SrcBlock		      "Reshape7"
-	      SrcPort		      1
-	      DstBlock		      "Initial Euler Angles"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      16
-	      SrcBlock		      "Reshape8"
-	      SrcPort		      1
-	      DstBlock		      "Initial Location (NED)"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
 	  BlockType		  ManualSwitch
 	  Name			  "Manual Switch"
 	  SID			  "16249"
-	  Position		  [1960, 337, 1990, 373]
+	  Position		  [900, 132, 930, 168]
 	  ZOrder		  170
 	  ShowName		  off
 	  CurrentSetting	  "0"
 	}
 	Block {
-	  BlockType		  Mux
-	  Name			  "Mux"
-	  SID			  "16245"
-	  Ports			  [7, 1]
-	  Position		  [1740, 132, 1745, 558]
-	  ZOrder		  166
-	  ShowName		  off
-	  Commented		  "on"
-	  Inputs		  "7"
-	  DisplayOption		  "bar"
-	}
-	Block {
 	  BlockType		  SubSystem
-	  Name			  "Navigation Model - Simple"
-	  SID			  "16013"
-	  Ports			  [6, 6]
-	  Position		  [1145, 197, 1440, 443]
-	  ZOrder		  162
-	  BackgroundColor	  "magenta"
+	  Name			  "Subsystem"
+	  SID			  "16250"
+	  Ports			  [1, 1]
+	  Position		  [610, 110, 735, 170]
+	  ZOrder		  171
 	  Commented		  "on"
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
-	    Name		    "Navigation Model - Simple"
-	    Location		    [-7, -7, 1543, 871]
+	    Name		    "Subsystem"
+	    Location		    [100, 100, 600, 900]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -2057,93 +1584,504 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
-	      Name		      "Linear Acceleration\n(Body)"
-	      SID		      "16014"
-	      Position		      [15, 118, 45, 132]
-	      ZOrder		      62
-	      BackgroundColor	      "red"
+	      Name		      "In1"
+	      SID		      "16251"
+	      Position		      [22, 238, 52, 252]
+	      ZOrder		      167
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
-	      BlockType		      Inport
-	      Name		      "Angular Acceleration\n(Body)"
-	      SID		      "16015"
-	      Position		      [15, 358, 45, 372]
-	      ZOrder		      63
-	      BackgroundColor	      "red"
-	      Port		      "2"
-	      IconDisplay	      "Port number"
+	      BlockType		      Reference
+	      Name		      "3Axis IMU - Measurement Model"
+	      SID		      "12644"
+	      Ports		      [5, 2]
+	      Position		      [665, 32, 880, 338]
+	      ZOrder		      13
+	      ForegroundColor	      "red"
+	      BackgroundColor	      "yellow"
+	      LibraryVersion	      "1.8"
+	      SourceBlock	      "ModelsLibrary/3Axis IMU"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      units		      "Metric (MKS)"
+	      IMULocation	      "nfs.Measurement.IMULoc"
+	      Ts		      "nfs.Measurement.Rate"
+	      AccSubtractGravity      off
+	      dtype_a		      on
+	      AccNaturalFrequency     "190"
+	      AccDampingRatio	      "0.707"
+	      AccSFCC		      "nfs.Measurement.Acc.SFCC"
+	      AccMeasurmentBias	      "[0; 0; 0]"
+	      AccMeasUpperLimit	      "[inf; inf; inf]"
+	      AccMeasLowerLimit	      "[-inf; -inf; -inf]"
+	      AccNoiseCheck	      on
+	      AccNoiseSeeds	      "nfs.Measurement.Acc.Seed"
+	      AccNoisePower	      "nfs.Measurement.Acc.NoisePower"
+	      dtype_g		      on
+	      GyroNaturalFrequency    "190"
+	      GyroDampingRatio	      "0.707"
+	      GyroSFCC		      "nfs.Measurement.Gyro.SFCC"
+	      GyroMeasurmentBias      "[0; 0; 0]"
+	      GyroGSensitiveBias      "[0; 0; 0]"
+	      GyroMeasUpperLimit      "[inf; inf; inf]"
+	      GyroMeasLowerLimit      "[-inf; -inf; -inf]"
+	      GyroNoiseCheck	      on
+	      GyroNoiseSeeds	      "nfs.Measurement.Gyro.Seed"
+	      GyroNoisePower	      "nfs.Measurement.Gyro.NoisePower"
 	    }
 	    Block {
-	      BlockType		      Inport
-	      Name		      "Initial Linear \nVelocity Vector"
-	      SID		      "16016"
-	      Position		      [125, 138, 155, 152]
-	      ZOrder		      59
-	      BackgroundColor	      "red"
-	      Port		      "3"
-	      IconDisplay	      "Port number"
+	      BlockType		      Constant
+	      Name		      "CG Loc\nin Body"
+	      SID		      "12647"
+	      Position		      [560, 237, 625, 253]
+	      ZOrder		      16
+	      BackgroundColor	      "green"
+	      Value		      "[0;0;0]"
 	    }
 	    Block {
-	      BlockType		      Inport
-	      Name		      "Initial Angular \nVelocity Vector"
-	      SID		      "16017"
-	      Position		      [125, 378, 155, 392]
-	      ZOrder		      58
-	      BackgroundColor	      "red"
-	      Port		      "4"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "Initial Euler Angles"
-	      SID		      "16018"
-	      Position		      [125, 208, 155, 222]
-	      ZOrder		      57
-	      BackgroundColor	      "red"
-	      Port		      "5"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "Initial Location\n(NED)"
-	      SID		      "16019"
-	      Position		      [125, 288, 155, 302]
-	      ZOrder		      56
-	      BackgroundColor	      "red"
-	      Port		      "6"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Integrator
-	      Name		      "Angular Velocity\nIntegrator\n(Body)"
-	      SID		      "16020"
-	      Ports		      [2, 1]
-	      Position		      [230, 355, 270, 395]
-	      ZOrder		      48
-	      ForegroundColor	      "orange"
-	      InitialConditionSource  "external"
-	      InitialCondition	      "nfs.angularvel0"
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "12639"
+	      Ports		      [1, 7]
+	      Position		      [105, 32, 110, 458]
+	      ZOrder		      9
+	      ShowName		      off
+	      Outputs		      "7"
+	      DisplayOption	      "bar"
 	      Port {
 		PortNumber		1
-		Name			"pqr"
+		Name			"Linear Velocity (Body)"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"Angular Velocity (Body)"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"Linear Acceleration (Body)"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"Angular Acceleration (Body)"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"Euler Angles"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"Position (NED)"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"Velocity (NED)"
 	      }
 	    }
 	    Block {
 	      BlockType		      SubSystem
-	      Name		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      SID		      "16021"
-	      Ports		      [4, 4]
-	      Position		      [430, 95, 680, 415]
-	      ZOrder		      61
-	      ForegroundColor	      "darkGreen"
+	      Name		      "Gravity Calculator"
+	      SID		      "15811"
+	      Ports		      [1, 1]
+	      Position		      [300, 285, 435, 335]
+	      ZOrder		      151
+	      ForegroundColor	      "lightBlue"
 	      RequestExecContextInheritance off
 	      Variant		      off
 	      System {
-		Name			"Euler angles &\nDirection Cosine\nUsing Quaternions"
+		Name			"Gravity Calculator"
+		Location		[-7, -7, 1543, 871]
+		Open			off
+		PortBlocksUseCompactNotation off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"80"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Position (NED)"
+		  SID			  "15812"
+		  Position		  [65, 68, 95, 82]
+		  ZOrder		  121
+		  BackgroundColor	  "green"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Flat Earth to LLA"
+		  SID			  "15813"
+		  Ports			  [2, 2]
+		  Position		  [190, 35, 310, 195]
+		  ZOrder		  112
+		  ForegroundColor	  "red"
+		  BackgroundColor	  "orange"
+		  LibraryVersion	  "1.478"
+		  SourceBlock		  "aerolibtransform2/Flat Earth to LLA"
+		  SourceType		  "Flat Earth to LLA"
+		  SourceProductName	  "Aerospace Blockset"
+		  SourceProductBaseCode	  "AE"
+		  ContentPreviewEnabled	  off
+		  units			  "Metric (MKS)"
+		  ptype			  "Earth (WGS84)"
+		  F			  "1/298.257223563"
+		  R			  "6378137"
+		  LL0			  "[nfs.Coordinate.Lat nfs.Coordinate.Long]"
+		  psi			  "0"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux1"
+		  SID			  "15814"
+		  Ports			  [2, 1]
+		  Position		  [340, 33, 345, 197]
+		  ZOrder		  116
+		  ShowName		  off
+		  Inputs		  "2"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Ref Alt"
+		  SID			  "15815"
+		  Position		  [70, 145, 90, 165]
+		  ZOrder		  113
+		  BackgroundColor	  "green"
+		  HideAutomaticName	  off
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape"
+		  SID			  "15816"
+		  Ports			  [1, 1]
+		  Position		  [375, 103, 405, 127]
+		  ZOrder		  117
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		  OutputDimensions	  "[1,3]"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape1"
+		  SID			  "15817"
+		  Ports			  [1, 1]
+		  Position		  [685, 103, 715, 127]
+		  ZOrder		  124
+		  ShowName		  off
+		  OutputDimensionality	  "Customize"
+		  OutputDimensions	  "[3,1]"
+		}
+		Block {
+		  BlockType		  GravityWGS84
+		  Name			  "WGS84 Gravity Model  "
+		  SID			  "15818"
+		  Ports			  [1, 1]
+		  Position		  [430, 76, 650, 154]
+		  ZOrder		  114
+		  ForegroundColor	  "magenta"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Gravity\n(NED)"
+		  SID			  "15819"
+		  Position		  [755, 108, 785, 122]
+		  ZOrder		  122
+		  BackgroundColor	  "red"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Mux1"
+		  SrcPort		  1
+		  DstBlock		  "Reshape"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Flat Earth to LLA"
+		  SrcPort		  2
+		  DstBlock		  "Mux1"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Reshape"
+		  SrcPort		  1
+		  DstBlock		  "WGS84 Gravity Model  "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Flat Earth to LLA"
+		  SrcPort		  1
+		  DstBlock		  "Mux1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "Position (NED)"
+		  SrcPort		  1
+		  DstBlock		  "Flat Earth to LLA"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  8
+		  SrcBlock		  "Ref Alt"
+		  SrcPort		  1
+		  DstBlock		  "Flat Earth to LLA"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  9
+		  SrcBlock		  "WGS84 Gravity Model  "
+		  SrcPort		  1
+		  DstBlock		  "Reshape1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  10
+		  SrcBlock		  "Reshape1"
+		  SrcPort		  1
+		  DstBlock		  "Gravity\n(NED)"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Initialization"
+	      SID		      "16218"
+	      Ports		      [0, 4]
+	      Position		      [920, 166, 1075, 334]
+	      ZOrder		      163
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Variant		      off
+	      System {
+		Name			"Initialization"
+		Location		[-7, -7, 1543, 871]
+		Open			off
+		PortBlocksUseCompactNotation off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant4"
+		  SID			  "16223"
+		  Position		  [15, 193, 190, 227]
+		  ZOrder		  -4
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "nfs.crusevelvec"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant6"
+		  SID			  "16224"
+		  Position		  [15, 238, 190, 272]
+		  ZOrder		  -4
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "nfs.angularvel0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant7"
+		  SID			  "16225"
+		  Position		  [15, 283, 190, 317]
+		  ZOrder		  -4
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "nfs.attitude0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant8"
+		  SID			  "16226"
+		  Position		  [15, 328, 190, 362]
+		  ZOrder		  -4
+		  BackgroundColor	  "green"
+		  ShowName		  off
+		  Value			  "nfs.initialpos"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape4"
+		  SID			  "16230"
+		  Ports			  [1, 1]
+		  Position		  [280, 198, 310, 222]
+		  ZOrder		  -23
+		  ShowName		  off
+		  OutputDimensionality	  "Column vector (2-D)"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape6"
+		  SID			  "16232"
+		  Ports			  [1, 1]
+		  Position		  [280, 243, 310, 267]
+		  ZOrder		  -23
+		  ShowName		  off
+		  OutputDimensionality	  "Column vector (2-D)"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape7"
+		  SID			  "16233"
+		  Ports			  [1, 1]
+		  Position		  [280, 288, 310, 312]
+		  ZOrder		  -23
+		  ShowName		  off
+		  OutputDimensionality	  "Column vector (2-D)"
+		}
+		Block {
+		  BlockType		  Reshape
+		  Name			  "Reshape8"
+		  SID			  "16234"
+		  Ports			  [1, 1]
+		  Position		  [280, 333, 310, 357]
+		  ZOrder		  -23
+		  ShowName		  off
+		  OutputDimensionality	  "Column vector (2-D)"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Initial Linear Velocity Vector"
+		  SID			  "16239"
+		  Position		  [420, 203, 450, 217]
+		  ZOrder		  -35
+		  BackgroundColor	  "red"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Initial Angular Velocity Vector"
+		  SID			  "16240"
+		  Position		  [420, 248, 450, 262]
+		  ZOrder		  -36
+		  BackgroundColor	  "red"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Initial Euler Angles"
+		  SID			  "16241"
+		  Position		  [420, 293, 450, 307]
+		  ZOrder		  -37
+		  BackgroundColor	  "red"
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Initial Location (NED)"
+		  SID			  "16242"
+		  Position		  [420, 338, 450, 352]
+		  ZOrder		  -38
+		  BackgroundColor	  "red"
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Constant4"
+		  SrcPort		  1
+		  DstBlock		  "Reshape4"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Constant6"
+		  SrcPort		  1
+		  DstBlock		  "Reshape6"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "Constant7"
+		  SrcPort		  1
+		  DstBlock		  "Reshape7"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  8
+		  SrcBlock		  "Constant8"
+		  SrcPort		  1
+		  DstBlock		  "Reshape8"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "Reshape4"
+		  SrcPort		  1
+		  DstBlock		  "Initial Linear Velocity Vector"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  14
+		  SrcBlock		  "Reshape6"
+		  SrcPort		  1
+		  DstBlock		  "Initial Angular Velocity Vector"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "Reshape7"
+		  SrcPort		  1
+		  DstBlock		  "Initial Euler Angles"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  16
+		  SrcBlock		  "Reshape8"
+		  SrcPort		  1
+		  DstBlock		  "Initial Location (NED)"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "16245"
+	      Ports		      [7, 1]
+	      Position		      [1710, 22, 1715, 448]
+	      ZOrder		      166
+	      ShowName		      off
+	      Inputs		      "7"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Navigation Model - Simple"
+	      SID		      "16013"
+	      Ports		      [6, 6]
+	      Position		      [1115, 87, 1410, 333]
+	      ZOrder		      162
+	      BackgroundColor	      "magenta"
+	      RequestExecContextInheritance off
+	      Variant		      off
+	      System {
+		Name			"Navigation Model - Simple"
 		Location		[-7, -7, 1543, 871]
 		Open			off
 		PortBlocksUseCompactNotation off
@@ -2160,80 +2098,180 @@ Model {
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
-		  Name			  "Linear Velocity"
-		  SID			  "16022"
-		  Position		  [350, 253, 380, 267]
-		  ZOrder		  -1
-		  BlockMirror		  on
+		  Name			  "Linear Acceleration\n(Body)"
+		  SID			  "16014"
+		  Position		  [15, 118, 45, 132]
+		  ZOrder		  62
 		  BackgroundColor	  "red"
 		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
 		}
 		Block {
 		  BlockType		  Inport
-		  Name			  "Initial\nEuler Angles"
-		  SID			  "16023"
-		  Position		  [40, 113, 70, 127]
-		  ZOrder		  -1
+		  Name			  "Angular Acceleration\n(Body)"
+		  SID			  "16015"
+		  Position		  [15, 358, 45, 372]
+		  ZOrder		  63
 		  BackgroundColor	  "red"
 		  Port			  "2"
 		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Initial Linear \nVelocity Vector"
+		  SID			  "16016"
+		  Position		  [125, 138, 155, 152]
+		  ZOrder		  59
+		  BackgroundColor	  "red"
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Initial Angular \nVelocity Vector"
+		  SID			  "16017"
+		  Position		  [125, 378, 155, 392]
+		  ZOrder		  58
+		  BackgroundColor	  "red"
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Initial Euler Angles"
+		  SID			  "16018"
+		  Position		  [125, 208, 155, 222]
+		  ZOrder		  57
+		  BackgroundColor	  "red"
+		  Port			  "5"
+		  IconDisplay		  "Port number"
 		}
 		Block {
 		  BlockType		  Inport
 		  Name			  "Initial Location\n(NED)"
-		  SID			  "16024"
-		  Position		  [195, 268, 225, 282]
-		  ZOrder		  -1
-		  BlockMirror		  on
+		  SID			  "16019"
+		  Position		  [125, 288, 155, 302]
+		  ZOrder		  56
 		  BackgroundColor	  "red"
-		  Port			  "3"
+		  Port			  "6"
 		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
 		}
 		Block {
-		  BlockType		  Inport
-		  Name			  "Angular Velocities"
-		  SID			  "16025"
-		  Position		  [40, 23, 70, 37]
-		  ZOrder		  -1
-		  BackgroundColor	  "red"
-		  Port			  "4"
-		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
-		}
-		Block {
-		  BlockType		  Constant
-		  Name			  "Constant"
-		  SID			  "16026"
-		  Position		  [120, 390, 150, 420]
-		  ZOrder		  -4
-		  BackgroundColor	  "red"
-		  ShowName		  off
-		}
-		Block {
-		  BlockType		  If
-		  Name			  "If"
-		  SID			  "16027"
-		  Ports			  [1, 1]
-		  Position		  [95, 331, 195, 369]
-		  ZOrder		  -15
+		  BlockType		  Integrator
+		  Name			  "Angular Velocity\nIntegrator\n(Body)"
+		  SID			  "16020"
+		  Ports			  [2, 1]
+		  Position		  [230, 355, 270, 395]
+		  ZOrder		  48
 		  ForegroundColor	  "orange"
-		  IfExpression		  "u1(3)>= 0"
-		  ShowElse		  off
+		  InitialConditionSource  "external"
+		  InitialCondition	  "nfs.angularvel0"
+		  Port {
+		    PortNumber		    1
+		    Name		    "pqr"
+		  }
 		}
 		Block {
 		  BlockType		  SubSystem
-		  Name			  "If Action\nSubsystem"
-		  SID			  "16028"
-		  Ports			  [1, 0, 0, 0, 0, 0, 0, 1]
-		  Position		  [180, 383, 295, 427]
-		  ZOrder		  -16
-		  TreatAsAtomicUnit	  on
+		  Name			  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  SID			  "16021"
+		  Ports			  [4, 4]
+		  Position		  [430, 95, 680, 415]
+		  ZOrder		  61
+		  ForegroundColor	  "darkGreen"
 		  RequestExecContextInheritance	off
 		  Variant		  off
 		  System {
+		    Name		    "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		    Location		    [-7, -7, 1543, 871]
+		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Linear Velocity"
+		    SID			    "16022"
+		    Position		    [350, 253, 380, 267]
+		    ZOrder		    -1
+		    BlockMirror		    on
+		    BackgroundColor	    "red"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Initial\nEuler Angles"
+		    SID			    "16023"
+		    Position		    [40, 113, 70, 127]
+		    ZOrder		    -1
+		    BackgroundColor	    "red"
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Initial Location\n(NED)"
+		    SID			    "16024"
+		    Position		    [195, 268, 225, 282]
+		    ZOrder		    -1
+		    BlockMirror		    on
+		    BackgroundColor	    "red"
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Angular Velocities"
+		    SID			    "16025"
+		    Position		    [40, 23, 70, 37]
+		    ZOrder		    -1
+		    BackgroundColor	    "red"
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    "16026"
+		    Position		    [120, 390, 150, 420]
+		    ZOrder		    -4
+		    BackgroundColor	    "red"
+		    ShowName		    off
+		    }
+		    Block {
+		    BlockType		    If
+		    Name		    "If"
+		    SID			    "16027"
+		    Ports		    [1, 1]
+		    Position		    [95, 331, 195, 369]
+		    ZOrder		    -15
+		    ForegroundColor	    "orange"
+		    IfExpression	    "u1(3)>= 0"
+		    ShowElse		    off
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "If Action\nSubsystem"
+		    SID			    "16028"
+		    Ports		    [1, 0, 0, 0, 0, 0, 0, 1]
+		    Position		    [180, 383, 295, 427]
+		    ZOrder		    -16
+		    TreatAsAtomicUnit	    on
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    System {
 		    Name		    "If Action\nSubsystem"
 		    Location		    [312, 359, 866, 843]
 		    Open		    off
@@ -2282,31 +2320,31 @@ Model {
 		    DstBlock		    "Stop Simulation"
 		    DstPort		    1
 		    }
-		  }
-		}
-		Block {
-		  BlockType		  Integrator
-		  Name			  "Position\nIntegrator"
-		  SID			  "16032"
-		  Ports			  [2, 1]
-		  Position		  [105, 245, 150, 285]
-		  ZOrder		  -20
-		  BlockMirror		  on
-		  ForegroundColor	  "cyan"
-		  InitialConditionSource  "external"
-		  InitialCondition	  "[0,0,nfs.attitude0]"
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Quaternion Rates"
-		  SID			  "16033"
-		  Ports			  [2, 1]
-		  Position		  [135, 16, 310, 74]
-		  ZOrder		  -6
-		  ForegroundColor	  "darkGreen"
-		  RequestExecContextInheritance	off
-		  Variant		  off
-		  System {
+		    }
+		    }
+		    Block {
+		    BlockType		    Integrator
+		    Name		    "Position\nIntegrator"
+		    SID			    "16032"
+		    Ports		    [2, 1]
+		    Position		    [105, 245, 150, 285]
+		    ZOrder		    -20
+		    BlockMirror		    on
+		    ForegroundColor	    "cyan"
+		    InitialConditionSource  "external"
+		    InitialCondition	    "[0,0,nfs.attitude0]"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Quaternion Rates"
+		    SID			    "16033"
+		    Ports		    [2, 1]
+		    Position		    [135, 16, 310, 74]
+		    ZOrder		    -6
+		    ForegroundColor	    "darkGreen"
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    System {
 		    Name		    "Quaternion Rates"
 		    Location		    [-7, -7, 1543, 871]
 		    Open		    off
@@ -2575,33 +2613,33 @@ Model {
 		    DstPort		    2
 		    }
 		    }
-		  }
-		}
-		Block {
-		  BlockType		  Integrator
-		  Name			  "Quaternions\nInt"
-		  SID			  "16047"
-		  Ports			  [2, 1]
-		  Position		  [355, 35, 395, 70]
-		  ZOrder		  -4
-		  ForegroundColor	  "blue"
-		  InitialConditionSource  "external"
-		  InitialCondition	  "nfs.attitude0"
-		  ContinuousStateAttributes "'Quaternions'"
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Rotation Angles\nto DCM1"
-		  SID			  "16048"
-		  Ports			  [1, 1]
-		  Position		  [454, 120, 496, 215]
-		  ZOrder		  -6
-		  BlockRotation		  270
-		  BlockMirror		  on
-		  ForegroundColor	  "darkGreen"
-		  RequestExecContextInheritance	off
-		  Variant		  off
-		  System {
+		    }
+		    }
+		    Block {
+		    BlockType		    Integrator
+		    Name		    "Quaternions\nInt"
+		    SID			    "16047"
+		    Ports		    [2, 1]
+		    Position		    [355, 35, 395, 70]
+		    ZOrder		    -4
+		    ForegroundColor	    "blue"
+		    InitialConditionSource  "external"
+		    InitialCondition	    "nfs.attitude0"
+		    ContinuousStateAttributes "'Quaternions'"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Rotation Angles\nto DCM1"
+		    SID			    "16048"
+		    Ports		    [1, 1]
+		    Position		    [454, 120, 496, 215]
+		    ZOrder		    -6
+		    BlockRotation	    270
+		    BlockMirror		    on
+		    ForegroundColor	    "darkGreen"
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    System {
 		    Name		    "Rotation Angles\nto DCM1"
 		    Location		    [16, 52, 1652, 1024]
 		    Open		    off
@@ -5146,19 +5184,19 @@ Model {
 		    DstBlock		    "DCM"
 		    DstPort		    1
 		    }
-		  }
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Rotation Angles\nto Quaternions"
-		  SID			  "16155"
-		  Ports			  [1, 1]
-		  Position		  [175, 99, 270, 141]
-		  ZOrder		  -6
-		  ForegroundColor	  "darkGreen"
-		  RequestExecContextInheritance	off
-		  Variant		  off
-		  System {
+		    }
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Rotation Angles\nto Quaternions"
+		    SID			    "16155"
+		    Ports		    [1, 1]
+		    Position		    [175, 99, 270, 141]
+		    ZOrder		    -6
+		    ForegroundColor	    "darkGreen"
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    System {
 		    Name		    "Rotation Angles\nto Quaternions"
 		    Location		    [16, 52, 690, 463]
 		    Open		    off
@@ -5363,19 +5401,19 @@ Model {
 		    DstBlock		    "1/2"
 		    DstPort		    1
 		    }
-		  }
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Rotation Angles\nto Quaternions1"
-		  SID			  "16166"
-		  Ports			  [1, 1]
-		  Position		  [500, 34, 595, 76]
-		  ZOrder		  -6
-		  ForegroundColor	  "darkGreen"
-		  RequestExecContextInheritance	off
-		  Variant		  off
-		  System {
+		    }
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Rotation Angles\nto Quaternions1"
+		    SID			    "16166"
+		    Ports		    [1, 1]
+		    Position		    [500, 34, 595, 76]
+		    ZOrder		    -6
+		    ForegroundColor	    "darkGreen"
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    System {
 		    Name		    "Rotation Angles\nto Quaternions1"
 		    Location		    [16, 52, 875, 685]
 		    Open		    off
@@ -6050,82 +6088,83 @@ Model {
 		    DstBlock		    "Quat2RotAngs"
 		    DstPort		    1
 		    }
-		  }
-		}
-		Block {
-		  BlockType		  Scope
-		  Name			  "Scope"
-		  SID			  "16194"
-		  Ports			  [1]
-		  Position		  [750, 99, 780, 131]
-		  ZOrder		  -3
-		  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr"
-		  ".Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sourc"
-		  "es','WiredSimulink',true,'DataLoggingVariableName','ScopeData23','DataLoggingSaveFormat','StructureWithTime','Data"
-		  "LoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'Serializ"
-		  "edDisplays',{struct('MinYLimReal','-0.00482','MaxYLimReal','0.03999','YLabelReal','','MinYLimMag','0.00000','MaxYL"
-		  "imMag','0.03999','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
-		  "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
-		  "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039"
-		  "215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title"
-		  "','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Selector4"
-		  ":1','Selector4:2','Selector4:3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal"
-		  "','-0.00482','MaxYLimReal','0.03999','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.03999','LegendVisibili"
-		  "ty','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0."
-		  "686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0"
-		  ".411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27450"
-		  "9803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineProperti"
-		  "esCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),ex"
-		  "tmgr.Configuration('Tools','Plot Navigation',true,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurem"
-		  "ents',true,'Version','2017b')),'Version','2017b','Location',[188.2 390.2 512.2 629.4])"
-		  NumInputPorts		  "1"
-		}
-		Block {
-		  BlockType		  Selector
-		  Name			  "Selector3"
-		  SID			  "16195"
-		  Ports			  [1, 1]
-		  Position		  [115, 101, 140, 139]
-		  ZOrder		  -3
-		  ForegroundColor	  "cyan"
-		  ShowName		  off
-		  InputPortWidth	  "3"
-		  IndexOptions		  "Index vector (dialog)"
-		  Indices		  "[3 2 1]"
-		  OutputSizes		  "1"
-		}
-		Block {
-		  BlockType		  Selector
-		  Name			  "Selector4"
-		  SID			  "16196"
-		  Ports			  [1, 1]
-		  Position		  [635, 36, 660, 74]
-		  ZOrder		  -3
-		  ForegroundColor	  "cyan"
-		  ShowName		  off
-		  InputPortWidth	  "3"
-		  IndexOptions		  "Index vector (dialog)"
-		  Indices		  "[3 2 1]"
-		  OutputSizes		  "1"
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Transform from\nBody to\nInertial axes"
-		  SID			  "16197"
-		  Ports			  [2, 1]
-		  Position		  [255, 236, 305, 269]
-		  ZOrder		  -30
-		  BlockMirror		  on
-		  ForegroundColor	  "magenta"
-		  RequestExecContextInheritance	off
-		  Variant		  off
-		  Object {
+		    }
+		    }
+		    Block {
+		    BlockType		    Scope
+		    Name		    "Scope"
+		    SID			    "16194"
+		    Ports		    [1]
+		    Position		    [750, 99, 780, 131]
+		    ZOrder		    -3
+		    ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+		    "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+		    "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData23','DataLoggingSaveFormat','StructureWithTime'"
+		    ",'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'"
+		    "SerializedDisplays',{struct('MinYLimReal','-0.00482','MaxYLimReal','0.03999','YLabelReal','','MinYLimMag','0.000"
+		    "00','MaxYLimMag','0.03999','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',["
+		    "0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666"
+		    "667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019"
+		    "608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.65098"
+		    "0392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'Lin"
+		    "eNames',{{'Selector4:1','Selector4:2','Selector4:3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefault"
+		    "s',struct('MinYLimReal','-0.00482','MaxYLimReal','0.03999','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','"
+		    "0.03999','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
+		    "lor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803921"
+		    "5686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
+		    "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title"
+		    "','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'Sh"
+		    "owContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'PreviousAutoscale','XY'),ex"
+		    "tmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[188.2 390.2 512"
+		    ".2 629.4])"
+		    NumInputPorts	    "1"
+		    }
+		    Block {
+		    BlockType		    Selector
+		    Name		    "Selector3"
+		    SID			    "16195"
+		    Ports		    [1, 1]
+		    Position		    [115, 101, 140, 139]
+		    ZOrder		    -3
+		    ForegroundColor	    "cyan"
+		    ShowName		    off
+		    InputPortWidth	    "3"
+		    IndexOptions	    "Index vector (dialog)"
+		    Indices		    "[3 2 1]"
+		    OutputSizes		    "1"
+		    }
+		    Block {
+		    BlockType		    Selector
+		    Name		    "Selector4"
+		    SID			    "16196"
+		    Ports		    [1, 1]
+		    Position		    [635, 36, 660, 74]
+		    ZOrder		    -3
+		    ForegroundColor	    "cyan"
+		    ShowName		    off
+		    InputPortWidth	    "3"
+		    IndexOptions	    "Index vector (dialog)"
+		    Indices		    "[3 2 1]"
+		    OutputSizes		    "1"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Transform from\nBody to\nInertial axes"
+		    SID			    "16197"
+		    Ports		    [2, 1]
+		    Position		    [255, 236, 305, 269]
+		    ZOrder		    -30
+		    BlockMirror		    on
+		    ForegroundColor	    "magenta"
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    29
+		    $ObjectID		    30
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "disp('T_IB')"
-		  }
-		  System {
+		    }
+		    System {
 		    Name		    "Transform from\nBody to\nInertial axes"
 		    Location		    [633, 52, 1391, 827]
 		    Open		    off
@@ -6235,166 +6274,166 @@ Model {
 		    DstBlock		    "Ve"
 		    DstPort		    1
 		    }
-		  }
-		}
-		Block {
-		  BlockType		  Math
-		  Name			  "Transpose"
-		  SID			  "16204"
-		  Ports			  [1, 1]
-		  Position		  [405, 230, 435, 260]
-		  ZOrder		  -11
-		  BlockMirror		  on
-		  Operator		  "transpose"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Direction Cosine\nMatrix (T_BI)"
-		  SID			  "16205"
-		  Position		  [515, 238, 545, 252]
-		  ZOrder		  -6
-		  BackgroundColor	  "green"
-		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,3]"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Euler\nAngles"
-		  SID			  "16206"
-		  Position		  [790, 48, 820, 62]
-		  ZOrder		  -7
-		  BackgroundColor	  "green"
-		  Port			  "2"
-		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Position\n(NED)"
-		  SID			  "16207"
-		  Position		  [15, 258, 45, 272]
-		  ZOrder		  -6
-		  BlockMirror		  on
-		  BackgroundColor	  "green"
-		  Port			  "3"
-		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Velocity\n(NED)"
-		  SID			  "16208"
-		  Position		  [115, 203, 145, 217]
-		  ZOrder		  -6
-		  BlockMirror		  on
-		  BackgroundColor	  "green"
-		  Port			  "4"
-		  IconDisplay		  "Port number"
-		  PortDimensions	  "[3,1]"
-		}
-		Line {
-		  ZOrder		  1
-		  SrcBlock		  "Position\nIntegrator"
-		  SrcPort		  1
-		  Points		  [-25, 0]
-		  Branch {
+		    }
+		    }
+		    Block {
+		    BlockType		    Math
+		    Name		    "Transpose"
+		    SID			    "16204"
+		    Ports		    [1, 1]
+		    Position		    [405, 230, 435, 260]
+		    ZOrder		    -11
+		    BlockMirror		    on
+		    Operator		    "transpose"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Direction Cosine\nMatrix (T_BI)"
+		    SID			    "16205"
+		    Position		    [515, 238, 545, 252]
+		    ZOrder		    -6
+		    BackgroundColor	    "green"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,3]"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Euler\nAngles"
+		    SID			    "16206"
+		    Position		    [790, 48, 820, 62]
+		    ZOrder		    -7
+		    BackgroundColor	    "green"
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Position\n(NED)"
+		    SID			    "16207"
+		    Position		    [15, 258, 45, 272]
+		    ZOrder		    -6
+		    BlockMirror		    on
+		    BackgroundColor	    "green"
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Velocity\n(NED)"
+		    SID			    "16208"
+		    Position		    [115, 203, 145, 217]
+		    ZOrder		    -6
+		    BlockMirror		    on
+		    BackgroundColor	    "green"
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "[3,1]"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "Position\nIntegrator"
+		    SrcPort		    1
+		    Points		    [-25, 0]
+		    Branch {
 		    ZOrder		    2
 		    DstBlock		    "Position\n(NED)"
 		    DstPort		    1
-		  }
-		  Branch {
+		    }
+		    Branch {
 		    ZOrder		    3
 		    Points		    [0, 85]
 		    DstBlock		    "If"
 		    DstPort		    1
-		  }
-		}
-		Line {
-		  ZOrder		  4
-		  SrcBlock		  "Transform from\nBody to\nInertial axes"
-		  SrcPort		  1
-		  Points		  [-15, 0]
-		  Branch {
+		    }
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Transform from\nBody to\nInertial axes"
+		    SrcPort		    1
+		    Points		    [-15, 0]
+		    Branch {
 		    ZOrder		    5
 		    DstBlock		    "Position\nIntegrator"
 		    DstPort		    1
-		  }
-		  Branch {
+		    }
+		    Branch {
 		    ZOrder		    6
 		    Points		    [0, -45]
 		    DstBlock		    "Velocity\n(NED)"
 		    DstPort		    1
-		  }
-		}
-		Line {
-		  ZOrder		  7
-		  SrcBlock		  "Initial Location\n(NED)"
-		  SrcPort		  1
-		  DstBlock		  "Position\nIntegrator"
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  8
-		  SrcBlock		  "Linear Velocity"
-		  SrcPort		  1
-		  DstBlock		  "Transform from\nBody to\nInertial axes"
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  9
-		  SrcBlock		  "Transpose"
-		  SrcPort		  1
-		  DstBlock		  "Transform from\nBody to\nInertial axes"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  10
-		  SrcBlock		  "Quaternion Rates"
-		  SrcPort		  1
-		  DstBlock		  "Quaternions\nInt"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  11
-		  SrcBlock		  "Angular Velocities"
-		  SrcPort		  1
-		  DstBlock		  "Quaternion Rates"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  12
-		  SrcBlock		  "Initial\nEuler Angles"
-		  SrcPort		  1
-		  DstBlock		  "Selector3"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  13
-		  SrcBlock		  "Selector3"
-		  SrcPort		  1
-		  DstBlock		  "Rotation Angles\nto Quaternions"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  14
-		  SrcBlock		  "Rotation Angles\nto Quaternions"
-		  SrcPort		  1
-		  Points		  [45, 0; 0, -60]
-		  DstBlock		  "Quaternions\nInt"
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  15
-		  SrcBlock		  "Quaternions\nInt"
-		  SrcPort		  1
-		  Points		  [30, 0]
-		  Branch {
+		    }
+		    }
+		    Line {
+		    ZOrder		    7
+		    SrcBlock		    "Initial Location\n(NED)"
+		    SrcPort		    1
+		    DstBlock		    "Position\nIntegrator"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "Linear Velocity"
+		    SrcPort		    1
+		    DstBlock		    "Transform from\nBody to\nInertial axes"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    9
+		    SrcBlock		    "Transpose"
+		    SrcPort		    1
+		    DstBlock		    "Transform from\nBody to\nInertial axes"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "Quaternion Rates"
+		    SrcPort		    1
+		    DstBlock		    "Quaternions\nInt"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "Angular Velocities"
+		    SrcPort		    1
+		    DstBlock		    "Quaternion Rates"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    12
+		    SrcBlock		    "Initial\nEuler Angles"
+		    SrcPort		    1
+		    DstBlock		    "Selector3"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    "Selector3"
+		    SrcPort		    1
+		    DstBlock		    "Rotation Angles\nto Quaternions"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    14
+		    SrcBlock		    "Rotation Angles\nto Quaternions"
+		    SrcPort		    1
+		    Points		    [45, 0; 0, -60]
+		    DstBlock		    "Quaternions\nInt"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    15
+		    SrcBlock		    "Quaternions\nInt"
+		    SrcPort		    1
+		    Points		    [30, 0]
+		    Branch {
 		    ZOrder		    16
 		    Points		    [0, 130; -420, 0; 0, -125]
 		    DstBlock		    "Quaternion Rates"
 		    DstPort		    2
-		  }
-		  Branch {
+		    }
+		    Branch {
 		    ZOrder		    17
 		    Points		    [45, 0]
 		    Branch {
@@ -6407,417 +6446,581 @@ Model {
 		    DstBlock		    "Rotation Angles\nto DCM1"
 		    DstPort		    1
 		    }
-		  }
-		}
-		Line {
-		  ZOrder		  20
-		  SrcBlock		  "Rotation Angles\nto Quaternions1"
-		  SrcPort		  1
-		  DstBlock		  "Selector4"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  21
-		  SrcBlock		  "Selector4"
-		  SrcPort		  1
-		  Points		  [45, 0]
-		  Branch {
+		    }
+		    }
+		    Line {
+		    ZOrder		    20
+		    SrcBlock		    "Rotation Angles\nto Quaternions1"
+		    SrcPort		    1
+		    DstBlock		    "Selector4"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    21
+		    SrcBlock		    "Selector4"
+		    SrcPort		    1
+		    Points		    [45, 0]
+		    Branch {
 		    ZOrder		    22
 		    DstBlock		    "Euler\nAngles"
 		    DstPort		    1
-		  }
-		  Branch {
+		    }
+		    Branch {
 		    ZOrder		    23
 		    Points		    [0, 60]
 		    DstBlock		    "Scope"
 		    DstPort		    1
-		  }
-		}
-		Line {
-		  ZOrder		  24
-		  SrcBlock		  "Rotation Angles\nto DCM1"
-		  SrcPort		  1
-		  Points		  [0, 25]
-		  Branch {
+		    }
+		    }
+		    Line {
+		    ZOrder		    24
+		    SrcBlock		    "Rotation Angles\nto DCM1"
+		    SrcPort		    1
+		    Points		    [0, 25]
+		    Branch {
 		    ZOrder		    25
 		    DstBlock		    "Direction Cosine\nMatrix (T_BI)"
 		    DstPort		    1
-		  }
-		  Branch {
+		    }
+		    Branch {
 		    ZOrder		    26
 		    DstBlock		    "Transpose"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    27
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "If Action\nSubsystem"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    28
+		    SrcBlock		    "If"
+		    SrcPort		    1
+		    Points		    [35, 0]
+		    DstBlock		    "If Action\nSubsystem"
+		    DstPort		    ifaction
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Integrator
+		  Name			  "Linear Velocity\nIntegrator\n(Body)"
+		  SID			  "16209"
+		  Ports			  [2, 1]
+		  Position		  [235, 115, 270, 155]
+		  ZOrder		  47
+		  ForegroundColor	  "orange"
+		  InitialConditionSource  "external"
+		  InitialCondition	  "nfs.crusevelvec"
+		  ContinuousStateAttributes "'BodyVelocity'"
+		  Port {
+		    PortNumber		    1
+		    Name		    "uvw"
+		  }
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation1"
+		  SID			  "16210"
+		  Ports			  [1, 1]
+		  Position		  [320, 120, 350, 150]
+		  ZOrder		  50
+		  ForegroundColor	  "orange"
+		  ShowName		  off
+		  InputPortMap		  "u0"
+		  UpperLimit		  "500"
+		  LowerLimit		  "-500"
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation2"
+		  SID			  "16211"
+		  Ports			  [1, 1]
+		  Position		  [320, 360, 350, 390]
+		  ZOrder		  49
+		  ForegroundColor	  "orange"
+		  ShowName		  off
+		  InputPortMap		  "u0"
+		  UpperLimit		  "500"
+		  LowerLimit		  "-500"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Linear Velocity\n(Body)\nMeasured"
+		  SID			  "16212"
+		  Position		  [440, 13, 470, 27]
+		  ZOrder		  55
+		  BackgroundColor	  "green"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Angular Velocity\n(Body)\nMeasured"
+		  SID			  "16213"
+		  Position		  [440, 458, 470, 472]
+		  ZOrder		  54
+		  BackgroundColor	  "green"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Euler Angles\nMeasured"
+		  SID			  "16214"
+		  Position		  [755, 208, 785, 222]
+		  ZOrder		  53
+		  BackgroundColor	  "green"
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Position\n(NED)\nMeasured"
+		  SID			  "16215"
+		  Position		  [755, 288, 785, 302]
+		  ZOrder		  52
+		  BackgroundColor	  "green"
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Velocity\n(NED)\nMeasured"
+		  SID			  "16216"
+		  Position		  [755, 368, 785, 382]
+		  ZOrder		  51
+		  BackgroundColor	  "green"
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "T_BI\nMeasured"
+		  SID			  "16217"
+		  Position		  [755, 128, 785, 142]
+		  ZOrder		  60
+		  BackgroundColor	  "green"
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Initial Euler Angles"
+		  SrcPort		  1
+		  DstBlock		  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Initial Location\n(NED)"
+		  SrcPort		  1
+		  DstBlock		  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Linear Acceleration\n(Body)"
+		  SrcPort		  1
+		  DstBlock		  "Linear Velocity\nIntegrator\n(Body)"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  SrcPort		  1
+		  DstBlock		  "T_BI\nMeasured"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  SrcPort		  2
+		  DstBlock		  "Euler Angles\nMeasured"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  6
+		  SrcBlock		  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  SrcPort		  4
+		  DstBlock		  "Velocity\n(NED)\nMeasured"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "Saturation1"
+		  SrcPort		  1
+		  Points		  [25, 0]
+		  Branch {
+		    ZOrder		    8
+		    DstBlock		    "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    9
+		    Points		    [0, -115]
+		    DstBlock		    "Linear Velocity\n(Body)\nMeasured"
 		    DstPort		    1
 		  }
 		}
 		Line {
-		  ZOrder		  27
-		  SrcBlock		  "Constant"
+		  ZOrder		  10
+		  SrcBlock		  "Angular Acceleration\n(Body)"
 		  SrcPort		  1
-		  DstBlock		  "If Action\nSubsystem"
+		  DstBlock		  "Angular Velocity\nIntegrator\n(Body)"
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  28
-		  SrcBlock		  "If"
+		  ZOrder		  11
+		  SrcBlock		  "Initial Linear \nVelocity Vector"
 		  SrcPort		  1
-		  Points		  [35, 0]
-		  DstBlock		  "If Action\nSubsystem"
-		  DstPort		  ifaction
+		  DstBlock		  "Linear Velocity\nIntegrator\n(Body)"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  12
+		  SrcBlock		  "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		  SrcPort		  3
+		  DstBlock		  "Position\n(NED)\nMeasured"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "uvw"
+		  ZOrder		  13
+		  Labels		  [0, 0]
+		  SrcBlock		  "Linear Velocity\nIntegrator\n(Body)"
+		  SrcPort		  1
+		  DstBlock		  "Saturation1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "pqr"
+		  ZOrder		  14
+		  Labels		  [0, 1]
+		  SrcBlock		  "Angular Velocity\nIntegrator\n(Body)"
+		  SrcPort		  1
+		  DstBlock		  "Saturation2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "Saturation2"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  Branch {
+		    ZOrder		    16
+		    DstBlock		    "Euler angles &\nDirection Cosine\nUsing Quaternions"
+		    DstPort		    4
+		  }
+		  Branch {
+		    ZOrder		    17
+		    Points		    [0, 90]
+		    DstBlock		    "Angular Velocity\n(Body)\nMeasured"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  18
+		  SrcBlock		  "Initial Angular \nVelocity Vector"
+		  SrcPort		  1
+		  DstBlock		  "Angular Velocity\nIntegrator\n(Body)"
+		  DstPort		  2
 		}
 	      }
 	    }
 	    Block {
-	      BlockType		      Integrator
-	      Name		      "Linear Velocity\nIntegrator\n(Body)"
-	      SID		      "16209"
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      "16243"
 	      Ports		      [2, 1]
-	      Position		      [235, 115, 270, 155]
-	      ZOrder		      47
-	      ForegroundColor	      "orange"
-	      InitialConditionSource  "external"
-	      InitialCondition	      "nfs.crusevelvec"
-	      ContinuousStateAttributes	"'BodyVelocity'"
-	      Port {
-		PortNumber		1
-		Name			"uvw"
-	      }
+	      Position		      [500, 287, 530, 318]
+	      ZOrder		      164
+	      Multiplication	      "Matrix(*)"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
-	      BlockType		      Saturate
-	      Name		      "Saturation1"
-	      SID		      "16210"
-	      Ports		      [1, 1]
-	      Position		      [320, 120, 350, 150]
-	      ZOrder		      50
-	      ForegroundColor	      "orange"
+	      BlockType		      Terminator
+	      Name		      "Terminator1"
+	      SID		      "16010"
+	      Position		      [210, 355, 230, 375]
+	      ZOrder		      160
+	      ForegroundColor	      "white"
+	      BackgroundColor	      "black"
 	      ShowName		      off
-	      InputPortMap	      "u0"
-	      UpperLimit	      "500"
-	      LowerLimit	      "-500"
 	    }
 	    Block {
-	      BlockType		      Saturate
-	      Name		      "Saturation2"
-	      SID		      "16211"
-	      Ports		      [1, 1]
-	      Position		      [320, 360, 350, 390]
-	      ZOrder		      49
-	      ForegroundColor	      "orange"
-	      ShowName		      off
-	      InputPortMap	      "u0"
-	      UpperLimit	      "500"
-	      LowerLimit	      "-500"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Linear Velocity\n(Body)\nMeasured"
-	      SID		      "16212"
-	      Position		      [440, 13, 470, 27]
-	      ZOrder		      55
-	      BackgroundColor	      "green"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Angular Velocity\n(Body)\nMeasured"
-	      SID		      "16213"
-	      Position		      [440, 458, 470, 472]
-	      ZOrder		      54
-	      BackgroundColor	      "green"
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Euler Angles\nMeasured"
-	      SID		      "16214"
-	      Position		      [755, 208, 785, 222]
-	      ZOrder		      53
-	      BackgroundColor	      "green"
-	      Port		      "3"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Position\n(NED)\nMeasured"
-	      SID		      "16215"
-	      Position		      [755, 288, 785, 302]
-	      ZOrder		      52
-	      BackgroundColor	      "green"
-	      Port		      "4"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Velocity\n(NED)\nMeasured"
-	      SID		      "16216"
-	      Position		      [755, 368, 785, 382]
-	      ZOrder		      51
-	      BackgroundColor	      "green"
-	      Port		      "5"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "T_BI\nMeasured"
-	      SID		      "16217"
-	      Position		      [755, 128, 785, 142]
-	      ZOrder		      60
-	      BackgroundColor	      "green"
-	      Port		      "6"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "Initial Euler Angles"
-	      SrcPort		      1
-	      DstBlock		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Initial Location\n(NED)"
-	      SrcPort		      1
-	      DstBlock		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      3
-	      SrcBlock		      "Linear Acceleration\n(Body)"
-	      SrcPort		      1
-	      DstBlock		      "Linear Velocity\nIntegrator\n(Body)"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      4
-	      SrcBlock		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      SrcPort		      1
-	      DstBlock		      "T_BI\nMeasured"
-	      DstPort		      1
-	    }
-	    Line {
+	      BlockType		      Terminator
+	      Name		      "Terminator4"
+	      SID		      "12643"
+	      Position		      [210, 415, 230, 435]
 	      ZOrder		      5
-	      SrcBlock		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      SrcPort		      2
-	      DstBlock		      "Euler Angles\nMeasured"
-	      DstPort		      1
+	      ForegroundColor	      "white"
+	      BackgroundColor	      "black"
+	      ShowName		      off
 	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      SrcPort		      4
-	      DstBlock		      "Velocity\n(NED)\nMeasured"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Saturation1"
-	      SrcPort		      1
-	      Points		      [25, 0]
-	      Branch {
-		ZOrder			8
-		DstBlock		"Euler angles &\nDirection Cosine\nUsing Quaternions"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			9
-		Points			[0, -115]
-		DstBlock		"Linear Velocity\n(Body)\nMeasured"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      10
-	      SrcBlock		      "Angular Acceleration\n(Body)"
-	      SrcPort		      1
-	      DstBlock		      "Angular Velocity\nIntegrator\n(Body)"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      11
-	      SrcBlock		      "Initial Linear \nVelocity Vector"
-	      SrcPort		      1
-	      DstBlock		      "Linear Velocity\nIntegrator\n(Body)"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      12
-	      SrcBlock		      "Euler angles &\nDirection Cosine\nUsing Quaternions"
-	      SrcPort		      3
-	      DstBlock		      "Position\n(NED)\nMeasured"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "uvw"
-	      ZOrder		      13
-	      Labels		      [0, 0]
-	      SrcBlock		      "Linear Velocity\nIntegrator\n(Body)"
-	      SrcPort		      1
-	      DstBlock		      "Saturation1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "pqr"
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator5"
+	      SID		      "12645"
+	      Position		      [210, 295, 230, 315]
 	      ZOrder		      14
-	      Labels		      [0, 1]
-	      SrcBlock		      "Angular Velocity\nIntegrator\n(Body)"
-	      SrcPort		      1
-	      DstBlock		      "Saturation2"
-	      DstPort		      1
+	      ForegroundColor	      "white"
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator6"
+	      SID		      "12646"
+	      Position		      [210, 55, 230, 75]
+	      ZOrder		      15
+	      ForegroundColor	      "white"
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "16252"
+	      Position		      [1945, 228, 1975, 242]
+	      ZOrder		      168
+	      IconDisplay	      "Port number"
 	    }
 	    Line {
-	      ZOrder		      15
-	      SrcBlock		      "Saturation2"
-	      SrcPort		      1
-	      Points		      [20, 0]
+	      ZOrder		      41
+	      SrcBlock		      "3Axis IMU - Measurement Model"
+	      SrcPort		      2
+	      Points		      [15, 0; 0, -115; 139, 0]
 	      Branch {
-		ZOrder			16
-		DstBlock		"Euler angles &\nDirection Cosine\nUsing Quaternions"
+		ZOrder			56
+		Points			[0, -70; 538, 0; 0, 155]
+		DstBlock		"Mux"
 		DstPort			4
 	      }
 	      Branch {
-		ZOrder			17
-		Points			[0, 90]
-		DstBlock		"Angular Velocity\n(Body)\nMeasured"
+		ZOrder			55
+		DstBlock		"Navigation Model - Simple"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      Name		      "Linear Acceleration (Body)"
+	      ZOrder		      25
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [133, 0; 0, -120]
+	      DstBlock		      "3Axis IMU - Measurement Model"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "CG Loc\nin Body"
+	      SrcPort		      1
+	      DstBlock		      "3Axis IMU - Measurement Model"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      45
+	      SrcBlock		      "Initialization"
+	      SrcPort		      4
+	      DstBlock		      "Navigation Model - Simple"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      46
+	      SrcBlock		      "Gravity Calculator"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      49
+	      SrcBlock		      "Navigation Model - Simple"
+	      SrcPort		      4
+	      Points		      [32, 0]
+	      Branch {
+		ZOrder			61
+		Points			[0, 152; -1184, 0; 0, -72]
+		DstBlock		"Gravity Calculator"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			60
+		Points			[86, 0; 0, 125]
+		DstBlock		"Mux"
+		DstPort			6
+	      }
+	    }
+	    Line {
+	      ZOrder		      52
+	      SrcBlock		      "Navigation Model - Simple"
+	      SrcPort		      2
+	      Points		      [19, 0; 0, -35]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      51
+	      SrcBlock		      "Navigation Model - Simple"
+	      SrcPort		      1
+	      Points		      [3, 0; 0, -55]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Linear Velocity (Body)"
+	      ZOrder		      24
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "Terminator6"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Angular Acceleration (Body)"
+	      ZOrder		      26
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      4
+	      Points		      [150, 0; 0, -60]
+	      DstBlock		      "3Axis IMU - Measurement Model"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "Angular Velocity (Body)"
+	      ZOrder		      21
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "3Axis IMU - Measurement Model"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      48
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "3Axis IMU - Measurement Model"
+	      DstPort		      5
+	    }
+	    Line {
+	      Name		      "Euler Angles"
+	      ZOrder		      22
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      5
+	      DstBlock		      "Terminator5"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Position (NED)"
+	      ZOrder		      39
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      6
+	      DstBlock		      "Terminator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      40
+	      SrcBlock		      "3Axis IMU - Measurement Model"
+	      SrcPort		      1
+	      Points		      [147, 0]
+	      Branch {
+		ZOrder			54
+		Points			[0, -37; 537, 0; 0, 102]
+		DstBlock		"Mux"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			53
+		DstBlock		"Navigation Model - Simple"
 		DstPort			1
 	      }
 	    }
 	    Line {
-	      ZOrder		      18
-	      SrcBlock		      "Initial Angular \nVelocity Vector"
+	      ZOrder		      43
+	      SrcBlock		      "Initialization"
+	      SrcPort		      2
+	      DstBlock		      "Navigation Model - Simple"
+	      DstPort		      4
+	    }
+	    Line {
+	      Name		      "Velocity (NED)"
+	      ZOrder		      6
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      7
+	      DstBlock		      "Terminator4"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      44
+	      SrcBlock		      "Initialization"
+	      SrcPort		      3
+	      DstBlock		      "Navigation Model - Simple"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      42
+	      SrcBlock		      "Initialization"
 	      SrcPort		      1
-	      DstBlock		      "Angular Velocity\nIntegrator\n(Body)"
-	      DstPort		      2
+	      DstBlock		      "Navigation Model - Simple"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      47
+	      SrcBlock		      "Navigation Model - Simple"
+	      SrcPort		      6
+	      Points		      [14, 0; 0, 54; -963, 0; 0, -69]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      58
+	      SrcBlock		      "Navigation Model - Simple"
+	      SrcPort		      3
+	      Points		      [123, 0; 0, 105]
+	      DstBlock		      "Mux"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      69
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      62
+	      SrcBlock		      "Navigation Model - Simple"
+	      SrcPort		      5
+	      Points		      [113, 0; 0, 145]
+	      DstBlock		      "Mux"
+	      DstPort		      7
+	    }
+	    Line {
+	      ZOrder		      68
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
 	    }
 	  }
-	}
-	Block {
-	  BlockType		  Product
-	  Name			  "Product"
-	  SID			  "16243"
-	  Ports			  [2, 1]
-	  Position		  [530, 397, 560, 428]
-	  ZOrder		  164
-	  Commented		  "on"
-	  Multiplication	  "Matrix(*)"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator1"
-	  SID			  "16010"
-	  Position		  [240, 465, 260, 485]
-	  ZOrder		  160
-	  ForegroundColor	  "white"
-	  BackgroundColor	  "black"
-	  ShowName		  off
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator4"
-	  SID			  "12643"
-	  Position		  [240, 525, 260, 545]
-	  ZOrder		  5
-	  ForegroundColor	  "white"
-	  BackgroundColor	  "black"
-	  ShowName		  off
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator5"
-	  SID			  "12645"
-	  Position		  [240, 405, 260, 425]
-	  ZOrder		  14
-	  ForegroundColor	  "white"
-	  BackgroundColor	  "black"
-	  ShowName		  off
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator6"
-	  SID			  "12646"
-	  Position		  [240, 165, 260, 185]
-	  ZOrder		  15
-	  ForegroundColor	  "white"
-	  BackgroundColor	  "black"
-	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "Navigation\nOutput\nMeasured"
 	  SID			  "1849"
-	  Position		  [2125, 348, 2155, 362]
+	  Position		  [1020, 143, 1050, 157]
 	  ZOrder		  3
 	  BackgroundColor	  "red"
 	  IconDisplay		  "Port number"
-	}
-	Line {
-	  Name			  "Euler Angles"
-	  ZOrder		  22
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  5
-	  DstBlock		  "Terminator5"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Position (NED)"
-	  ZOrder		  39
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  6
-	  DstBlock		  "Terminator1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Velocity (NED)"
-	  ZOrder		  6
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  7
-	  DstBlock		  "Terminator4"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Angular Velocity (Body)"
-	  ZOrder		  21
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  2
-	  DstBlock		  "3Axis IMU - Measurement Model"
-	  DstPort		  2
-	}
-	Line {
-	  Name			  "Angular Acceleration (Body)"
-	  ZOrder		  26
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  4
-	  Points		  [150, 0; 0, -60]
-	  DstBlock		  "3Axis IMU - Measurement Model"
-	  DstPort		  3
-	}
-	Line {
-	  Name			  "Linear Velocity (Body)"
-	  ZOrder		  24
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  1
-	  DstBlock		  "Terminator6"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Linear Acceleration (Body)"
-	  ZOrder		  25
-	  Labels		  [0, 0]
-	  SrcBlock		  "Demux"
-	  SrcPort		  3
-	  Points		  [133, 0; 0, -120]
-	  DstBlock		  "3Axis IMU - Measurement Model"
-	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  16
@@ -6825,170 +7028,22 @@ Model {
 	  SrcPort		  1
 	  Points		  [42, 0]
 	  Branch {
-	    ZOrder		    65
-	    Points		    [0, 270]
+	    ZOrder		    94
+	    Points		    [0, 65]
 	    DstBlock		    "Goto"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    64
-	    DstBlock		    "Demux"
+	    ZOrder		    91
+	    DstBlock		    "Subsystem"
 	    DstPort		    1
 	  }
-	}
-	Line {
-	  ZOrder		  27
-	  SrcBlock		  "CG Loc\nin Body"
-	  SrcPort		  1
-	  DstBlock		  "3Axis IMU - Measurement Model"
-	  DstPort		  4
-	}
-	Line {
-	  ZOrder		  40
-	  SrcBlock		  "3Axis IMU - Measurement Model"
-	  SrcPort		  1
-	  Points		  [147, 0]
-	  Branch {
-	    ZOrder		    54
-	    Points		    [0, -37; 537, 0; 0, 102]
-	    DstBlock		    "Mux"
-	    DstPort		    3
-	  }
-	  Branch {
-	    ZOrder		    53
-	    DstBlock		    "Navigation Model - Simple"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  41
-	  SrcBlock		  "3Axis IMU - Measurement Model"
-	  SrcPort		  2
-	  Points		  [15, 0; 0, -115; 139, 0]
-	  Branch {
-	    ZOrder		    56
-	    Points		    [0, -70; 538, 0; 0, 155]
-	    DstBlock		    "Mux"
-	    DstPort		    4
-	  }
-	  Branch {
-	    ZOrder		    55
-	    DstBlock		    "Navigation Model - Simple"
-	    DstPort		    2
-	  }
-	}
-	Line {
-	  ZOrder		  42
-	  SrcBlock		  "Initialization"
-	  SrcPort		  1
-	  DstBlock		  "Navigation Model - Simple"
-	  DstPort		  3
-	}
-	Line {
-	  ZOrder		  43
-	  SrcBlock		  "Initialization"
-	  SrcPort		  2
-	  DstBlock		  "Navigation Model - Simple"
-	  DstPort		  4
-	}
-	Line {
-	  ZOrder		  44
-	  SrcBlock		  "Initialization"
-	  SrcPort		  3
-	  DstBlock		  "Navigation Model - Simple"
-	  DstPort		  5
-	}
-	Line {
-	  ZOrder		  45
-	  SrcBlock		  "Initialization"
-	  SrcPort		  4
-	  DstBlock		  "Navigation Model - Simple"
-	  DstPort		  6
-	}
-	Line {
-	  ZOrder		  46
-	  SrcBlock		  "Gravity Calculator"
-	  SrcPort		  1
-	  DstBlock		  "Product"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  47
-	  SrcBlock		  "Navigation Model - Simple"
-	  SrcPort		  6
-	  Points		  [14, 0; 0, 54; -963, 0; 0, -69]
-	  DstBlock		  "Product"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  48
-	  SrcBlock		  "Product"
-	  SrcPort		  1
-	  DstBlock		  "3Axis IMU - Measurement Model"
-	  DstPort		  5
-	}
-	Line {
-	  ZOrder		  49
-	  SrcBlock		  "Navigation Model - Simple"
-	  SrcPort		  4
-	  Points		  [32, 0]
-	  Branch {
-	    ZOrder		    61
-	    Points		    [0, 152; -1184, 0; 0, -72]
-	    DstBlock		    "Gravity Calculator"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    60
-	    Points		    [86, 0; 0, 125]
-	    DstBlock		    "Mux"
-	    DstPort		    6
-	  }
-	}
-	Line {
-	  ZOrder		  51
-	  SrcBlock		  "Navigation Model - Simple"
-	  SrcPort		  1
-	  Points		  [3, 0; 0, -55]
-	  DstBlock		  "Mux"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  52
-	  SrcBlock		  "Navigation Model - Simple"
-	  SrcPort		  2
-	  Points		  [19, 0; 0, -35]
-	  DstBlock		  "Mux"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  58
-	  SrcBlock		  "Navigation Model - Simple"
-	  SrcPort		  3
-	  Points		  [123, 0; 0, 105]
-	  DstBlock		  "Mux"
-	  DstPort		  5
-	}
-	Line {
-	  ZOrder		  62
-	  SrcBlock		  "Navigation Model - Simple"
-	  SrcPort		  5
-	  Points		  [113, 0; 0, 145]
-	  DstBlock		  "Mux"
-	  DstPort		  7
-	}
-	Line {
-	  ZOrder		  67
-	  SrcBlock		  "Mux"
-	  SrcPort		  1
-	  DstBlock		  "Manual Switch"
-	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  68
 	  SrcBlock		  "From"
 	  SrcPort		  1
-	  Points		  [0, -45]
+	  Points		  [48, 0; 0, -45]
 	  DstBlock		  "Manual Switch"
 	  DstPort		  2
 	}
@@ -6997,6 +7052,13 @@ Model {
 	  SrcBlock		  "Manual Switch"
 	  SrcPort		  1
 	  DstBlock		  "Navigation\nOutput\nMeasured"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  92
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  DstBlock		  "Manual Switch"
 	  DstPort		  1
 	}
 	Annotation {
@@ -7018,6 +7080,7 @@ Model {
 	  BackgroundColor	  "gray"
 	  DropShadow		  on
 	  Interpreter		  "rich"
+	  ZOrder		  -1
 	}
       }
     }
@@ -7032,7 +7095,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		30
+	$ObjectID		31
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/LockheedMartinVARIOUS'));"
       }
@@ -7298,7 +7361,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    31
+		    $ObjectID		    32
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Cross Product"
 		    Description		    "Calculate the cross product of two 3-by-1 vectors."
@@ -8744,7 +8807,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    32
+		    $ObjectID		    33
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "disp('T_IB')"
 		  }
@@ -9195,7 +9258,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    33
+		    $ObjectID		    34
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Cross Product"
 		    Description		    "Calculate the cross product of two 3-by-1 vectors."
@@ -11710,11 +11773,11 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    34
+		    $ObjectID		    35
 		    $ClassName		    "Simulink.Mask"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    35
+		    $ObjectID		    36
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "ae"
@@ -11725,12 +11788,12 @@ Model {
 		    Type		    "Simulink.dialog.Control"
 		    Dimension		    3
 		    Object {
-		    $ObjectID		    36
+		    $ObjectID		    37
 		    $ClassName		    "Simulink.dialog.Group"
 		    Prompt		    "%<MaskType>"
 		    Object {
 		    $PropName		    "DialogControls"
-		    $ObjectID		    37
+		    $ObjectID		    38
 		    $ClassName		    "Simulink.dialog.Text"
 		    Prompt		    "%<MaskDescription>"
 		    Name		    "DescTextVar"
@@ -11738,13 +11801,13 @@ Model {
 		    Name		    "DescGroupVar"
 		    }
 		    Object {
-		    $ObjectID		    38
+		    $ObjectID		    39
 		    $ClassName		    "Simulink.dialog.Group"
 		    Prompt		    "Simulink:studio:ToolBarParametersMenu"
 		    Name		    "ParameterGroupVar"
 		    }
 		    Object {
-		    $ObjectID		    39
+		    $ObjectID		    40
 		    $ClassName		    "Simulink.dialog.parameter.Edit"
 		    Name		    "ae"
 		    }
@@ -31495,7 +31558,7 @@ Model {
 		    ":0px;\">Since the forces and moments are in stability axis,</p>\n<p align=\"center\" style=\" margin-top:0px; ma"
 		    "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> the beta has been mu"
 		    "ltiplied with zero.</p></body></html>"
-		    Position		    [58, 396, 281, 422]
+		    Position		    [58, 396, 60, 414]
 		    InternalMargins	    [0, 0, 0, 0]
 		    HorizontalAlignment	    "left"
 		    VerticalAlignment	    "top"
@@ -31713,11 +31776,11 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    40
+		    $ObjectID		    41
 		    $ClassName		    "Simulink.Mask"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    41
+		    $ObjectID		    42
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "cD0"
@@ -32132,20 +32195,20 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    42
+		    $ObjectID		    43
 		    $ClassName		    "Simulink.Mask"
 		    Array {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    43
+		    $ObjectID		    44
 		    Type		    "edit"
 		    Name		    "cL0"
 		    Prompt		    "CL0"
 		    Value		    "nfs.aero.cL0"
 		    }
 		    Object {
-		    $ObjectID		    44
+		    $ObjectID		    45
 		    Type		    "edit"
 		    Name		    "meanchord"
 		    Prompt		    "Mean Aerodynamic Chord"
@@ -34552,7 +34615,7 @@ Model {
 		    ":0px;\">Since the forces and moments are in stability axis,</p>\n<p align=\"center\" style=\" margin-top:0px; ma"
 		    "rgin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> the beta has been mu"
 		    "ltiplied with zero.</p></body></html>"
-		    Position		    [118, 407, 341, 433]
+		    Position		    [118, 407, 120, 425]
 		    InternalMargins	    [0, 0, 0, 0]
 		    HorizontalAlignment	    "left"
 		    VerticalAlignment	    "top"
@@ -37885,7 +37948,7 @@ Model {
 		  Variant		  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    45
+		    $ObjectID		    46
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -37899,7 +37962,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    46
+		    $ObjectID		    47
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -39482,22 +39545,22 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData2','DataLoggingSaveFormat','StructureWithTim"
 	      "e','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',tru"
-	      "e,'SerializedDisplays',{struct('MinYLimReal','-1143.00002','MaxYLimReal','10287.00018','YLabelReal','','MinYLim"
-	      "Mag','  0.00000','MaxYLimMag','10287.00018','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',f"
-	      "alse,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',["
-	      "1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921568627"
-	      "45098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074"
-	      "5098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',"
-	      "{{}},'NumLines',3,'LineNames',{{'Gain3:1','Gain3:2','Gain3:3'}},'ShowContent',true,'Placement',1)},'DisplayProp"
-	      "ertyDefaults',struct('MinYLimReal','-1143.00002','MaxYLimReal','10287.00018','YLabelReal','','MinYLimMag','  0."
-	      "00000','MaxYLimMag','10287.00018','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Axes"
-	      "Color',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666"
-	      "666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83"
-	      "1372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215"
-	      "686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumL"
-	      "ines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',tr"
-	      "ue),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[188.2 39"
-	      "0.2 512.2 629.4])"
+	      "e,'SerializedDisplays',{struct('MinYLimReal','-24373.81204','MaxYLimReal','218955.3995','YLabelReal','','MinYLi"
+	      "mMag','   0.00000','MaxYLimMag','218955.3995','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase'"
+	      ",false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder'"
+	      ",[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686"
+	      "2745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0"
+	      "745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames"
+	      "',{{}},'NumLines',3,'LineNames',{{'Gain3:1','Gain3:2','Gain3:3'}},'ShowContent',true,'Placement',1)},'DisplayPr"
+	      "opertyDefaults',struct('MinYLimReal','-24373.81204','MaxYLimReal','218955.3995','YLabelReal','','MinYLimMag',' "
+	      "  0.00000','MaxYLimMag','218955.3995','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'"
+	      "AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0."
+	      "0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 "
+	      "0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803"
+	      "9215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'"
+	      "NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation"
+	      "',true),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[1 74"
+	      ".1999999999999 1537 863],'VisibleAtModelOpen','on')"
 	      NumInputPorts	      "1"
 	    }
 	    Block {
@@ -40028,7 +40091,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		47
+	$ObjectID		48
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/OnBoardComputerESAPathfinder'));"
       }
@@ -40994,20 +41057,20 @@ Model {
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.01309','MaxYLimReal','0.01309','YLabelReal','','MinYLi"
-	      "mMag','0.00000','MaxYLimMag','0.01309','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
-	      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
-	      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
-	      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980"
-	      "39215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
-	      "'NumLines',4,'LineNames',{{'Sum:1','Sum:2','Sum:3','Sum:4'}},'ShowContent',true,'Placement',1)},'DisplayPropert"
-	      "yDefaults',struct('MinYLimReal','-0.01309','MaxYLimReal','0.01309','YLabelReal','','MinYLimMag','0.00000','MaxY"
-	      "LimMag','0.01309','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'"
-	      "AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.62352"
-	      "9411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;"
-	      "0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.6509803921"
-	      "56863])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,"
-	      "'Version','2017b')),'Version','2017b')"
+	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.038','MaxYLimReal','0.03803','YLabelReal','','MinYLimM"
+	      "ag','0.00000','MaxYLimMag','0.03803','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'A"
+	      "xesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
+	      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
+	      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
+	      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'N"
+	      "umLines',4,'LineNames',{{'Sum:1','Sum:2','Sum:3','Sum:4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyD"
+	      "efaults',struct('MinYLimReal','-0.038','MaxYLimReal','0.03803','YLabelReal','','MinYLimMag','0.00000','MaxYLimM"
+	      "ag','0.03803','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
+	      "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411"
+	      "764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.39"
+	      "2156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215686"
+	      "3])),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Ver"
+	      "sion','2017b')),'Version','2017b','Position',[769.8 433.8 766.4 348.8])"
 	      NumInputPorts	      "1"
 	    }
 	    Block {
@@ -41182,35 +41245,35 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    48
+		    $ObjectID		    49
 		    $ClassName		    "Simulink.Mask"
 		    Display		    "plot([0,1,1,2,2,3,3,4],[0,0,1,1,-1,-1,0,0])"
 		    Array {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    4
 		    Object {
-		    $ObjectID		    49
+		    $ObjectID		    50
 		    Type		    "edit"
 		    Name		    "T_start"
 		    Prompt		    "Doublet Time"
 		    Value		    "10"
 		    }
 		    Object {
-		    $ObjectID		    50
+		    $ObjectID		    51
 		    Type		    "edit"
 		    Name		    "amp"
 		    Prompt		    "Amplitude"
 		    Value		    "deg2rad(2)"
 		    }
 		    Object {
-		    $ObjectID		    51
+		    $ObjectID		    52
 		    Type		    "edit"
 		    Name		    "span"
 		    Prompt		    "Time Span"
 		    Value		    "1"
 		    }
 		    Object {
-		    $ObjectID		    52
+		    $ObjectID		    53
 		    Type		    "edit"
 		    Name		    "sampletime"
 		    Prompt		    "Sample Time"
@@ -41679,7 +41742,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    53
+		    $ObjectID		    54
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -41693,7 +41756,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    54
+		    $ObjectID		    55
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -41795,7 +41858,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    55
+		    $ObjectID		    56
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -41809,7 +41872,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    56
+		    $ObjectID		    57
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -41911,7 +41974,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    57
+		    $ObjectID		    58
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -41925,7 +41988,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    58
+		    $ObjectID		    59
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -42027,7 +42090,7 @@ Model {
 		    Variant		    off
 		    Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    59
+		    $ObjectID		    60
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "Sigbuilder block"
 		    Description		    "Simulink:masks:SigbuilderBlock_MD"
@@ -42041,7 +42104,7 @@ Model {
 		    Capabilities	    "slmaskedcaps(gcbh)"
 		    Object {
 		    $PropName		    "Parameters"
-		    $ObjectID		    60
+		    $ObjectID		    61
 		    $ClassName		    "Simulink.MaskParameter"
 		    Type		    "edit"
 		    Name		    "tuvar"
@@ -45111,7 +45174,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		61
+	$ObjectID		62
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('iData/Initialization'))"
       }
