@@ -78,11 +78,11 @@ Bmatlong       =   [ae.Xdelta_e;
 % % % % % % There is an  issue with Amatlat (v variant) - the results are not correct!
 
 %                   v           p           r                   phi                     psi    
-% Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
-%                     ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
-%                     ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
-%                     0           1           tan(nfs.pathangle)  0                       0;
-%                     0           0           sec(nfs.pathangle)  0                       0;];
+Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
+                    ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
+                    ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
+                    0           1           tan(nfs.pathangle)  0                       0;
+                    0           0           sec(nfs.pathangle)  0                       0;];
 %                   delta_a             delta_r
 Bmatlat        =   [ae.Ydelta_a         ae.Ydelta_r     ;
                     ae.Ldelta_aprime    ae.Ldelta_rprime;
@@ -90,17 +90,17 @@ Bmatlat        =   [ae.Ydelta_a         ae.Ydelta_r     ;
                     0                   0               ;
                     0                   0               ;];
 %                   beta           p           r                   phi                     psi    
-Amatlat        =   [ae.Yv          0           -1                  g/u*cos(nfs.pathangle)  0;
-                    ae.Lbetaprime  ae.Lpprime  ae.Lrprime          0                       0;
-                    ae.Nbetaprime  ae.Npprime  ae.Nrprime          0                       0;
-                    0              1           tan(nfs.pathangle)  0                       0;
-                    0              0           sec(nfs.pathangle)  0                       0;];
-%                   delta_a             delta_r
-Bmatlat        =   [ae.Ydelta_a/u       ae.Ydelta_r/u   ;
-                    ae.Ldelta_aprime    ae.Ldelta_rprime;
-                    ae.Ndelta_aprime    ae.Ndelta_rprime;
-                    0                   0               ;
-                    0                   0               ;];
+% Amatlat        =   [ae.Yv          0           -1                  g/u*cos(nfs.pathangle)  0;
+%                     ae.Lbetaprime  ae.Lpprime  ae.Lrprime          0                       0;
+%                     ae.Nbetaprime  ae.Npprime  ae.Nrprime          0                       0;
+%                     0              1           tan(nfs.pathangle)  0                       0;
+%                     0              0           sec(nfs.pathangle)  0                       0;];
+% %                   delta_a             delta_r
+% Bmatlat        =   [ae.Ydelta_a/u       ae.Ydelta_r/u   ;
+%                     ae.Ldelta_aprime    ae.Ldelta_rprime;
+%                     ae.Ndelta_aprime    ae.Ndelta_rprime;
+%                     0                   0               ;
+%                     0                   0               ;];
 
 
 Amat            =   blkdiag(Amatlong,Amatlat);

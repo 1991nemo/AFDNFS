@@ -15,7 +15,7 @@
 function X = AFDTrim(nfs)
 
 x0=[0 0 nfs.weight];
-options=optimset('Display','iter','TolX',1e-10,'TolFun',1e-30,...
+options=optimset('Display','iter','TolX',1e-30,'TolFun',1e-30,...
                  'Algorithm','levenberg-marquardt');
 [x,~]=fsolve(@(x) TrimCost(x,nfs),x0,options);
 disp('------------------------------------------------------------------');

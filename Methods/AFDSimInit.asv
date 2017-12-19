@@ -41,4 +41,4 @@ nfs = NFSUncertainty(nfs);
 nfs = NFSCoordinateInit(nfs);
 nfs = NFSMrasurement(nfs);
 
-NFSOnLoad;
+TurbulenceSelector = 0; % 0 - no turbulence; 1 - Dryden; 2 - Von-K

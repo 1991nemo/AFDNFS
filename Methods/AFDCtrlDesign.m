@@ -7,7 +7,9 @@ Dlong = zeros(size(Clong,1),size(Blong,2));
 
 syslong = ss(Along, Blong, Clong, Dlong);
 
-[Klong, ~, ~] = lqr(syslong,eye(size(Along))*10,eye(size(Blong,2)));
+Qlong = diag([50 50 600 400]);
+
+[Klong, ~, ~] = lqr(syslong,Qlong,eye(size(Blong,2)));
 
 nfs.ctrl.lqr.long.K = Klong;
 
@@ -18,7 +20,7 @@ Dlat = zeros(size(Clat,1),size(Blat,2));
 
 syslat = ss(Alat, Blat, Clat, Dlat);
 
-[Klat, ~, ~] = lqr(syslat,eye(size(Alat))*2,eye(size(Blat,2)));
+[Klat, ~, ~] = lqr(syslat,eye(size(Alat))*20,eye(size(Blat,2)));
 
 nfs.ctrl.lqr.lat.K = Klat;
 
