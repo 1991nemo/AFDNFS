@@ -74,11 +74,12 @@ Bmatlong       =   [ae.Xdelta_e;
                     ae.Zdelta_e;
                     Mdelta_ebar;
                     0          ;];
-
-% % % % % % There is an  issue with Amatlat (v variant) - the results are not correct!
+longsys         =   ss(Amatlong,Bmatlong,eye(size(Amatlong)),0,...
+    'StateName',{'U','W','Q','Theta'},'InputName',{'de'},...
+    'OutputName',{'U','W','Q','Theta'});
 
 %                   v           p           r                   phi                     psi    
-Amatlat        =   [ae.Yv       0           u                   -g*cos(nfs.pathangle)   0;
+Amatlat        =   [ae.Yv       0           -u                  g*cos(nfs.pathangle)    0;
                     ae.Lvprime  ae.Lpprime  ae.Lrprime          0                       0;
                     ae.Nvprime  ae.Npprime  ae.Nrprime          0                       0;
                     0           1           tan(nfs.pathangle)  0                       0;
@@ -89,7 +90,11 @@ Bmatlat        =   [ae.Ydelta_a         ae.Ydelta_r     ;
                     ae.Ndelta_aprime    ae.Ndelta_rprime;
                     0                   0               ;
                     0                   0               ;];
-%                   beta           p           r                   phi                     psi    
+latsys          =   ss(Amatlat,Bmatlat,eye(size(Amatlat)),zeros(5,2),...
+    'StateName',{'V','P','R','Phi','Psi'},'InputName',{'da','dr'},...
+    'OutputName',{'V','P','R','Phi','Psi'});
+
+% %                   beta           p           r                   phi                     psi    
 % Amatlat        =   [ae.Yv          0           -1                  g/u*cos(nfs.pathangle)  0;
 %                     ae.Lbetaprime  ae.Lpprime  ae.Lrprime          0                       0;
 %                     ae.Nbetaprime  ae.Npprime  ae.Nrprime          0                       0;
@@ -101,6 +106,9 @@ Bmatlat        =   [ae.Ydelta_a         ae.Ydelta_r     ;
 %                     ae.Ndelta_aprime    ae.Ndelta_rprime;
 %                     0                   0               ;
 %                     0                   0               ;];
+% latsys          =   ss(Amatlat,Bmatlat,eye(size(Amatlat)),zeros(5,2),...
+%     'StateName',{'Beta','P','R','Phi','Psi'},'InputName',{'da','dr'},...
+%     'OutputName',{'Beta','P','R','Phi','Psi'});
 
 
 Amat            =   blkdiag(Amatlong,Amatlat);
@@ -111,19 +119,8 @@ nfs.dyn.linsys  =   ss(Amat,Bmat,Cmat,Dmat,0,'StateName',{'U','W','Q',...
     'Theta','V','P','R','Phi','Psi'},'InputName',{'de','da','dr'},...
     'OutputName',{'U','W','Q','Theta','V','P','R','Phi','Psi'});
 % reorder the linear system to the convenient form
-p = [1, 5, 2, 6, 3, 7, 8, 4, 9];
-
-
-longsys         =   ss(Amatlong,Bmatlong,eye(size(Amatlong)),0,...
-    'StateName',{'U','W','Q','Theta'},'InputName',{'de'},...
-    'OutputName',{'U','W','Q','Theta'});
-% latsys          =   ss(Amatlat,Bmatlat,eye(size(Amatlat)),zeros(5,2),...
-%     'StateName',{'V','P','R','Phi','Psi'},'InputName',{'da','dr'},...
-%     'OutputName',{'V','P','R','Phi','Psi'});
-
-latsys          =   ss(Amatlat,Bmatlat,eye(size(Amatlat)),zeros(5,2),...
-    'StateName',{'Beta','P','R','Phi','Psi'},'InputName',{'da','dr'},...
-    'OutputName',{'Beta','P','R','Phi','Psi'});
+% p = [1, 5, 2, 6, 3, 7, 8, 4, 9];
+% nfs.dyn.linsys = xperm(nfs.dyn.linsys,P);
 
 clear q s c u m b Ixx Iyy Izz Ixz ae coeff rho s g theta1 A B Mubar Mwbar ...
       Mqbar Mthetabar Mdelta_ebar;
