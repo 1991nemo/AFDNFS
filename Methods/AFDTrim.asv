@@ -17,8 +17,7 @@ function X = AFDTrim(nfs)
 x0=[0 0 nfs.weight];
 options=optimset('Display','iter','TolX',1e-30,'TolFun',1e-30,...
                  'Algorithm','levenberg-marquardt');
-% [x,~]=fsolve(@(x) TrimCost(x,nfs),x0,options);
-[x,~]=fsolve(@(x) TrimCost2(x,nfs),x0,options);
+[x,~]=fsolve(@(x) TrimCost(x,nfs),x0,options);
 disp('------------------------------------------------------------------');
 disp('  ');
 fprintf('Alpha_trim: %f deg or %6.10f rad\n',rad2deg(x(1)),x(1));
@@ -28,18 +27,16 @@ disp('  ');
 disp('------------------------------------------------------------------');
 disp('  ');
 X={x(1) x(2) sqrt(x(3)^2); 'rad' 'rad' 'N'}';
-delta_e = x(2);
-alpha = x(1);
-thrust = sqrt(x(3)^2);
-attitude=[0,alpha,0];
-vel = [nfs.crusevel*cos(alpha), 0, nfs.crusevel*sin(alpha)]';
-[force,moment]=ForceMoment(vel,[0,0,0]',[delta_e,0,0,0],attitude,[0,0,nfs.altitude],thrust,0,nfs);
-disp(force);
-disp(moment);
+% delta_e = x(2);
+% alpha = x(1);
+% thrust = sqrt(x(3)^2);
+% attitude=[0,alpha,0];
+% vel = [nfs.crusevel*cos(alpha), 0, nfs.crusevel*sin(alpha)]';
+% [force,moment]=ForceMoment(vel,[0,0,0]',[delta_e,0,0,0],attitude,[0,0,nfs.altitude],thrust,0,nfs);
+% disp(force);
+% disp(moment);
 end
 
-
-%{
 function fun_val=TrimCost(x,nfs)
 alpha=x(1);
 delta_e=x(2);
@@ -247,23 +244,4 @@ a = sqrt(T*gamma*R);
 theta = T/T0;
 P = P0*theta.^(g/(L*R)).*expon;
 rho=rho0*theta.^((g/(L*R))-1.0).*expon;
-end
-%}
-
-function cost = TrimCost2(x,nfs)
-assignin('base','nfs',nfs);
-assignin('base','TurbulenceSelector',0);
-assignin('base','alpha',x(1));
-assignin('base','delta_e',x(2));
-assignin('base','thrust',sqrt(x(3)^2));
-sim('TrimFandM');
-try
-% cost = evalin('base','cost.Data(:,1,end)');
-cost = cost.Data(:,1,end);
-% evalin('base','clear cost alpha delta_e thrust');
-catch ME,
-    disp(ME)
-    cost = 1e3*ones(6,1);
-end
-
 end

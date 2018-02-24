@@ -15,6 +15,9 @@
 clc; clear all; close all;
 format long;
 nfs=PlaneData('SI');%('Imperial');
+nfs = NFSUncertainty(nfs);
+nfs = NFSCoordinateInit(nfs);
+nfs = NFSMrasurement(nfs);
 % load('SampleDatcomData.mat');
 % Trim Condition =========================================================%
 [trim_con]=AFDTrim(nfs);
@@ -37,8 +40,5 @@ disp('Moment = '); disp(M_Body);
 clear F_Body M_Body;
 nfs = TransferFunction(nfs,'Plot','false');
 nfs = AFDCtrlDesign(nfs);
-nfs = NFSUncertainty(nfs);
-nfs = NFSCoordinateInit(nfs);
-nfs = NFSMrasurement(nfs);
 
 NFSOnLoad;
