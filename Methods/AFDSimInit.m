@@ -28,17 +28,25 @@ nfs.trim.thrust=trim_con{3};
 
 nfs.crusevelvec=[nfs.crusevel*cos(nfs.trim.alpha), 0, nfs.crusevel*sin(nfs.trim.alpha)]';
 nfs.attitude0=[0,nfs.trim.alpha,0]';
-desired.height=-nfs.altitude;
-desired.pitch=(nfs.trim.alpha);
-desired.phi=0;
-desired.q=0;
+nfs.desired.height=-nfs.altitude;
+nfs.desired.pitch=(nfs.trim.alpha);
+nfs.desired.phi=0; 
+nfs.desired.q=0;
 
-[F_Body,M_Body]=ForceMoment(nfs.crusevelvec,[0 0 0],[nfs.trim.delta_e 0 0 0],...
-    [0 nfs.trim.alpha 0],[0,0,-nfs.altitude],nfs.trim.thrust,0,nfs);
-disp('Force = '); disp(F_Body);
-disp('Moment = '); disp(M_Body);
-clear F_Body M_Body;
+% [F_Body,M_Body]=ForceMoment(nfs.crusevelvec,[0 0 0],[nfs.trim.delta_e 0 0 0],...
+%     [0 nfs.trim.alpha 0],[0,0,-nfs.altitude],nfs.trim.thrust,0,nfs);
+% disp('Force = '); disp(F_Body);
+% disp('Moment = '); disp(M_Body);
+% clear F_Body M_Body;
+
+
 nfs = TransferFunction(nfs,'Plot','false');
 nfs = AFDCtrlDesign(nfs);
 
 NFSOnLoad;
+dictionaryObj = Simulink.data.dictionary.open([wd,'\NFSDatabase.sldd']);
+sectionObj = dictionaryObj.getSection('Design Data');
+temp = sectionObj.getEntry('nfs');
+setValue(temp,nfs);
+saveChanges(dictionaryObj);
+dictionaryObj.close();
