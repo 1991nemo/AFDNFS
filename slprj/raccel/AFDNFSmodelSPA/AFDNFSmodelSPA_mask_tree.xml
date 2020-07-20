@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm/R2020a">
+  <slsa.mm.MaskTree type="slsa.mm.MaskTree" uuid="d92ff414-e929-431f-b6bc-7929348e4044">
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="7cd3cd05-f46f-44ef-a920-46214ed8fabc">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA</blockPath>
+      <childrenIds>AFDNFSmodelSPA:15746:108</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:108:750</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:108:750:772</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:108:771</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:108:771:722</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:108:771:722:772</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:108:771:754</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109:750</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109:750:772</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109:771</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109:771:722</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109:771:722:772</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15746:109:771:754</childrenIds>
+      <id>AFDNFSmodelSPA:15746</id>
+      <masks type="slsa.mm.Mask" uuid="c76f0703-5377-459a-98f8-3ef68f7c8b15">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="d1f44ba4-1297-4af5-b433-6a799d7b639f">
+          <expression>1</expression>
+          <name>units</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="82087483-9985-404d-ba80-5d62ff6afa88">
+          <expression>2</expression>
+          <name>ptype</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="830e377b-fce1-4480-b97d-6a5db90ae540">
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>refPosPort</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="69ac0220-1dc9-466d-96b1-d8fba5c2433d">
+          <expression>[nfs.Coordinate.Lat nfs.Coordinate.Long]</expression>
+          <isTunable>true</isTunable>
+          <name>LL0</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="5fb186b1-fcd3-408c-80ec-4899f87bc40d">
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>psi</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <initializationCode>ports = aeroicon(&apos;aeroblklla&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="76c1c3e2-5bcd-41d6-9fb4-db5cf628d76c">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap</blockPath>
+      <id>AFDNFSmodelSPA:15746:108</id>
+      <masks type="slsa.mm.Mask" uuid="536295bb-02a9-49f8-af47-2d6568aff0ae">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="c1591f94-9dfa-4bd0-a1d9-8563833b1222">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Wrap Longitude</blockPath>
+      <id>AFDNFSmodelSPA:15746:108:750</id>
+      <masks type="slsa.mm.Mask" uuid="d7bcb378-9da4-4d44-aca1-871bd4c3c5c3">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="9d5b316b-71fe-455c-9d50-ef96851ae81e">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Wrap Longitude/Compare To Constant</blockPath>
+      <id>AFDNFSmodelSPA:15746:108:750:772</id>
+      <masks type="slsa.mm.Mask" uuid="a85a62de-4917-40ba-b13f-53e61fcdf4d2">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="abf05f1a-3037-45e1-ac38-a12e9ebfc915">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="94186e42-9a1c-4904-bf74-b25fa1398330">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="d71fce78-519e-4852-b5cf-91776bb7f997">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="28b1705d-c767-4988-9926-2ab395274c1a">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="f35f98b7-7739-40e6-b22f-aca2d736ecd3">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90</blockPath>
+      <id>AFDNFSmodelSPA:15746:108:771</id>
+      <masks type="slsa.mm.Mask" uuid="e2ca46a4-645b-45ee-b1b0-29cfeb33b895">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="94821d92-4151-4193-b7a1-decef9d5b0cd">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Wrap Angle 180</blockPath>
+      <id>AFDNFSmodelSPA:15746:108:771:722</id>
+      <masks type="slsa.mm.Mask" uuid="07a70f08-e816-4ac3-a37b-a953efa01f30">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="69934e4f-f995-428a-aa45-96c24c2b849e">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Wrap Angle 180/Compare To Constant</blockPath>
+      <id>AFDNFSmodelSPA:15746:108:771:722:772</id>
+      <masks type="slsa.mm.Mask" uuid="c0ad5e1f-c099-4510-91a1-d30a8a1086a6">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="701b8819-d3d7-4cfa-973e-745836ac8f06">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="3ba42e7f-0b80-45fb-9527-856e3ab49197">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="3151fc94-0bd3-4b88-bcab-ad5e2cab7d9d">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="31fb2dbd-0a88-408a-9b07-e7711013be20">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="16153133-8566-4bf0-a35c-37adb9b43559">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Compare To Constant</blockPath>
+      <id>AFDNFSmodelSPA:15746:108:771:754</id>
+      <masks type="slsa.mm.Mask" uuid="89a53950-8b8a-4c6c-8690-d3472ff6737f">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="bc7a403d-a560-4930-a3ad-5e2af5b6cb4d">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="c6323fe7-81aa-4a65-a846-3d096ae9f3a3">
+          <expression>90</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="7e55f545-6db2-4797-8f9d-671f5f3e2a1e">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="70b4e351-f23a-4bd0-bc36-7fc4924a1576">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="f478cdee-52ab-4a60-b4bc-0509b65e2c43">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1</blockPath>
+      <id>AFDNFSmodelSPA:15746:109</id>
+      <masks type="slsa.mm.Mask" uuid="bfcfe113-7b9a-41d7-acda-0273847d505e">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="a8fd49b4-7f9e-4d60-a8c8-f296def959a7">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Wrap Longitude</blockPath>
+      <id>AFDNFSmodelSPA:15746:109:750</id>
+      <masks type="slsa.mm.Mask" uuid="8f5e8292-8a56-4828-90c9-3d41be3d7570">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="098f8ad4-dd1e-4fe1-86b5-e2ac158327e7">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Wrap Longitude/Compare To Constant</blockPath>
+      <id>AFDNFSmodelSPA:15746:109:750:772</id>
+      <masks type="slsa.mm.Mask" uuid="407f6a9b-5648-4265-851d-70e9d8dc5519">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="00a75f20-3869-4a81-b60f-2a158c7f94a0">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="f2ddd6e4-cd00-46b4-9379-796df0a0e182">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="b75c97aa-227f-44a0-8250-f95eaa7bce7d">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="c5660e4a-754e-48c8-ac00-7f7fc075f3d1">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="6b1a4f85-0684-42d2-a6ef-3d41995d0ff0">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90</blockPath>
+      <id>AFDNFSmodelSPA:15746:109:771</id>
+      <masks type="slsa.mm.Mask" uuid="088b5fce-3a53-4f32-8fed-85f81c597382">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="dd755a88-d65c-4425-866f-07b2899b8033">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Wrap Angle 180</blockPath>
+      <id>AFDNFSmodelSPA:15746:109:771:722</id>
+      <masks type="slsa.mm.Mask" uuid="ebbfb1a5-8c33-4021-9f1f-45c7870186da">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="0a081ceb-720d-4885-bdce-a4f0ea76acf6">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Wrap Angle 180/Compare To Constant</blockPath>
+      <id>AFDNFSmodelSPA:15746:109:771:722:772</id>
+      <masks type="slsa.mm.Mask" uuid="4b8b4328-ecc8-4ab6-a5ce-89d2a723af8f">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="d1aff976-bf1e-49a2-bf1c-0239d0e13f12">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="e2ce34e0-2a9b-4767-8329-e8bf6dce2031">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="d08efe22-54b5-4d71-afeb-341ea65038bb">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="c6c0e8f3-5934-491c-9dca-df5a969669ea">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="d0415042-0249-413a-9d8e-59642d38d11b">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Compare To Constant</blockPath>
+      <id>AFDNFSmodelSPA:15746:109:771:754</id>
+      <masks type="slsa.mm.Mask" uuid="32a54283-4cfd-4d2a-b00f-c94a1d32b9cb">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="c3b45e3d-dccd-4cf1-a5e0-f4b988d89fac">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="aef57503-db7b-4a2d-95d3-ae037e3380a9">
+          <expression>90</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="fb369597-eef7-4d04-9f48-fcb77e2c7d5d">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="a5ed4f9a-2f09-4f8a-9fe1-13a383f8b11d">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>AFDNFSmodelSPA:15746</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="663fb893-32b2-494c-9fc2-e8329c14964f">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Thrust/Signal Builder</blockPath>
+      <id>AFDNFSmodelSPA:15762</id>
+      <masks type="slsa.mm.Mask" uuid="3ffccec2-4ecc-4999-b5b4-947f02c89c34">
+        <initializationCode>if ~strcmp(get_param(bdroot(gcbh),&apos;SimulationStatus&apos;),&apos;stopped&apos;) tuvar = sigbuilder_block(&apos;maskInit&apos;); end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="2a5f0654-82bd-4778-8bff-87605b8f2627">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Aerodynamic Forces and Moments Derivatives/Forces/Force Coefficients Calculator/Drag Coefficient</blockPath>
+      <id>AFDNFSmodelSPA:16825:361</id>
+      <masks type="slsa.mm.Mask" uuid="778f0fc3-aef7-4e6d-b49f-9015ad3d2fc2">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="aac4cfc5-d1ad-483a-a976-32ce76b45f17">
+          <expression>nfs.aero.cD0</expression>
+          <isTunable>true</isTunable>
+          <name>cD0</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="5936a7c0-220f-41d4-8650-83dc946fa1c3">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/Forces and Moments/Aerodynamic Forces and Moments Derivatives/Forces/Force Coefficients Calculator/Lift Coefficient</blockPath>
+      <id>AFDNFSmodelSPA:16825:385</id>
+      <masks type="slsa.mm.Mask" uuid="a9a53cda-fd62-49ca-a500-a58f3d656ac1">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="21617152-f2d2-4bff-aa3a-fd05d856a370">
+          <expression>nfs.aero.cL0</expression>
+          <isTunable>true</isTunable>
+          <name>cL0</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="4ae06b4d-6afb-4df5-b4bb-9bdec9bb4ae7">
+          <expression>nfs.meanchord</expression>
+          <isTunable>true</isTunable>
+          <name>meanchord</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="7342e419-1775-4a7c-b168-e8018f1c5adf">
+      <blockPath>AFDNFSmodelSPA/OnBoardComputer/Control System/Trim Offset +  Reference Excitation/Doublet Generated Signal/Doublet</blockPath>
+      <id>AFDNFSmodelSPA:5780</id>
+      <masks type="slsa.mm.Mask" uuid="44a2b6fe-f5e8-44e2-94db-a4664e367330">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="7804e630-6901-4dff-9d2f-732cb9e6b3c0">
+          <expression>10</expression>
+          <isTunable>true</isTunable>
+          <name>T_start</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="b6dbc91b-6940-4af2-a81d-2a28022e426b">
+          <expression>deg2rad(2)</expression>
+          <isTunable>true</isTunable>
+          <name>amp</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="313d58a1-0ad3-4b16-8968-279c0e9482dc">
+          <expression>1</expression>
+          <isTunable>true</isTunable>
+          <name>span</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="eef6d969-6a1d-4a57-bc3f-5e8b22d8ecd5">
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>sampletime</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="b702e82c-7f4e-41b6-a76c-5a9d5f4eb7d6">
+      <blockPath>AFDNFSmodelSPA/OnBoardComputer/Control System/Trim Offset +  Reference Excitation/Triangular signal span 10 sec/Signal Builder1</blockPath>
+      <id>AFDNFSmodelSPA:5835</id>
+      <masks type="slsa.mm.Mask" uuid="6d7c6a25-06b6-4145-afd0-a6090f00f520">
+        <initializationCode>if ~strcmp(get_param(bdroot(gcbh),&apos;SimulationStatus&apos;),&apos;stopped&apos;) tuvar = sigbuilder_block(&apos;maskInit&apos;); end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="41628b17-47af-4d53-a8be-3ee1dfa83db0">
+      <blockPath>AFDNFSmodelSPA/OnBoardComputer/Control System/Trim Offset +  Reference Excitation/Triangular signal span 10 sec/Signal Builder2</blockPath>
+      <id>AFDNFSmodelSPA:6843</id>
+      <masks type="slsa.mm.Mask" uuid="8ed06455-2437-42f0-8390-4a81a34f0118">
+        <initializationCode>if ~strcmp(get_param(bdroot(gcbh),&apos;SimulationStatus&apos;),&apos;stopped&apos;) tuvar = sigbuilder_block(&apos;maskInit&apos;); end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="6cd56e86-03c6-4d04-a471-d4861bcf1dba">
+      <blockPath>AFDNFSmodelSPA/OnBoardComputer/Control System/Trim Offset +  Reference Excitation/Triangular signal span 10 sec/Signal Builder3</blockPath>
+      <id>AFDNFSmodelSPA:6847</id>
+      <masks type="slsa.mm.Mask" uuid="ca47f8c8-5ecb-48fc-8860-a4a8b97bb675">
+        <initializationCode>if ~strcmp(get_param(bdroot(gcbh),&apos;SimulationStatus&apos;),&apos;stopped&apos;) tuvar = sigbuilder_block(&apos;maskInit&apos;); end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="534830dc-2437-4b4c-918f-8e6404de5ebc">
+      <blockPath>AFDNFSmodelSPA/OnBoardComputer/Control System/Trim Offset +  Reference Excitation/Triangular signal span 10 sec/Signal Builder4</blockPath>
+      <id>AFDNFSmodelSPA:6851</id>
+      <masks type="slsa.mm.Mask" uuid="488ef371-d151-42c0-ba56-ce00476a2925">
+        <initializationCode>if ~strcmp(get_param(bdroot(gcbh),&apos;SimulationStatus&apos;),&apos;stopped&apos;) tuvar = sigbuilder_block(&apos;maskInit&apos;); end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="0bee325f-b032-42b8-9018-99eed09ed584">
+      <blockPath>AFDNFSmodelSPA/Nonlinear Flight Simulator/6DoF Nonlinear Flight Equations of Motion (Rigid Body)/Euler angles &amp; Direction Cosine/Rotation Angles to DCM/Create 3x3 Matrix</blockPath>
+      <id>AFDNFSmodelSPA:7948</id>
+      <masks type="slsa.mm.Mask" uuid="598b2cff-c453-45e3-afb9-055a68906261">
+        <initializationCode>if aerosharedtest(gcb)
+    aerosharedicon(&apos;shared&apos;);
+else
+    sharedautoicon(&apos;shared&apos;);
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="5c27c814-cf72-48ec-b83d-c33426f2572e">
+      <childrenIds>AFDNFSmodelSPA:15746</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:15762</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:16825:361</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:16825:385</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:5780</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:5835</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:6843</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:6847</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:6851</childrenIds>
+      <childrenIds>AFDNFSmodelSPA:7948</childrenIds>
+      <id>root</id>
+    </maskedBlocks>
+  </slsa.mm.MaskTree>
+</MF0>

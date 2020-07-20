@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm/R2020a">
+  <slsa.mm.MaskTree type="slsa.mm.MaskTree" uuid="1947a8d8-696d-4a9e-920f-5efd30cbde71">
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="7f9bbae7-e926-480a-9e3c-fbebd0495407">
+      <blockPath>TrimFandM/Forces and Moments/Aerodynamic Forces and /Forces/Force Coefficients Calculator/Drag Coefficient</blockPath>
+      <id>TrimFandM:1191</id>
+      <masks type="slsa.mm.Mask" uuid="4b24aa91-5a41-46c6-9bf9-6e17602f3b29">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="0ff1021c-f111-4790-8b12-a6317f91c656">
+          <expression>nfs.aero.cD0</expression>
+          <isTunable>true</isTunable>
+          <name>cD0</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="03244811-3e28-4e51-9534-6e9d82bbee7c">
+      <blockPath>TrimFandM/Forces and Moments/Aerodynamic Forces and /Forces/Force Coefficients Calculator/Lift Coefficient</blockPath>
+      <id>TrimFandM:1215</id>
+      <masks type="slsa.mm.Mask" uuid="bfc8403c-8997-493d-b974-c7dfc551a85c">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="e75a318b-d3bb-41e8-afd6-7dadb5ee9bb0">
+          <expression>nfs.aero.cL0</expression>
+          <isTunable>true</isTunable>
+          <name>cL0</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="9a17752e-5eb8-4290-9da3-264b8326317f">
+          <expression>nfs.meanchord</expression>
+          <isTunable>true</isTunable>
+          <name>meanchord</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="dc6a6814-6018-4994-bb0b-661b1453004c">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA</blockPath>
+      <childrenIds>TrimFandM:1481:108</childrenIds>
+      <childrenIds>TrimFandM:1481:108:750</childrenIds>
+      <childrenIds>TrimFandM:1481:108:750:772</childrenIds>
+      <childrenIds>TrimFandM:1481:108:771</childrenIds>
+      <childrenIds>TrimFandM:1481:108:771:722</childrenIds>
+      <childrenIds>TrimFandM:1481:108:771:722:772</childrenIds>
+      <childrenIds>TrimFandM:1481:108:771:754</childrenIds>
+      <childrenIds>TrimFandM:1481:109</childrenIds>
+      <childrenIds>TrimFandM:1481:109:750</childrenIds>
+      <childrenIds>TrimFandM:1481:109:750:772</childrenIds>
+      <childrenIds>TrimFandM:1481:109:771</childrenIds>
+      <childrenIds>TrimFandM:1481:109:771:722</childrenIds>
+      <childrenIds>TrimFandM:1481:109:771:722:772</childrenIds>
+      <childrenIds>TrimFandM:1481:109:771:754</childrenIds>
+      <id>TrimFandM:1481</id>
+      <masks type="slsa.mm.Mask" uuid="09b5e128-9bc0-48c4-8c80-78f4a0186003">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="0ab2427c-db6e-41f2-aae6-c98ccd2d2d25">
+          <expression>1</expression>
+          <name>units</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="a98e7296-9331-4a27-ba44-0acba535fcad">
+          <expression>2</expression>
+          <name>ptype</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="768d54ce-62d0-4eb6-b3bb-a772ad7c8c6a">
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>refPosPort</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="f47f29cc-82d0-410b-a2b5-92d2965553a1">
+          <expression>[nfs.Coordinate.Lat nfs.Coordinate.Long]</expression>
+          <isTunable>true</isTunable>
+          <name>LL0</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="b4f97797-1abf-4c1f-b486-561b63224ba0">
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>psi</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <initializationCode>ports = aeroicon(&apos;aeroblklla&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="db263792-476f-45e8-b75d-699cfadf85aa">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap</blockPath>
+      <id>TrimFandM:1481:108</id>
+      <masks type="slsa.mm.Mask" uuid="6332591a-4d6f-48b8-a463-fb70d934cf30">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="7a7b235e-5aaa-441b-926b-0bae50296281">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Wrap Longitude</blockPath>
+      <id>TrimFandM:1481:108:750</id>
+      <masks type="slsa.mm.Mask" uuid="1ff117fe-7109-472c-bdaf-c9f0389313c8">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="739eef91-7fba-4157-88f5-acd346881c01">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Wrap Longitude/Compare To Constant</blockPath>
+      <id>TrimFandM:1481:108:750:772</id>
+      <masks type="slsa.mm.Mask" uuid="bbcd742f-c261-4425-9ba7-dd9dc1e24412">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="af88e9ba-ef66-48a3-a83f-3f2c75cd66bd">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="d27888e0-8327-4259-8f57-55b09d0cd356">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="2d29ca6c-a143-4ff3-a0e5-f8bb2b93dab6">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="209951aa-91aa-4a8e-89b4-5d6a901505f3">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="b6bccf48-6785-457c-b25f-7e7cd5f9eb29">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90</blockPath>
+      <id>TrimFandM:1481:108:771</id>
+      <masks type="slsa.mm.Mask" uuid="91cbcb03-7893-4881-833f-0f02c31ee7b8">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="4628f579-dc56-4886-859e-f06bb39da92e">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Wrap Angle 180</blockPath>
+      <id>TrimFandM:1481:108:771:722</id>
+      <masks type="slsa.mm.Mask" uuid="3d5f0eda-c59a-4106-a892-ce83fdffcb21">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="a3fc5d66-f510-4171-81e0-7a8f1f0a5052">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Wrap Angle 180/Compare To Constant</blockPath>
+      <id>TrimFandM:1481:108:771:722:772</id>
+      <masks type="slsa.mm.Mask" uuid="5d51753c-d853-4578-b8cd-386737411be6">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="62f0937e-53a5-4bc7-8658-dc3af65a97f4">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="dd2878a8-4a54-48c3-9ea9-072c35a5fa61">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="ea9d4d94-4ca9-4d00-a8c8-8b170ed37f2f">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="2bffcf1d-f3b4-42d4-9ba5-a531296a2611">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="bbf47354-c014-400c-981f-34aaa5bb6e4c">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Compare To Constant</blockPath>
+      <id>TrimFandM:1481:108:771:754</id>
+      <masks type="slsa.mm.Mask" uuid="da7d8999-88da-43bf-9efb-4a7ccf7d7fec">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="6b2d1e17-4375-44e9-8d2e-701e743f7a5c">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="8aaa6781-ea1b-4ad2-beaf-a2764d435409">
+          <expression>90</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="42d05bc8-ee1f-4e5f-bdd5-d76b259ea7c4">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="70175378-9a4f-497f-b9b7-b39d5928851a">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="1c44b865-8123-4e9d-ba0c-368dded2dc38">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1</blockPath>
+      <id>TrimFandM:1481:109</id>
+      <masks type="slsa.mm.Mask" uuid="ac78e267-fd42-4b71-b425-eceb6208627b">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="7f9fc35a-feb7-41d9-8c96-541979921bd2">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Wrap Longitude</blockPath>
+      <id>TrimFandM:1481:109:750</id>
+      <masks type="slsa.mm.Mask" uuid="13aae2f2-f407-4e01-9887-5b9855e295df">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="2a3676cd-1fec-4270-8f7d-ba2e6be1a817">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Wrap Longitude/Compare To Constant</blockPath>
+      <id>TrimFandM:1481:109:750:772</id>
+      <masks type="slsa.mm.Mask" uuid="0c1343de-5dd0-4ac7-a6ab-8800142103d7">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="c73a9817-3052-460b-869b-c2f7f2a38e95">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="55d6d56d-686f-4f6a-a02b-07311017ead9">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="95c187d0-efd7-498f-9840-eba0b3c2952e">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="b5388174-b58f-4fc4-be38-9c021399d26f">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="5e04b501-2e29-4c5e-afe1-c1e04287810f">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90</blockPath>
+      <id>TrimFandM:1481:109:771</id>
+      <masks type="slsa.mm.Mask" uuid="c73ffa34-c0d2-4c3a-a85f-81db3196f272">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="7380a4c8-043d-4a0a-9e2f-0298015df093">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Wrap Angle 180</blockPath>
+      <id>TrimFandM:1481:109:771:722</id>
+      <masks type="slsa.mm.Mask" uuid="f114b0a4-9bbc-45ac-bf50-88ba473f4b3d">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="e04ee5a4-9a83-4bbd-9550-b93ec0dc4ec0">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Wrap Angle 180/Compare To Constant</blockPath>
+      <id>TrimFandM:1481:109:771:722:772</id>
+      <masks type="slsa.mm.Mask" uuid="e156f50b-b5e9-4c4d-b9c9-2fa175bd41b9">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="a7527a59-5eb8-49dc-9e60-477022c97ef4">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="250fbdfa-0af0-4b26-90e5-aee260a92e70">
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="d32d0db1-1909-4f28-9486-569666ab5333">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="39f10e19-de61-439f-8efa-777bc0fa435e">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="06c74005-642a-4f80-9d89-c65d3cf9c7cb">
+      <blockPath>TrimFandM/Forces and Moments/Gravity Calculator/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Compare To Constant</blockPath>
+      <id>TrimFandM:1481:109:771:754</id>
+      <masks type="slsa.mm.Mask" uuid="d2a4ad6b-2a08-4660-9983-9edd14e57e80">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="a333a2d0-fcb3-4124-ba11-47f25f39a37c">
+          <expression>6</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="2d3111a8-10f7-416e-9ad6-ab7d2dc830af">
+          <expression>90</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+          <refersToVariables>true</refersToVariables>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="c6b94592-4465-4011-b8a1-018c65d5e5d9">
+          <expression>2</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="9da8bb20-d937-4754-af14-bf43adb96b6d">
+          <expression>1</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>TrimFandM:1481</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="1f5379cd-6826-4de0-bc10-524a7fdbb1ab">
+      <blockPath>TrimFandM/Forces and Moments/Thrust/Signal Builder</blockPath>
+      <id>TrimFandM:1497</id>
+      <masks type="slsa.mm.Mask" uuid="74627979-c206-4c7b-a767-855175597ea3">
+        <initializationCode>if ~strcmp(get_param(bdroot(gcbh),&apos;SimulationStatus&apos;),&apos;stopped&apos;) tuvar = sigbuilder_block(&apos;maskInit&apos;); end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="d5be39ec-23f0-42e8-b9bf-1a8799c525de">
+      <blockPath>TrimFandM/Forces and Moments/Aerodynamic Forces and /Energy Analysis1</blockPath>
+      <id>TrimFandM:78</id>
+      <masks type="slsa.mm.Mask" uuid="4370f57e-0ed7-4a22-8fb9-3eaf89e82051">
+        <dialogParameters type="slsa.mm.DialogParameterInfo" uuid="cb9ace0e-02c2-40e8-aef9-cfa7b8c6760b">
+          <expression>nfs</expression>
+          <isTunable>true</isTunable>
+          <name>ae</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.MaskedBlock" uuid="8807e745-1e31-438d-ad73-81eb700dc92e">
+      <childrenIds>TrimFandM:1191</childrenIds>
+      <childrenIds>TrimFandM:1215</childrenIds>
+      <childrenIds>TrimFandM:1481</childrenIds>
+      <childrenIds>TrimFandM:1497</childrenIds>
+      <childrenIds>TrimFandM:78</childrenIds>
+      <id>root</id>
+    </maskedBlocks>
+  </slsa.mm.MaskTree>
+</MF0>

@@ -22,14 +22,19 @@ nfs = NFSMrasurement(nfs);
 % Trim Condition =========================================================%
 [trim_con]=AFDTrim(nfs);
 % [trim_con]=AFDTrimDatcom(nfs);
-nfs.trim.alpha=trim_con{1};
-nfs.trim.delta_e=trim_con{2};
-nfs.trim.thrust=trim_con{3};
+nfs.trim.alpha = trim_con{1};
+nfs.trim.beta = 0;
+nfs.trim.delta_e = trim_con{2};
+nfs.trim.delta_f = 0;
+nfs.trim.delta_a = 0;
+nfs.trim.delta_r = 0;
+nfs.trim.thrust = trim_con{3};
 
-nfs.crusevelvec=[nfs.crusevel*cos(nfs.trim.alpha), 0, nfs.crusevel*sin(nfs.trim.alpha)]';
-nfs.attitude0=[0,nfs.trim.alpha,0]';
+nfs.crusevelvec=nfs.crusevel*[cos(nfs.trim.alpha)*cos(nfs.trim.beta), ...
+              sin(nfs.trim.beta), sin(nfs.trim.alpha)*cos(nfs.trim.beta)]';
+nfs.attitude0=[0,nfs.pathangle + nfs.trim.alpha,0]';
 nfs.desired.height=-nfs.altitude;
-nfs.desired.pitch=(nfs.trim.alpha);
+nfs.desired.pitch=(nfs.pathangle + nfs.trim.alpha);
 nfs.desired.phi=0; 
 nfs.desired.q=0;
 

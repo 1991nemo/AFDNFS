@@ -13,29 +13,47 @@
 %                          Trimming Function                              %
 %=========================================================================%
 function X = AFDTrim(nfs)
+% Find an appropirate initial guess in the neighborhood of the exact
+% solution
+CL1 = (nfs.weight*cos(nfs.pathangle))./(nfs.dynamicpressure*nfs.refarea);
+alpha_init = ((CL1 - nfs.aero.cL0)*nfs.aero.cmdelta_e + nfs.aero.cm0*nfs.aero.cLdelta_e)/(nfs.aero.cLalpha*nfs.aero.cmdelta_e-nfs.aero.cmalpha*nfs.aero.cLdelta_e);
+delta_e_init = (-nfs.aero.cmalpha*(CL1 - nfs.aero.cL0) - nfs.aero.cm0*nfs.aero.cLalpha)/(nfs.aero.cLalpha*nfs.aero.cmdelta_e-nfs.aero.cmalpha*nfs.aero.cLdelta_e);
+T_init = nfs.weight*sin(nfs.pathangle)+(nfs.aero.cD0 + nfs.aero.cDalpha*abs(alpha_init) + nfs.aero.cDdelta_e*abs(delta_e_init))*nfs.dynamicpressure*nfs.refarea;
 
-x0=[0 0 nfs.weight];
-options=optimset('Display','iter','TolX',1e-30,'TolFun',1e-30,...
-                 'Algorithm','levenberg-marquardt');
+x0=[alpha_init delta_e_init T_init./nfs.weight*2];
+% x0 = [0.034095 0.0010187 1.436985041392959e-01]; % Cruise
+% x0 = []; % 1:3 descent
+options = optimoptions('fsolve','Display','iter','TolX',1e-30,...
+    'TolFun',1e-30,'DiffMinChange',0.01,'FiniteDifferenceType','central',...
+    'MaxFunctionEvaluations',1e5,'MaxIterations',1e5,...
+    'StepTolerance',1e-10);
+
+% options = optimoptions('fsolve','Display','iter','TolX',1e-30,...
+%     'TolFun',1e-30,'FiniteDifferenceType','central',...
+%     'MaxFunctionEvaluations',1e5,'MaxIterations',1e5,...
+%     'StepTolerance',1e-10);
+
 % [x,~]=fsolve(@(x) TrimCost(x,nfs),x0,options);
 [x,~]=fsolve(@(x) TrimCost2(x,nfs),x0,options);
 disp('------------------------------------------------------------------');
 disp('  ');
 fprintf('Alpha_trim: %f deg or %6.10f rad\n',rad2deg(x(1)),x(1));
 fprintf('DeltaE_trim: %f deg or %6.10f rad\n',rad2deg(x(2)),x(2));
-fprintf('Thrus_trim: %6.10f N or %f lbs\n',sqrt(x(3)),sqrt(x(3))/4.448222);
+fprintf('Thrus_trim: %6.10f N or %f lbs\n',nfs.weight*abs(x(3)),nfs.weight*abs(x(3))/4.448222);
 disp('  ');
 disp('------------------------------------------------------------------');
 disp('  ');
-X={x(1) x(2) sqrt(x(3)^2); 'rad' 'rad' 'N'}';
-delta_e = x(2);
-alpha = x(1);
-thrust = sqrt(x(3)^2);
-attitude=[0,alpha,0];
-vel = [nfs.crusevel*cos(alpha), 0, nfs.crusevel*sin(alpha)]';
-[force,moment]=ForceMoment(vel,[0,0,0]',[delta_e,0,0,0],attitude,[0,0,nfs.altitude],thrust,0,nfs);
-disp(force);
-disp(moment);
+X={x(1) x(2) nfs.weight*abs(x(3)); 'rad' 'rad' 'N'}';
+% delta_e = x(2);
+% alpha = x(1);
+% thrust = sqrt(x(3)^2);
+% attitude=[0,alpha,0];
+% vel = [nfs.crusevel*cos(alpha), 0, nfs.crusevel*sin(alpha)]';
+% [force,moment]=ForceMoment(vel,[0,0,0]',[delta_e,0,0,0],attitude,[0,0,nfs.altitude],thrust,0,nfs);
+% disp(force);
+% disp(moment);
+sim('TrimFandM');
+disp(cost.Data(:,1,end));
 end
 
 
@@ -253,17 +271,22 @@ end
 function cost = TrimCost2(x,nfs)
 assignin('base','nfs',nfs);
 assignin('base','TurbulenceSelector',0);
-assignin('base','alpha',x(1));
-assignin('base','delta_e',x(2));
-assignin('base','thrust',sqrt(x(3)^2));
+theta = nfs.pathangle + x(1);
+evalin('base',['TrimTrial = struct(''alpha'',',num2str(x(1)),...
+                                  ',''beta'',',num2str(0),...
+                                  ',''theta'',',num2str(theta),...
+                                  ',''thrust'',',num2str(nfs.weight*abs(x(3))),...
+                                  ',''delta_e'',',num2str(x(2)),...
+                                  ',''delta_f'',',num2str(0),...
+                                  ',''delta_a'',',num2str(0),...
+                                  ',''delta_r'',',num2str(0),');']);
+
 sim('TrimFandM');
 try
-% cost = evalin('base','cost.Data(:,1,end)');
-cost = cost.Data(:,1,end);
-% evalin('base','clear cost alpha delta_e thrust');
+cost = norm(cost.Data(:,1,end)); %#ok
 catch ME,
     disp(ME)
-    cost = 1e3*ones(6,1);
+    cost = nan;%1e6*ones(6,1);
 end
 
 end
